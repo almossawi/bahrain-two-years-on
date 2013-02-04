@@ -1,0 +1,702 @@
+{
+    "deaths": [
+        {
+            "id": 87,
+            "name": "Qassim Habib",
+            "age": 8,
+            "from": "Karbabad",
+            "date_of_death": "2013-1-26",
+            "type_of_death": "suffocation of tear gas"
+        },
+        {
+            "id": 86,
+            "name": "Habeeb Ebrahim ",
+            "age": 87,
+            "from": "Malkiya",
+            "date_of_death": "2013-1-12",
+            "type_of_death": "suffocation of tear gas"
+        },
+        {
+            "id": 85,
+            "name": "Bassil Al-Qattan",
+            "age": 44,
+            "from": "Shakhoora",
+            "date_of_death": "2012-12-19",
+            "type_of_death": "suffocation of tear gas"
+        },
+        {
+            "id": 84,
+            "name": "Ali Radhi",
+            "age": 16,
+            "from": "Samaheej",
+            "date_of_death": "2012-11-9",
+            "type_of_death": "run over after being chased by police"
+        },
+        {
+            "id": 83,
+            "name": "Mahdi Ali Marhoon",
+            "age": 84,
+            "from": "Maameer",
+            "date_of_death": "2012-10-17",
+            "type_of_death": "suffocation of tear gas"
+        },
+        {
+            "id": 82,
+            "name": "Mohammed Mushaima",
+            "age": "22",
+            "from": "Daih",
+            "date_of_death": "2012-10-2",
+            "type_of_death": "lack of medical care at prison"
+        },
+        {
+            "id": 81,
+            "name": "Ali Hasan Neamah",
+            "age": 17,
+            "from": "Saddad",
+            "date_of_death": "2012-9-28",
+            "type_of_death": "Shotgun"
+        },
+        {
+            "id": 80,
+            "name": "Hussam Al Haddad",
+            "age": 16,
+            "from": "Muharraq",
+            "date_of_death": "2012-8-17",
+            "type_of_death": "Shotgun"
+        },
+        {
+            "id": 79,
+            "name": "Shabeer Mammed",
+            "age": 27,
+            "from": "indian / Sanad",
+            "date_of_death": "2012-4-22",
+            "type_of_death": "suffocation of tear gas"
+        },
+        {
+            "id": 78,
+            "name": "Salah Abbas Habib",
+            "age": 36,
+            "from": "Bilad AlQadeem",
+            "date_of_death": "2012-4-21",
+            "type_of_death": "Shotgun"
+        },
+        {
+            "id": 77,
+            "name": "Khadija Mohammed Ali",
+            "age": 50,
+            "from": "Maameer",
+            "date_of_death": "2012-4-5",
+            "type_of_death": "suffocation of tear gas"
+        },
+        {
+            "id": 76,
+            "name": "Ahmed Ismael Hussain AlSamadi",
+            "age": 22,
+            "from": "Salmabad",
+            "date_of_death": "2012-3-31",
+            "type_of_death": "shot with live ammunition"
+        },
+        {
+            "id": 75,
+            "name": "Ahmed Abdulnabi AbdulRasool",
+            "age": 30,
+            "from": "",
+            "date_of_death": "2012-3-24",
+            "type_of_death": "suffocation of tear gas"
+        },
+        {
+            "id": 74,
+            "name": "Abdat Ali AbdulMohsen",
+            "age": 40,
+            "from": "Aali",
+            "date_of_death": "2012-3-23",
+            "type_of_death": "suffocation of tear gas"
+        },
+        {
+            "id": 73,
+            "name": "Sabri Mahfoodh Yousif",
+            "age": 27,
+            "from": "Shahrakan",
+            "date_of_death": "2012-3-19",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 72,
+            "name": "Jaffar Jassem Radhi",
+            "age": 41,
+            "from": "",
+            "date_of_death": "2012-3-17",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 71,
+            "name": "Fadhel AlObaidy",
+            "age": 22,
+            "from": "Duraz",
+            "date_of_death": "2012-3-10",
+            "type_of_death": "shot - tear gas canister"
+        },
+        {
+            "id": 70,
+            "name": "Sakeena Marhoon",
+            "age": 70,
+            "from": "",
+            "date_of_death": "2012-3-6",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 69,
+            "name": "Yahya Yousif Ahmed",
+            "age": 0,
+            "actual_age": "1 month",
+            "from": "",
+            "date_of_death": "2012-3-5",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 68,
+            "name": "Sayed Jaffar Salman AlAlawi",
+            "age": 75,
+            "from": "Shakhura",
+            "date_of_death": "2012-3-1",
+            "type_of_death": "beaten"
+        },
+        {
+            "id": 67,
+            "name": "Habib Kadhim Almulla",
+            "age": 60,
+            "from": "Sehla",
+            "date_of_death": "2012-2-29",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 66,
+            "name": "Abda Hussain",
+            "age": 68,
+            "from": "Sehla",
+            "date_of_death": "2012-2-25",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 65,
+            "name": "Rose Nisha Naikarottu Baby Varghese",
+            "age": 28,
+            "from": "India/ Manama",
+            "date_of_death": "2012-2-21",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 64,
+            "name": "Mansoor Salman",
+            "age": 85,
+            "from": "Sitra",
+            "date_of_death": "2012-2-18",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 63,
+            "name": "Ali Issa Abdulla Alhayeki",
+            "age": 48,
+            "from": "Samaheej",
+            "date_of_death": "2012-2-6",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 62,
+            "name": "Abdali Ali Mohamed",
+            "age": 58,
+            "from": "Maameer",
+            "date_of_death": "2012-2-1",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 61,
+            "name": "Zahra Ali Alhawaj",
+            "age": 69,
+            "from": "Noaim",
+            "date_of_death": "2012-2-1",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 60,
+            "name": "Saeed Ali Al-Sukari",
+            "age": 65,
+            "from": "Aali/Noaim",
+            "date_of_death": "2012-1-25",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 59,
+            "name": "Abbas Jaffar AlShaikh",
+            "age": "26",
+            "from": "Daih",
+            "date_of_death": "2012-1-25",
+            "type_of_death": " could be linked to tear gas and previous injuries"
+        },
+        {
+            "id": 58,
+            "name": "Muntadher Saeed Fakhar",
+            "age": 37,
+            "from": "Sanabis",
+            "date_of_death": "2012-1-25",
+            "type_of_death": "Torture"
+        },
+        {
+            "id": 57,
+            "name": "Mohamed Ebrahim Yaqoob",
+            "age": 18,
+            "from": "Sitra",
+            "date_of_death": "2012-1-25",
+            "type_of_death": "Torture"
+        },
+        {
+            "id": 56,
+            "name": "Mohamed Khamis AlKhunaizi",
+            "age": 26,
+            "from": "Jidhafs",
+            "date_of_death": "2012-1-20",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 55,
+            "name": "Yaseen Jassim AlAsfoor",
+            "age": 14,
+            "from": "Maameer/AlEkr",
+            "date_of_death": "2012-1-20",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 54,
+            "name": "Salma Muhsin",
+            "age": 81,
+            "from": "Barbar",
+            "date_of_death": "2012-1-15",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 53,
+            "name": "Yousif Ahmed Muwali",
+            "age": 24,
+            "from": "Qalali/Muharraq",
+            "date_of_death": "2012-1-13",
+            "type_of_death": "Torture"
+        },
+        {
+            "id": 52,
+            "name": "Fakhria Jassim AlSakran",
+            "age": 55,
+            "from": "Isa Town/Muharraq",
+            "date_of_death": "2012-1-3",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 51,
+            "name": "Sayed Hashim Sayed Saeed",
+            "age": 15,
+            "from": "Sitra",
+            "date_of_death": "2011-12-31",
+            "type_of_death": "shot - tear gas canister"
+        },
+        {
+            "id": 50,
+            "name": "Abdulali Ali Ahmed",
+            "age": 73,
+            "from": "Muqsha",
+            "date_of_death": "2011-12-17",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 49,
+            "name": "Ali Ahmed AlQassab",
+            "age": 21,
+            "from": "AbuSaiba",
+            "date_of_death": "2011-12-15",
+            "type_of_death": "run over after being chased by police"
+        },
+        {
+            "id": 48,
+            "name": "Sajida Faisal",
+            "age": 0,
+            "actual_age": "5 days",
+            "from": "Bilad AlQadeem",
+            "date_of_death": "2011-12-11",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 47,
+            "name": "Zahra Saleh",
+            "age": 27,
+            "from": "Safera/Daih",
+            "date_of_death": "2011-12-7",
+            "type_of_death": "hit with metal rod in the head"
+        },
+        {
+            "id": 46,
+            "name": "AbdulNabi Kadhem",
+            "age": 44,
+            "from": "Aali",
+            "date_of_death": "2011-11-23",
+            "type_of_death": "his car was hit by police car and crushed into wall"
+        },
+        {
+            "id": 45,
+            "name": "Ali Yousif Badah",
+            "age": 16,
+            "from": "Sitra",
+            "date_of_death": "2011-11-19",
+            "type_of_death": "Run over by police car"
+        },
+        {
+            "id": 44,
+            "name": "Ali Hasan al-Dehi",
+            "age": 70,
+            "from": "Daih",
+            "date_of_death": "2011-11-3",
+            "type_of_death": "beaten to death"
+        },
+        {
+            "id": 43,
+            "name": "Ahmed Jaber AlQattan",
+            "age": 16,
+            "from": "Shakhura",
+            "date_of_death": "11-10-6",
+            "type_of_death": "shotgun"
+        },
+        {
+            "id": 42,
+            "name": "Jaafar Lutf Allah",
+            "age": 74,
+            "from": "Abu Saiba'a",
+            "date_of_death": "11-9-30",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 41,
+            "name": "Jaffar Hasan",
+            "age": 28,
+            "from": "Demistan",
+            "date_of_death": "11-9-18",
+            "type_of_death": "beating"
+        },
+        {
+            "id": 40,
+            "name": "Sayyed Jawad Ahmed",
+            "age": 36,
+            "from": "Sitra",
+            "date_of_death": "11-9-14",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 39,
+            "name": "Ali Alshaikh",
+            "age": 14,
+            "from": "Sitra",
+            "date_of_death": "11-8-31",
+            "type_of_death": "shot - tear gas canister"
+        },
+        {
+            "id": 38,
+            "name": "Isa AlTaweel",
+            "age": 50,
+            "from": "Sitra",
+            "date_of_death": "11-7-31",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 37,
+            "name": "Zainab Hassan Ahmed al-Jumaa",
+            "age": 39,
+            "from": "Sitra",
+            "date_of_death": "11-7-15",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 36,
+            "name": "Majeed Mohammed Abdulaal",
+            "age": 30,
+            "from": "Northern Sihla",
+            "date_of_death": "11-6-30",
+            "type_of_death": "shotgun"
+        },
+        {
+            "id": 35,
+            "name": "Jaber Al Elewat",
+            "age": 43,
+            "from": "Al Musalla",
+            "date_of_death": "11-6-12",
+            "type_of_death": "Torture"
+        },
+        {
+            "id": 34,
+            "name": "Sayed Adnan Sayed Hassan",
+            "age": 44,
+            "from": "Al Markh",
+            "date_of_death": "11-6-23",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 33,
+            "name": "Salman Isa AbuIdrees ",
+            "age": 63,
+            "from": "Manama",
+            "date_of_death": "11-6-3",
+            "type_of_death": "Shot - rubber bullet"
+        },
+        {
+            "id": 32,
+            "name": "Zainab AlTajar",
+            "age": 69,
+            "from": "Sanabis",
+            "date_of_death": "11-6-2",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 31,
+            "name": "Mohammed Abdulhussain Farhan",
+            "age": 6,
+            "from": "Sitra",
+            "date_of_death": "11-4-30",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 30,
+            "name": "Aziza Hassan Khamis",
+            "age": 25,
+            "from": "Bilad AlQadeem",
+            "date_of_death": "11-4-16",
+            "type_of_death": "Psychological intimidation"
+        },
+        {
+            "id": 29,
+            "name": "Kareem Fakhrawi",
+            "age": 49,
+            "from": "Karbabad",
+            "date_of_death": "11-4-12",
+            "type_of_death": "Torture"
+        },
+        {
+            "id": 28,
+            "name": "Zakariya Rashid Hassan AlAshiri",
+            "age": 40,
+            "from": "AlDair",
+            "date_of_death": "11-4-9",
+            "type_of_death": "Torture"
+        },
+        {
+            "id": 27,
+            "name": "Ali Isa Saqer",
+            "age": 31,
+            "from": "Sehla",
+            "date_of_death": "11-4-9",
+            "type_of_death": "Torture"
+        },
+        {
+            "id": 26,
+            "name": "Sayed Hameed Mahfoodh Alsari",
+            "age": 61,
+            "from": "Sarr",
+            "date_of_death": "11-4-6",
+            "type_of_death": "beating to death"
+        },
+        {
+            "id": 25,
+            "name": "Hassan Jassim Mohammed Makki",
+            "age": 39,
+            "from": "Karzakan",
+            "date_of_death": "11-4-3",
+            "type_of_death": "Torture"
+        },
+        {
+            "id": 24,
+            "name": "Sayed-Ahmad Sa’eed Shams",
+            "age": 15,
+            "from": "Saar",
+            "date_of_death": "11-3-30",
+            "type_of_death": "Shotgun"
+        },
+        {
+            "id": 23,
+            "name": "Isa Mohammed",
+            "age": 71,
+            "from": "Ma'ameer",
+            "date_of_death": "11-3-25",
+            "type_of_death": "Suffocation of tear gas"
+        },
+        {
+            "id": 22,
+            "name": "Aziz Jumma Ayyad",
+            "age": 33,
+            "from": "Al-Hajar",
+            "date_of_death": "11-3-24",
+            "type_of_death": "Torture"
+        },
+        {
+            "id": 21,
+            "name": "Hani Abdul-Aziz Abdullah Jumah",
+            "age": 33,
+            "from": "Khamis",
+            "date_of_death": "11-3-24",
+            "type_of_death": "Shotgun"
+        },
+        {
+            "id": 20,
+            "name": "Bahia Abdelrasoul Al-Aradi (Ms)",
+            "age": 51,
+            "from": "Manama",
+            "date_of_death": "11-3-21",
+            "type_of_death": "Shot in head"
+        },
+        {
+            "id": 19,
+            "name": "Jawad Mohammed Ali Shamlan",
+            "age": 48,
+            "from": "Al-Hajar",
+            "date_of_death": "11-3-20",
+            "type_of_death": "shotgun"
+        },
+        {
+            "id": 18,
+            "name": "Abdul-Rasoul Hassan al-Hujairi",
+            "age": 38,
+            "from": "Bouri",
+            "date_of_death": "11-3-20",
+            "type_of_death": "Beating to death"
+        },
+        {
+            "id": 17,
+            "name": "Aklas Miah",
+            "age": 50,
+            "from": "Bangladish",
+            "date_of_death": "11-3-15",
+            "type_of_death": "Shot in head"
+        },
+        {
+            "id": 16,
+            "name": "Isa Radhi al-Radhi",
+            "age": 47,
+            "from": "Sitra",
+            "date_of_death": "11-3-19",
+            "type_of_death": "beating to death + shotgun"
+        },
+        {
+            "id": 15,
+            "name": "Ali Ahmad Rashid Al-Mraisi",
+            "age": 30,
+            "from": "Rafa’",
+            "date_of_death": "11-3-17",
+            "type_of_death": "run over by car"
+        },
+        {
+            "id": 14,
+            "name": "Mohammed Faruq Abd al-Samad al-Balooshi",
+            "age": 27,
+            "from": "Pakistan",
+            "date_of_death": "11-3-16",
+            "type_of_death": "run over by car"
+        },
+        {
+            "id": 13,
+            "name": "Kashif Ahmed Mandhour",
+            "age": 21,
+            "from": "Pakistan",
+            "date_of_death": "11-3-16",
+            "type_of_death": "run over by car"
+        },
+        {
+            "id": 12,
+            "name": "Ahmed Abdulla Hassan",
+            "age": 22,
+            "from": "Daih/Hammad Town",
+            "date_of_death": "11-3-16",
+            "type_of_death": "shotgun"
+        },
+        {
+            "id": 11,
+            "name": "Jaffer Mohammed abd-Ali",
+            "age": 41,
+            "from": "Karraneh",
+            "date_of_death": "11-3-16",
+            "type_of_death": "livebullet shot in chest"
+        },
+        {
+            "id": 10,
+            "name": "Jaffer Abdulla Ma’yuf",
+            "age": 30,
+            "from": "Aali",
+            "date_of_death": "11-3-16",
+            "type_of_death": "shotgun and livebullet"
+        },
+        {
+            "id": 9,
+            "name": "Steven Ebraham",
+            "age": 48,
+            "from": "India",
+            "date_of_death": "11-3-16",
+            "type_of_death": "livebullet"
+        },
+        {
+            "id": 8,
+            "name": "Ahmed Abdulla Farhan",
+            "age": 30,
+            "from": "Sitra",
+            "date_of_death": "11-3-15",
+            "type_of_death": "Shot in head"
+        },
+        {
+            "id": 7,
+            "name": "Abdul-Redha Mohammed Buhmeid",
+            "age": 32,
+            "from": "AlMalkiya",
+            "date_of_death": "11-2-21",
+            "type_of_death": "Shot in head"
+        },
+        {
+            "id": 6,
+            "name": "Ali Mansoor Khudhair",
+            "age": 53,
+            "from": "Sitra",
+            "date_of_death": "11-2-17",
+            "type_of_death": "shotgun"
+        },
+        {
+            "id": 5,
+            "name": "Mahmood Ahmed Makki (Abu-Takki)",
+            "age": 23,
+            "from": "Sitra",
+            "date_of_death": "11-2-17",
+            "type_of_death": "shotgun"
+        },
+        {
+            "id": 4,
+            "name": "Ali Ahmed Abdulla al-Moumen",
+            "age": 23,
+            "from": "Sitra",
+            "date_of_death": "11-2-17",
+            "type_of_death": "shotgun"
+        },
+        {
+            "id": 3,
+            "name": "Isa Abdul-Hassan",
+            "age": 60,
+            "from": "Karzakkan",
+            "date_of_death": "11-2-17",
+            "type_of_death": "shotgun"
+        },
+        {
+            "id": 2,
+            "name": "Fadhel Salman al-Matrook",
+            "age": 31,
+            "from": "Mahooze",
+            "date_of_death": "11-2-15",
+            "type_of_death": "shotgun"
+        },
+        {
+            "id": 1,
+            "name": "Ali Abdulhadi Mushaima",
+            "age": 21,
+            "from": "Daih",
+            "date_of_death": "11-2-14",
+            "type_of_death": "shotgun"
+        }
+    ]
+}
