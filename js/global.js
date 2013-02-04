@@ -37,7 +37,7 @@ function drawMainVisual(container) {
 		
 	var yScale = d3.scale.linear()
         .domain([0, yMax])
-        .range([0, -450]);
+        .range([-30, -450]);
 		
 	
     //draw svg
@@ -67,7 +67,7 @@ function drawMainVisual(container) {
 			.on('mouseover', function(d) {
 				console.log(d);
 				$("#p" + d.id)
-					.attr("stroke-width", 2);
+					.attr("stroke-width", 4);
 			})
 			.on('mouseout', function(d) {
 				$("#p" + d.id)
@@ -75,7 +75,7 @@ function drawMainVisual(container) {
 			})
 			.transition()
 				.duration(2000)
-				.delay(1000)
+				.delay(function(d, i){ console.log(d); return 10*i+40; })
 				.attr("d", function(d) {
 					//once go left and once go right
 					p3 = (d.id % 2 == 0) ? p3 : p3 * -1;
