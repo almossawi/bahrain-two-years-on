@@ -12,7 +12,7 @@
         },
         {
             "id": 86,
-            "name": "Habeeb Ebrahim ",
+            "name": "Habeeb Ebrahim",
             "age": 87,
             "from": "Malkiya",
             "date_of_death": "2013-1-12",
@@ -35,12 +35,29 @@
             "type_of_death": "Run over after being chased by police car"
         },
         {
+            "id": 88,
+            "name": "Asia Almadih",
+            "age": 43,
+            "from": "Jidhafs",
+            "date_of_death": "2012-11-4",
+            "type_of_death": "Complications from tear gas"
+        },
+        {
             "id": 83,
             "name": "Mahdi Ali Marhoon",
             "age": 84,
             "from": "Maameer",
             "date_of_death": "2012-10-17",
             "type_of_death": "Suffocation from tear gas"
+        },
+        {
+            "id": 89,
+            "name": "Huda Naema Hassan",
+            "age": 0,
+            "actual_age": "11 months",
+            "from": "Bugowa",
+            "date_of_death": "2012-10-15",
+            "type_of_death": "Complications from tear gas"
         },
         {
             "id": 82,
@@ -52,11 +69,19 @@
         },
         {
             "id": 81,
-            "name": "Ali Hasan Neamah",
+            "name": "Ali Hussain Neamah",
             "age": 17,
             "from": "Saddad",
             "date_of_death": "2012-9-28",
             "type_of_death": "Shotgun"
+        },
+        {
+            "id": 89,
+            "name": "Hassan Abdulla Ali",
+            "age": 59,
+            "from": "Sitra Mihza",
+            "date_of_death": "2012-9-18",
+            "type_of_death": "Suffocation from tear gas"
         },
         {
             "id": 80,
