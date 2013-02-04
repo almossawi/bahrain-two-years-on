@@ -1,6 +1,6 @@
 html {
 	outline:none;
-	font-family:Georgia, "Gill Sans",Lato,"Helvetica Neue",Helvetica,sans-serif;
+	font-family:"Open Sans", "Gill Sans", Lato, "Helvetica Neue", Helvetica,sans-serif, Georgia;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 
 p {
 	font-size:12pt;
-	line-height:1.5;
+	line-height:1.8;
 }
 
 
@@ -55,7 +55,7 @@ h1 {
 	left:0px;
 	text-align:center;
 	font-family:'Open Sans';
-	margin-top:10px;
+	margin-top:20px;
 }
 
 #title_caption {
@@ -573,4 +573,13 @@ tr {
 
 #map_data .firstrow {
 	border-top:1px solid #efefef;
+}
+
+#details {
+	width:280px;
+	height:70px;
+	border-radius:6px;
+	padding:12px;
+	font-size:12px;
+	background-color:#000000;
 }

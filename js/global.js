@@ -51,7 +51,7 @@ function drawMainVisual(container) {
 	svg.selectAll("path")
 		.data(data.deaths)
 		.enter().append("svg:path")
-			.attr("opacity", 0.8)
+			.attr("opacity", 0.9)
 			.attr("id", function(d) { return "p" + d.id; })
 			.attr("stroke-width", 1)
 			.attr("stroke", "cyan")
@@ -66,16 +66,24 @@ function drawMainVisual(container) {
 			})
 			.on('mouseover', function(d) {
 				console.log(d);
-				$("#p" + d.id)
-					.attr("stroke-width", 4);
+				$("path").attr("stroke-width", 1); //reset all strokes
+				$("#p" + d.id).attr("stroke-width", 5);
+
+				var age = (d.age == 0) ? d.actual_age : d.age + " years";
+				var html = d.name + "<br />" 
+					+ age + "<br />"
+					+ d.date_of_death + "<br />"
+					+ d.type_of_death;
+
+				$("#details").html(html);
 			})
-			.on('mouseout', function(d) {
+			/*.on('mouseout', function(d) {
 				$("#p" + d.id)
 					.attr("stroke-width", 1);
-			})
+			})*/
 			.transition()
-				.duration(2000)
-				.delay(function(d, i){ console.log(d); return 10*i+40; })
+				.duration(2500)
+				.delay(function(d, i){ console.log(d); return 10*(i*3); })
 				.attr("d", function(d) {
 					//once go left and once go right
 					p3 = (d.id % 2 == 0) ? p3 : p3 * -1;
