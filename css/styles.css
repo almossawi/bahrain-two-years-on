@@ -5,6 +5,7 @@ html {
 
 body {
 	/*background-color:#fcfbfb;*/
+	color:#dcdbdb;
 	background-color:#232323;
 	margin:0;
 	padding:0;
@@ -13,7 +14,6 @@ body {
 p {
 	font-size:12pt;
 	line-height:1.5;
-	color:#000000;
 }
 
 
@@ -50,7 +50,6 @@ p {
 h1 {
 	font-size:34px;
 	font-weight:400;
-	color:#000000;
 	position:relative;
 	clear:both;
 	left:0px;
@@ -165,8 +164,6 @@ text {
 
 path {
 	fill:none;
-	/*stroke:#5d5c5c;*/
-	stroke-width:1;
 }
 
 
@@ -283,7 +280,7 @@ img.label {
 	padding:10px;
 	/*background-color:#ffffff;*/
 	/*border:8px solid #e33258;*/
-	border:1px dotted #cccccc;
+	border:0px dotted #cccccc;
 }
 
 #ranked_table_and_map {

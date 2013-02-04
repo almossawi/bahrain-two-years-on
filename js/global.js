@@ -23,7 +23,7 @@ function assignEventListeners() {
 function drawMainVisual(container) {
   d3.json("data/feb2011.json", function(data) {
 	var w = 900,
-		h = 500,
+		h = 600,
 		xPadding = 0,
 		yPadding = 10,
 		x_axis_format = "%b %e",
@@ -31,7 +31,7 @@ function drawMainVisual(container) {
 
 	var p1 = 450, //start x
 		p2 = 480, //start y
-		p3 = -150, //end x
+		p3 = -300, //end x
 		p4 = -425, //end y
 		horizontal_skew = 3;
 		
@@ -51,22 +51,45 @@ function drawMainVisual(container) {
 	svg.selectAll("path")
 		.data(data.deaths)
 		.enter().append("svg:path")
-			.attr("opacity", 0.5)
-			.attr("stroke", function(d) {
-				if(d.age <= 12) return "#8c6d31";
-				else if(d.age <= 19) return "#bd9e39";
-				else if(d.age <= 60) return "#e7ba52";
-				else if(d.age > 60) return "#e7cb94";
-			})
+			.attr("opacity", 0.8)
+			.attr("id", function(d) { return "p" + d.id; })
+			.attr("stroke-width", 1)
+			.attr("stroke", "cyan")
 			.attr("d", function(d) {
-				console.log(d.age, yScale(d.age));
+				//once go left and once go right
+				//p3 = (d.id % 2 == 0) ? p3 : p3 * -1;
 				
-				p3 = (d.id % 2 == 0) ? p3 : p3 * -1; //once go left and once go right
-				p3 += Math.floor((Math.random()*30)+1) //add a random amount to each
-				p1 += Math.floor((Math.random()*1)+1) //add a random amount to each
+				//add a random amount to each
+				//p1 += Math.floor((Math.random()*1)+1);
 				
-				return "m " + p1 + "," + p2 + " c " + horizontal_skew + "," + yScale(d.age) + " " + p3 + "," + yScale(d.age) + " " + p3 + "," + yScale(d.age); 
+				return "m " + p1 + "," + (p2+200) + " L " + p1 + "," + p2 + " c 0,0 0,0 0,0"; 
+			})
+			.on('mouseover', function(d) {
+				console.log(d);
+				$("#p" + d.id)
+					.attr("stroke-width", 2);
+			})
+			.on('mouseout', function(d) {
+				$("#p" + d.id)
+					.attr("stroke-width", 1);
+			})
+			.transition()
+				.duration(2000)
+				.delay(1000)
+				.attr("d", function(d) {
+					//once go left and once go right
+					p3 = (d.id % 2 == 0) ? p3 : p3 * -1;
+				
+					//add a random amount to each
+					p1 += Math.floor((Math.random()*1)+1);
+				
+					return "m " + p1 + "," + (p2+200) + " L " + p1 + "," + p2 + " c " + horizontal_skew + "," + yScale(d.age) + " " + p3 + "," + yScale(d.age) + " " + p3 + "," + yScale(d.age);
+				})
+			.attr("stroke", function(d) {
+				var colorScale = d3.scale.linear().domain([0,yMax]).range(["red", "cyan"]);
+				return colorScale(d.age);
 			});
+				
 			
 
 
@@ -126,4 +149,8 @@ function getHumanSize(size) {
 
 function isNumber(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+function getRandomInt (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
