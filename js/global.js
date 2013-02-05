@@ -32,7 +32,7 @@ function drawMainVisual(container) {
 
 	var p1 = 396, //start x
 		p2 = 480, //start y
-		p3 = -350, //end x
+		p3 = -390, //end x
 		p4 = -425, //end y
 		horizontal_skew = 3;
 		
@@ -107,7 +107,7 @@ function drawMainVisual(container) {
 				.attr("d", function(d) {
 					//once go left and once go right
 					var p3_d = (d.id % 2 == 1) ? p3 : p3 * -1;
-				console.log("p3",p3_d, d.id);
+
 					//add a random amount to each
 					p1 += Math.floor((Math.random()*2)+1);
 				
