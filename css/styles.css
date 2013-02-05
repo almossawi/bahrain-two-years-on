@@ -6,7 +6,7 @@ html {
 body {
 	/*background-color:#fcfbfb;*/
 	color:#dcdbdb;
-	background-color:#232323;
+	background-color:#1a1a1a;
 	margin:0;
 	padding:0;
 }
@@ -576,14 +576,16 @@ tr {
 }
 
 #details {
-	width:280px;
+	width:240px;
 	height:70px;
 	border-radius:6px;
 	padding:12px;
 	font-size:12px;
 	position:absolute;
 	top:200px;
+	margin-left:-200px;
 	background-color:#000000;
+	display:none;
 }
 
 #title {
@@ -595,6 +597,5 @@ tr {
 	width:400px;
 	border:0px solid white;
 	text-align:center;
-	padding-left:40px;
 	margin-top:100px;
 }

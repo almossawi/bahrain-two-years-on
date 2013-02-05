@@ -53,7 +53,7 @@
         {
             "id": 89,
             "name": "Huda Naema Hassan",
-            "age": 0,
+            "age": 0.92,
             "actual_age": "11 months",
             "from": "Bugowa",
             "date_of_death": "2012-10-15",
@@ -92,12 +92,28 @@
             "type_of_death": "Shotgun"
         },
         {
+            "id": 91,
+            "name": "Hassan Isa Hashim",
+            "age": 1,
+            "from": "Nabih Saleh",
+            "date_of_death": "2012-6-26",
+            "type_of_death": "Complications from tear gas"
+        },
+        {
             "id": 79,
             "name": "Shabeer Mammed",
             "age": 27,
-            "from": "indian / Sanad",
+            "from": "Sanad (Indian expat)",
             "date_of_death": "2012-4-22",
             "type_of_death": "Suffocation from tear gas"
+        },
+        {
+            "id": 92,
+            "name": "Maryam Nasir Mohammed",
+            "age": 80,
+            "from": "Sadad",
+            "date_of_death": "2012-6-9",
+            "type_of_death": "Complications from tear gas"
         },
         {
             "id": 78,
@@ -108,8 +124,16 @@
             "type_of_death": "Shotgun"
         },
         {
+            "id": 93,
+            "name": "Mohammed Radhi Almahfoodh",
+            "age": 25,
+            "from": "Sar",
+            "date_of_death": "2012-4-13",
+            "type_of_death": "Run over by police car"
+        },
+        {
             "id": 77,
-            "name": "Khadija Mohammed Ali",
+            "name": "Khadija Mohammed Ali Al-Abbas",
             "age": 50,
             "from": "Maameer",
             "date_of_death": "2012-4-5",
@@ -117,11 +141,19 @@
         },
         {
             "id": 76,
-            "name": "Ahmed Ismael Hussain AlSamadi",
+            "name": "Ahmed Ismael Hussain",
             "age": 22,
             "from": "Salmabad",
             "date_of_death": "2012-3-31",
             "type_of_death": "Shot with live ammunition"
+        },
+        {
+            "id": 94,
+            "name": "Hussain Majid Almajid",
+            "age": 50,
+            "from": "Demistan",
+            "date_of_death": "2012-3-28",
+            "type_of_death": "Suffocation from tear gas"
         },
         {
             "id": 75,
@@ -151,7 +183,7 @@
             "id": 72,
             "name": "Jaffar Jassem Radhi",
             "age": 41,
-            "from": "",
+            "from": "Migsha",
             "date_of_death": "2012-3-17",
             "type_of_death": "Suffocation from tear gas"
         },
@@ -165,18 +197,18 @@
         },
         {
             "id": 70,
-            "name": "Sakeena Marhoon",
+            "name": "Sakeena Ali Marhoon",
             "age": 70,
-            "from": "",
+            "from": "Abu Saiba",
             "date_of_death": "2012-3-6",
             "type_of_death": "Suffocation from tear gas"
         },
         {
             "id": 69,
             "name": "Yahya Yousif Ahmed",
-            "age": 0,
+            "age": 0.1,
             "actual_age": "1 month",
-            "from": "",
+            "from": "Ras Rumman",
             "date_of_death": "2012-3-5",
             "type_of_death": "Suffocation from tear gas"
         },
@@ -186,7 +218,7 @@
             "age": 75,
             "from": "Shakhura",
             "date_of_death": "2012-3-1",
-            "type_of_death": "Beaten to death"
+            "type_of_death": "Complications following police beating"
         },
         {
             "id": 67,
@@ -221,8 +253,16 @@
             "type_of_death": "Suffocation from tear gas"
         },
         {
+            "id": 94,
+            "name": "Fatima Albasri",
+            "age": 32,
+            "from": "Nabih Saleh",
+            "date_of_death": "2012-2-12",
+            "type_of_death": "Complications from tear gas"
+        },
+        {
             "id": 63,
-            "name": "Ali Issa Abdulla Alhayeki",
+            "name": "Ali Issa Abdulla Alhayki",
             "age": 48,
             "from": "Samaheej",
             "date_of_death": "2012-2-6",
@@ -288,7 +328,7 @@
             "id": 55,
             "name": "Yaseen Jassim AlAsfoor",
             "age": 14,
-            "from": "Maameer/AlEkr",
+            "from": "Maameer",
             "date_of_death": "2012-1-20",
             "type_of_death": "Suffocation from tear gas"
         },
@@ -343,7 +383,7 @@
         {
             "id": 48,
             "name": "Sajida Faisal",
-            "age": 0,
+            "age": 0.01,
             "actual_age": "5 days",
             "from": "Bilad AlQadeem",
             "date_of_death": "2011-12-11",
@@ -359,7 +399,7 @@
         },
         {
             "id": 46,
-            "name": "AbdulNabi Kadhem",
+            "name": "AbdulNabi Kadhem Alaagil",
             "age": 44,
             "from": "Aali",
             "date_of_death": "2011-11-23",
@@ -375,11 +415,28 @@
         },
         {
             "id": 44,
-            "name": "Ali Hasan al-Dehi",
+            "name": "Ali Hasan Al-Daihi",
             "age": 70,
             "from": "Daih",
             "date_of_death": "2011-11-3",
             "type_of_death": "Beaten to death"
+        },
+        {
+            "id": 95,
+            "name": "Mohammed Hassanain Ali",
+            "age": 0.1,
+            "actual_age": "1 month",
+            "from": "Dair",
+            "date_of_death": "2011-10-30",
+            "type_of_death": "Complications from tear gas"
+        },
+        {
+            "id": 96,
+            "name": "Riyadh Hassan Rashid",
+            "age": 50,
+            "from": "Karraneh",
+            "date_of_death": "2011-10-29",
+            "type_of_death": "Complications from shotgun"
         },
         {
             "id": 43,
@@ -391,7 +448,7 @@
         },
         {
             "id": 42,
-            "name": "Jaafar Lutf Allah",
+            "name": "Jaafar Lutfallah",
             "age": 74,
             "from": "Abu Saiba'a",
             "date_of_death": "2011-9-30",
@@ -399,7 +456,7 @@
         },
         {
             "id": 41,
-            "name": "Jaffar Hasan",
+            "name": "Jaffar Hasan Yusuf",
             "age": 28,
             "from": "Demistan",
             "date_of_death": "2011-9-18",
@@ -430,6 +487,15 @@
             "type_of_death": "Suffocation from tear gas"
         },
         {
+            "id": 97,
+            "name": "Husain Al-Aameer",
+            "age": 40,
+            "other": "don't know age",
+            "from": "Bilad Alqadeem",
+            "date_of_death": "2011-8-13",
+            "type_of_death": "Complications from torture"
+        },
+        {
             "id": 37,
             "name": "Zainab Hassan Ahmed al-Jumaa",
             "age": 39,
@@ -438,10 +504,19 @@
             "type_of_death": "Suffocation from tear gas"
         },
         {
+            "id": 98,
+            "name": "Ali Abdulla Al-Sadiq",
+            "age": 25,
+            "other": "don't know age",
+            "from": "Sanabis",
+            "date_of_death": "2011-7-19",
+            "type_of_death": "Tortured to death"
+        },
+        {
             "id": 36,
             "name": "Majeed Mohammed Abdulaal",
             "age": 30,
-            "from": "Northern Sihla",
+            "from": "Northern Sehla",
             "date_of_death": "2011-6-30",
             "type_of_death": "Shotgun"
         },
@@ -462,8 +537,16 @@
             "type_of_death": "Suffocation from tear gas"
         },
         {
+            "id": 99,
+            "name": "Hassan Alsitri",
+            "age": 60,
+            "from": "Nuwaidrat",
+            "date_of_death": "2011-6-19",
+            "type_of_death": "Stabbed by government loyalists"
+        },
+        {
             "id": 33,
-            "name": "Salman Isa AbuIdrees ",
+            "name": "Salman Isa AbuIdrees",
             "age": 63,
             "from": "Manama",
             "date_of_death": "2011-6-3",
@@ -499,7 +582,7 @@
             "age": 49,
             "from": "Karbabad",
             "date_of_death": "2011-4-12",
-            "type_of_death": "Torture"
+            "type_of_death": "Tortured to death"
         },
         {
             "id": 28,
@@ -507,7 +590,7 @@
             "age": 40,
             "from": "AlDair",
             "date_of_death": "2011-4-9",
-            "type_of_death": "Torture"
+            "type_of_death": "Tortured to death"
         },
         {
             "id": 27,
@@ -515,7 +598,7 @@
             "age": 31,
             "from": "Sehla",
             "date_of_death": "2011-4-9",
-            "type_of_death": "Torture"
+            "type_of_death": "Tortured to death"
         },
         {
             "id": 26,
@@ -539,7 +622,7 @@
             "age": 15,
             "from": "Saar",
             "date_of_death": "2011-3-30",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shot"
         },
         {
             "id": 23,
@@ -555,7 +638,7 @@
             "age": 33,
             "from": "Al-Hajar",
             "date_of_death": "2011-3-24",
-            "type_of_death": "Torture"
+            "type_of_death": "Tortured to death"
         },
         {
             "id": 21,
@@ -567,11 +650,19 @@
         },
         {
             "id": 20,
-            "name": "Bahia Abdelrasoul Al-Aradi (Ms)",
+            "name": "Bahia Abdelrasoul Al-Aradi",
             "age": 51,
             "from": "Manama",
             "date_of_death": "2011-3-21",
-            "type_of_death": "Shot in head"
+            "type_of_death": "Shot in head while driving"
+        },
+        {
+            "id": 100,
+            "name": "Fatima Taqi Almosawi",
+            "age": 28,
+            "from": "Markh",
+            "date_of_death": "2011-3-31",
+            "type_of_death": "Complications from psychological intimidation"
         },
         {
             "id": 19,
@@ -603,21 +694,21 @@
             "age": 47,
             "from": "Sitra",
             "date_of_death": "11-3-19",
-            "type_of_death": "Beaten to death, fired on by shotgun"
+            "type_of_death": "Shotgun, then beaten to death"
         },
         {
             "id": 15,
-            "name": "Ali Ahmad Rashid Al-Mraisi",
+            "name": "Ali Ahmad Al-Mraisi",
             "age": 30,
-            "from": "Rifa’",
+            "from": "Rifa (police officer)",
             "date_of_death": "2011-3-17",
             "type_of_death": "Run over by car"
         },
         {
             "id": 14,
-            "name": "Mohammed Faruq Abd al-Samad al-Balooshi",
+            "name": "Mohammed Faruq al-Balooshi",
             "age": 27,
-            "from": "Pakistan",
+            "from": "Pakistan (police officer)",
             "date_of_death": "2011-3-16",
             "type_of_death": "Run over by car"
         },
@@ -625,21 +716,21 @@
             "id": 13,
             "name": "Kashif Ahmed Mandhour",
             "age": 21,
-            "from": "Pakistan",
+            "from": "Pakistan (police officer)",
             "date_of_death": "2011-3-16",
             "type_of_death": "Run over by car"
         },
         {
             "id": 12,
-            "name": "Ahmed Abdulla Hassan",
+            "name": "Ahmed Abdulla Alarnoot",
             "age": 22,
-            "from": "Daih/Hammad Town",
+            "from": "Daih",
             "date_of_death": "2011-3-16",
             "type_of_death": "Shotgun"
         },
         {
             "id": 11,
-            "name": "Jaffer Mohammed abd-Ali",
+            "name": "Jaffer Mohammed Abd-Ali",
             "age": 41,
             "from": "Karraneh",
             "date_of_death": "2011-3-16",
@@ -668,6 +759,14 @@
             "from": "Sitra",
             "date_of_death": "2011-3-15",
             "type_of_death": "Shot point blank at a checkpoint"
+        },
+        {
+            "id": 101,
+            "name": "Ali Aldemistani",
+            "age": 18,
+            "from": "Demistan",
+            "date_of_death": "2011-3-13",
+            "type_of_death": "Car crash after being chased by government loyalists"
         },
         {
             "id": 7,
@@ -713,7 +812,7 @@
             "id": 2,
             "name": "Fadhel Salman Al-Matrook",
             "age": 31,
-            "from": "Mahooze",
+            "from": "Mahooz",
             "date_of_death": "2011-2-15",
             "type_of_death": "Shotgun"
         },

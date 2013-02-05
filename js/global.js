@@ -1,6 +1,7 @@
 "use strict";
 
-var LANG;
+var LANG,
+	default_opacity = 0.8;
 
 $(document).ready(function () {	
 	//provide lang literals globally
@@ -21,7 +22,7 @@ function assignEventListeners() {
 
 //draw the arcs
 function drawMainVisual(container) {
-  d3.json("data/feb2011.json", function(data) {
+  d3.json("data/feb2011.json", function(data) {data.deaths = data.deaths.shuffle();
 	var w = 900,
 		h = 600,
 		xPadding = 0,
@@ -29,9 +30,9 @@ function drawMainVisual(container) {
 		x_axis_format = "%b %e",
 		yMax = d3.max(data.deaths, function(d) { return d.age; });
 
-	var p1 = 450, //start x
+	var p1 = 396, //start x
 		p2 = 480, //start y
-		p3 = -300, //end x
+		p3 = -350, //end x
 		p4 = -425, //end y
 		horizontal_skew = 3;
 		
@@ -51,7 +52,7 @@ function drawMainVisual(container) {
 	svg.selectAll("path")
 		.data(data.deaths)
 		.enter().append("svg:path")
-			.attr("opacity", 0.9)
+			.attr("opacity", default_opacity)
 			.attr("id", function(d) { return "p" + d.id; })
 			.attr("stroke-width", 1)
 			.attr("stroke", "cyan")
@@ -66,16 +67,35 @@ function drawMainVisual(container) {
 			})
 			.on('mouseover', function(d) {
 				console.log(d);
-				$("path").attr("stroke-width", 1); //reset all strokes
-				$("#p" + d.id).attr("stroke-width", 5);
+				
+				//reset all strokes
+				$("path")
+					.attr("stroke-width", 1)
+					.attr("opacity", default_opacity);
+				
+				$("#p" + d.id)
+					.attr("stroke-width", 4)
+					.attr("opacity", 1);
 
-				var age = (d.age == 0) ? d.actual_age : d.age + " years";
+				var age = (d.age < 1) ? d.actual_age : d.age + " years";
 				var html = d.name + "<br />" 
 					+ age + "<br />"
 					+ d.date_of_death + "<br />"
 					+ d.type_of_death;
 
-				$("#details").html(html);
+				$("#details").fadeIn().html(html);
+				
+				//reposition the details block
+				$("#details")
+					.css("top", function() {
+						return p2 + yScale(d.age);
+					})
+					.css("margin-left", function() {
+						if(d.id % 2 == 1)
+							return "-200px";
+						else
+							return "950px";
+					})
 			})
 			/*.on('mouseout', function(d) {
 				$("#p" + d.id)
@@ -83,18 +103,24 @@ function drawMainVisual(container) {
 			})*/
 			.transition()
 				.duration(2500)
-				.delay(function(d, i){ console.log(d); return 10*(i*3); })
+				.delay(function(d, i){ console.log(d); return 10*(i*2); })
 				.attr("d", function(d) {
 					//once go left and once go right
-					p3 = (d.id % 2 == 0) ? p3 : p3 * -1;
-				
+					var p3_d = (d.id % 2 == 1) ? p3 : p3 * -1;
+				console.log("p3",p3_d, d.id);
 					//add a random amount to each
-					p1 += Math.floor((Math.random()*1)+1);
+					p1 += Math.floor((Math.random()*2)+1);
 				
-					return "m " + p1 + "," + (p2+200) + " L " + p1 + "," + p2 + " c " + horizontal_skew + "," + yScale(d.age) + " " + p3 + "," + yScale(d.age) + " " + p3 + "," + yScale(d.age);
+					return "m " + p1 + "," + (p2+200) + " L " + p1 + "," + p2 + " c " + horizontal_skew + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age);
 				})
 			.attr("stroke", function(d) {
-				var colorScale = d3.scale.linear().domain([0,yMax]).range(["red", "cyan"]);
+				var colorScale = d3.scale.linear().domain([0,yMax]).range(["#e33258", "cyan"]);
+				//var colorScale = d3.scale.linear().domain([0,yMax]).range(["red", "cyan"]);
+				//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#FAAB00", "#C7003F"]);
+				//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#DAF204", "red"]);
+				//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#FCF0D0", "#e33232"]);
+				//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#30D5C8", "#F8F8FF"]);
+
 				return colorScale(d.age);
 			});
 				
@@ -161,4 +187,15 @@ function isNumber(n) {
 
 function getRandomInt (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+Array.prototype.shuffle = function () {
+    for (var i = this.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = this[i];
+        this[i] = this[j];
+        this[j] = tmp;
+    }
+
+    return this;
 }
