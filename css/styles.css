@@ -55,7 +55,7 @@ h1 {
 	left:0px;
 	text-align:center;
 	font-family:'Open Sans';
-	margin-top:20px;
+	margin-top:0px;
 }
 
 #title_caption {
@@ -267,7 +267,7 @@ img.label {
 }
 
 #page {
-	width:1000px;
+	width:1100px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:20px;
@@ -276,11 +276,12 @@ img.label {
 
 #trend {
 	border-radius:0px;
-	height:500px;
+	height:600px;
 	padding:10px;
 	/*background-color:#ffffff;*/
 	/*border:8px solid #e33258;*/
-	border:0px dotted #cccccc;
+	/*border:1px dotted #cccccc;*/
+	width:100%;
 }
 
 #ranked_table_and_map {
@@ -433,7 +434,7 @@ img.label {
 }
 
 #trend svg {
-	margin-left:15px;
+	/*border:1px solid white;*/
 }
 
 th {
@@ -581,7 +582,7 @@ tr {
 	height:70px;
 	border-radius:6px;
 	padding:12px;
-	font-size:12px;
+	font-size:14px;
 	position:absolute;
 	top:200px;
 	margin-left:-200px;
@@ -598,5 +599,5 @@ tr {
 	width:400px;
 	border:0px solid white;
 	text-align:center;
-	margin-top:100px;
+	margin-top:10px;
 }

@@ -23,14 +23,14 @@ function assignEventListeners() {
 //draw the arcs
 function drawMainVisual(container) {
   d3.json("data/feb2011.json", function(data) {data.deaths = data.deaths.shuffle();
-	var w = 900,
+	var w = 1100,
 		h = 600,
 		xPadding = 0,
 		yPadding = 10,
 		x_axis_format = "%b %e",
 		yMax = d3.max(data.deaths, function(d) { return d.age; });
 
-	var p1 = 396, //start x
+	var p1 = 465, //start x
 		p2 = 480, //start y
 		p3 = -390, //end x
 		p4 = -425, //end y
@@ -46,6 +46,38 @@ function drawMainVisual(container) {
         .append("svg")
         .attr("width", w)
         .attr("height", h);
+        
+	svg.append("svg:line")
+		.attr("id", "yaxis")
+		.attr("stroke", "#cccccc")
+		.attr("stroke-width", "1")
+    	.attr('x1', 20)
+    	.attr('y1', 20)
+    	.attr('y2', 460)
+    	.attr('x2', 20);
+    	
+    svg.append("svg:text")
+    	.attr("id", "ali")
+		.style("fill", "#cccccc")
+    	.attr('x', 10)
+    	.attr('y', 20)
+    	.style("font-size", "10px")
+    	.attr("transform", "rotate(-90, 10 , 20) translate(-240, 0)")
+    	.text("Victim's age");
+    	
+    svg.append("svg:text")
+		.style("fill", "#cccccc")
+    	.attr('x', 26)
+    	.attr('y', 30)
+    	.style("font-size", "10px")
+    	.text("90 years");
+    	
+    svg.append("svg:text")
+		.style("fill", "#cccccc")
+    	.attr('x', 26)
+    	.attr('y', 458)
+    	.style("font-size", "10px")
+    	.text("Newborn");
 
 		
 
@@ -78,9 +110,9 @@ function drawMainVisual(container) {
 					.attr("opacity", 1);
 
 				var age = (d.age < 1) ? d.actual_age : d.age + " years";
-				var html = d.name + "<br />" 
-					+ age + "<br />"
-					+ d.date_of_death + "<br />"
+				var html = d.name + ", " 
+					+ age + ", died on "
+					+ d.date_of_death + " by "
 					+ d.type_of_death;
 
 				$("#details").fadeIn().html(html);
