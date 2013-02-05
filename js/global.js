@@ -110,9 +110,9 @@ function drawMainVisual(container) {
 					.attr("opacity", 1);
 
 				var age = (d.age < 1) ? d.actual_age : d.age + " years";
-				var html = d.name + ", " 
-					+ age + ", died on "
-					+ d.date_of_death + " by "
+				var html = "<strong>" + d.name + "</strong>, " + age + "<br />"
+					+ "From " + d.from + "<br />"
+					+ "Killed on " + d.date_of_death + "<br />"
 					+ d.type_of_death;
 
 				$("#details").fadeIn().html(html);
