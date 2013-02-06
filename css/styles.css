@@ -389,6 +389,8 @@ img.label {
 
 .copy {
 	margin-top:30px;
+	padding-left:100px;
+	padding-right:100px;
 	font-style:normal;
 	line-height:30px;
 }
@@ -396,7 +398,7 @@ img.label {
 #logo_container {
 	position:absolute;
 	right:0;
-	bottom:40px;
+	bottom:30px;
 	width:100%;
 	z-index:2;
 	color:white;
@@ -589,4 +591,28 @@ tr {
 	border:0px solid white;
 	text-align:center;
 	margin-top:10px;
+}
+
+.bar {
+	height:10px;
+	margin-bottom:5px;
+	margin-top:0;
+	padding-top:10px;
+	background-color:#cccccc;
+	float:left;
+	margin-left:0px;
+	font-size:11px;
+	line-height:0;
+	text-align:right;
+	padding-right:5px;
+	color:#000000;
+}
+
+.bar_label {
+	margin-top:0;
+	padding-top:10px;
+	float:left;
+	font-size:12px;
+	line-height:0;
+	width:140px;
 }
