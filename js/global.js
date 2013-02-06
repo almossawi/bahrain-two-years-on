@@ -17,12 +17,19 @@ $(document).ready(function () {
 	});
 });
 
-function assignEventListeners() {	
+function assignEventListeners() {
+	$("body").on("click", function() {
+		$("#details").fadeOut();
+	});
 }
 
 //draw the arcs
 function drawMainVisual(container) {
-  d3.json("data/feb2011.json", function(data) {data.deaths = data.deaths.shuffle();
+  d3.json("data/feb2011.json", function(data) {
+  	//data.deaths = data.deaths.shuffle();
+  	
+  	console.log(data.deaths.length);
+  	
 	var w = 1100,
 		h = 600,
 		xPadding = 0,
@@ -30,7 +37,7 @@ function drawMainVisual(container) {
 		x_axis_format = "%b %e",
 		yMax = d3.max(data.deaths, function(d) { return d.age; });
 
-	var p1 = 465, //start x
+	var p1 = 427, //start x
 		p2 = 480, //start y
 		p3 = -390, //end x
 		p4 = -425, //end y
@@ -110,10 +117,10 @@ function drawMainVisual(container) {
 					.attr("opacity", 1);
 
 				var age = (d.age < 1) ? d.actual_age : d.age + " years";
-				var html = "<strong>" + d.name + "</strong>, " + age + "<br />"
-					+ "From " + d.from + "<br />"
-					+ "Killed on " + d.date_of_death + "<br />"
-					+ d.type_of_death;
+				var html = "<strong>" + d.name + "</strong><br />"
+					+ age + ", from " + d.from + "<br />"
+					+ "Killed " + Date.parse(d.date_of_death).toString('dddd, MMM d, yyyy') + "<br />"
+					+ "<p>&ldquo;" + d.type_of_death_full + "&rdquo;</p>";
 
 				$("#details").fadeIn().html(html);
 				
@@ -123,10 +130,12 @@ function drawMainVisual(container) {
 						return p2 + yScale(d.age);
 					})
 					.css("margin-left", function() {
-						if(d.id % 2 == 1)
-							return "-200px";
+						if(d.id == 1)
+							return "990px";
+						else if(d.id % 2 == 1)
+							return "-160px";
 						else
-							return "950px";
+							return "990px";
 					})
 			})
 			/*.on('mouseout', function(d) {
@@ -137,11 +146,14 @@ function drawMainVisual(container) {
 				.duration(2500)
 				.delay(function(d, i){ console.log(d); return 10*(i*2); })
 				.attr("d", function(d) {
-					//once go left and once go right
-					var p3_d = (d.id % 2 == 1) ? p3 : p3 * -1;
+					//once go left and once go right (first one always right for now (id == 1))
+					var p3_d = (d.id % 2 == 1 && d.id != 1) ? p3 : p3 * -1;
 
 					//add a random amount to each
-					p1 += Math.floor((Math.random()*2)+1);
+					//we need to make sure that we cover the entire spread from 1 to 30
+					//TODO fill empty ones first before randomizing
+					//TODO
+					p1 += Math.floor((Math.random()*3)+1);
 				
 					return "m " + p1 + "," + (p2+200) + " L " + p1 + "," + p2 + " c " + horizontal_skew + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age);
 				})
@@ -155,7 +167,8 @@ function drawMainVisual(container) {
 
 				return colorScale(d.age);
 			});
-				
+			
+			//highlight first one
 			
 
 

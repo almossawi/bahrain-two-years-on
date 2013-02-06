@@ -8,7 +8,8 @@
             "date_of_death": "2013-1-26",
             "type_of_death": "Suffocation from tear gas",
             "name_arabic": "قاسم حبيب",
-            "type_of_death_arabic": "استنشاق الغاز المسيل للدموع"
+            "type_of_death_arabic": "استنشاق الغاز المسيل للدموع",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 86,
@@ -16,7 +17,8 @@
             "age": 87,
             "from": "Malkiya",
             "date_of_death": "2013-1-12",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 85,
@@ -24,7 +26,8 @@
             "age": 44,
             "from": "Shakhoora",
             "date_of_death": "2012-12-19",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Died due to the excessive inhalation of toxic tear gas thrown on his area."
         },
         {
             "id": 84,
@@ -32,7 +35,26 @@
             "age": 16,
             "from": "Samaheej",
             "date_of_death": "2012-11-9",
-            "type_of_death": "Run over after being chased by police car"
+            "type_of_death": "Run over while chased by police",
+            "type_of_death_full": "Died immediately when police chased him while he was heading to Friday Prayers in Diraz, when he ran away a speeding car hit him."
+        },
+        {
+            "id": 106,
+            "name": "Thirunavukkarasu Murugaiiyan",
+            "age": 29,
+            "from": "India (expat)",
+            "date_of_death": "2012-11-5",
+            "type_of_death": "Explosive device",
+            "type_of_death_full": "Died as a result of injuries sustained from explosives devices in Gudaibiya area of Manama when he kicked an object wrapped in plastic bag."
+        },
+        {
+            "id": 105,
+            "name": "Shajib Mian Shukur Mian",
+            "age": 33,
+            "from": "Bangladesh (expat)",
+            "date_of_death": "2012-11-5",
+            "type_of_death": "Explosive device",
+            "type_of_death_full": "Died of injuries from explosives devices in Gudaibiya."
         },
         {
             "id": 88,
@@ -40,24 +62,27 @@
             "age": 43,
             "from": "Jidhafs",
             "date_of_death": "2012-11-4",
-            "type_of_death": "Complications from tear gas"
+            "type_of_death": "Complications from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 83,
             "name": "Mahdi Ali Marhoon",
             "age": 84,
-            "from": "Maameer",
+            "from": "Ma'ameer",
             "date_of_death": "2012-10-17",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 89,
             "name": "Huda Naema Hassan",
             "age": 0.92,
             "actual_age": "11 months",
-            "from": "Bugowa",
+            "from": "Buguwwah",
             "date_of_death": "2012-10-15",
-            "type_of_death": "Complications from tear gas"
+            "type_of_death": "Tear gas",
+            "type_of_death_full": "Tear gas inhalation"
         },
         {
             "id": 82,
@@ -65,31 +90,35 @@
             "age": "22",
             "from": "Daih",
             "date_of_death": "2012-10-2",
-            "type_of_death": "Lack of medical care in prison"
+            "type_of_death": "Lack of medical care in prison",
+            "type_of_death_full": "Mohammed was pronounced dead in Manama on October 2 as a result of complications from sickle-cell anemia. He had been hospitalized in Salmaniya Hospital since August 2011 and his lawyers say they had asked the Bahraini courts to release Mushaima because of his bad health, but the courts had rejected the request."
         },
         {
             "id": 81,
             "name": "Ali Hussain Neamah",
             "age": 17,
-            "from": "Saddad",
+            "from": "Sadad",
             "date_of_death": "2012-9-28",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shotgun",
+            "type_of_death_full": "Died of birdshot bullets fired by security forces on a peaceful protest."
         },
         {
-            "id": 89,
+            "id": 90,
             "name": "Hassan Abdulla Ali",
             "age": 59,
-            "from": "Sitra Mihza",
+            "from": "Sitra",
             "date_of_death": "2012-9-18",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Complications from tear gas inhalation"
         },
         {
             "id": 80,
-            "name": "Hussam Al Haddad",
+            "name": "Hussam Al-Haddad",
             "age": 16,
             "from": "Muharraq",
             "date_of_death": "2012-8-17",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shotgun",
+            "type_of_death_full": "Died in hospital as a result of injuries sustained by security forces.  Hussam was shot with a shotgun and kicked repeatedly by a man in civilian clothing in front of security forces.  Human Rights Watch said al-Haddad was unarmed."
         },
         {
             "id": 91,
@@ -97,15 +126,17 @@
             "age": 1,
             "from": "Nabih Saleh",
             "date_of_death": "2012-6-26",
-            "type_of_death": "Complications from tear gas"
+            "type_of_death": "Complications from tear gas",
+            "type_of_death_full": "Complications from tear gas inhalation."
         },
         {
             "id": 79,
             "name": "Shabeer Mammed",
             "age": 27,
-            "from": "Sanad (Indian expat)",
+            "from": "India (expat)",
             "date_of_death": "2012-4-22",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 92,
@@ -113,15 +144,17 @@
             "age": 80,
             "from": "Sadad",
             "date_of_death": "2012-6-9",
-            "type_of_death": "Complications from tear gas"
+            "type_of_death": "Complications from tear gas",
+            "type_of_death_full": "Complications from tear gas inhalation."
         },
         {
             "id": 78,
             "name": "Salah Abbas Habib",
             "age": 36,
-            "from": "Bilad AlQadeem",
+            "from": "Bilad Alqadeem",
             "date_of_death": "2012-4-21",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shotgun",
+            "type_of_death_full": "He died after being beaten by riot police on the eve of the Bahrain Grand Prix. Rights group released photos showing 'injuries from a close-range blast of birdshot' blaming security forces for his death. 'He had birdshot wounds in his chest and abdomen,' said the deceased brother, Hussain."
         },
         {
             "id": 93,
@@ -129,15 +162,17 @@
             "age": 25,
             "from": "Sar",
             "date_of_death": "2012-4-13",
-            "type_of_death": "Run over by police car"
+            "type_of_death": "Run into by police car",
+            "type_of_death_full": "Run into several times by a police car, which resulted in fatal injuries."
         },
         {
             "id": 77,
-            "name": "Khadija Mohammed Ali Al-Abbas",
+            "name": "Khadija Mohammed Al-Abbas",
             "age": 50,
-            "from": "Maameer",
+            "from": "Ma'ameer",
             "date_of_death": "2012-4-5",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 76,
@@ -145,7 +180,8 @@
             "age": 22,
             "from": "Salmabad",
             "date_of_death": "2012-3-31",
-            "type_of_death": "Shot with live ammunition"
+            "type_of_death": "Shot with live ammunition",
+            "type_of_death_full": "Ahmed, a cameraman and citizen journalist was protesting in Salmabad when he was shot by gunfire in his upper right tight and subsequently died in hospital. Witnesses said at about 1:30 am Al-Salmabadi was shot with a laser-pointed gun by a civilian car accompanying security forces. Apparently, he was targeted due to filming from a video camera, witness said. Al Wefaq blamed militants loyal to the regime for Al-Salmabadi's death."
         },
         {
             "id": 94,
@@ -153,55 +189,62 @@
             "age": 50,
             "from": "Demistan",
             "date_of_death": "2012-3-28",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 75,
-            "name": "Ahmed Abdulnabi AbdulRasool",
+            "name": "Ahmed Abdulnabi Abdulrasool",
             "age": 30,
-            "from": "",
+            "from": "Shahrakkan",
             "date_of_death": "2012-3-24",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation.  His cousin said Ahmed was a sailor and had a healthy body, however he and his sister have been sick and coughing bloody since a tear gas canister was fired into their house on the evening of March 16."
         },
         {
             "id": 74,
-            "name": "Abdat Ali AbdulMohsen",
+            "name": "Abda Ali Abdulmohsen",
             "age": 40,
-            "from": "Aali",
+            "from": "A'ali",
             "date_of_death": "2012-3-23",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 73,
             "name": "Sabri Mahfoodh Yousif",
             "age": 27,
-            "from": "Shahrakan",
+            "from": "Shahrakkan",
             "date_of_death": "2012-3-19",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation [13]."
         },
         {
             "id": 72,
             "name": "Jaffar Jassem Radhi",
             "age": 41,
-            "from": "Migsha",
+            "from": "Migsha'a",
             "date_of_death": "2012-3-17",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Suffocation from tear gas [13]."
         },
         {
             "id": 71,
-            "name": "Fadhel AlObaidy",
+            "name": "Fadhel Al-Obaidy",
             "age": 22,
-            "from": "Duraz",
+            "from": "Diraz",
             "date_of_death": "2012-3-10",
-            "type_of_death": "Shot"
+            "type_of_death": "Shot",
+            "type_of_death_full": "Police shot Fadhel in the head with a tear gas canister during a peaceful protest on March 1 and then proceeded to beat him."
         },
         {
             "id": 70,
             "name": "Sakeena Ali Marhoon",
             "age": 70,
-            "from": "Abu Saiba",
+            "from": "Abu Saiba'a",
             "date_of_death": "2012-3-6",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Hospitalized on 6 February 2012 as a result of inhaling tear gas and died on 6 March 2012."
         },
         {
             "id": 69,
@@ -210,15 +253,17 @@
             "actual_age": "1 month",
             "from": "Ras Rumman",
             "date_of_death": "2012-3-5",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas exposure during his mother’s pregnancy [13]"
         },
         {
             "id": 68,
-            "name": "Sayed Jaffar Salman AlAlawi",
+            "name": "Jafar Salman Al-Alawi",
             "age": 75,
             "from": "Shakhura",
             "date_of_death": "2012-3-1",
-            "type_of_death": "Complications following police beating"
+            "type_of_death": "Complications following beating",
+            "type_of_death_full": "The Bahrain Center for Human Rights said Jafar died as a result of injuries inflicted by security forces to the head and pelvis since 15 February 2011. He was reportedly in coma for a long while and even after waking up from it, he was admitted again, till his death on 2 March 2012."
         },
         {
             "id": 67,
@@ -226,7 +271,8 @@
             "age": 60,
             "from": "Sehla",
             "date_of_death": "2012-2-29",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 66,
@@ -234,15 +280,17 @@
             "age": 68,
             "from": "Sehla",
             "date_of_death": "2012-2-25",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 65,
-            "name": "Rose Nisha Naikarottu Baby Varghese",
+            "name": "Rose Nisha Varghese",
             "age": 28,
-            "from": "India/ Manama",
+            "from": "India (expat)",
             "date_of_death": "2012-2-21",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 64,
@@ -250,7 +298,17 @@
             "age": 85,
             "from": "Sitra",
             "date_of_death": "2012-2-18",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
+        },
+        {
+            "id": 109,
+            "name": "Hussain Albaggali",
+            "age": 19,
+            "from": "Jidhafs",
+            "date_of_death": "2012-2-17",
+            "type_of_death": "Burn injuries",
+            "type_of_death_full": "Reuters claimed that he died of burns sustained in January while burning tires in a protest timed to coincide with the 2012 Bahrain International Air Show. He did not seek timely medical attention, according to his family, due to fear of arrest."
         },
         {
             "id": 94,
@@ -258,7 +316,8 @@
             "age": 32,
             "from": "Nabih Saleh",
             "date_of_death": "2012-2-12",
-            "type_of_death": "Complications from tear gas"
+            "type_of_death": "Complications from tear gas",
+            "type_of_death_full": "Complications following exposure to tear gas."
         },
         {
             "id": 63,
@@ -266,71 +325,80 @@
             "age": 48,
             "from": "Samaheej",
             "date_of_death": "2012-2-6",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 62,
             "name": "Abdali Ali Mohamed",
             "age": 58,
-            "from": "Maameer",
+            "from": "Ma'ameer",
             "date_of_death": "2012-2-1",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 61,
             "name": "Zahra Ali Alhawaj",
             "age": 69,
-            "from": "Noaim",
+            "from": "Naim",
             "date_of_death": "2012-2-1",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 60,
-            "name": "Saeed Ali Al-Sukari",
+            "name": "Saeed Ali Al-Sikri",
             "age": 65,
-            "from": "Aali/Noaim",
+            "from": "A'ali",
             "date_of_death": "2012-1-25",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation [13]."
         },
         {
             "id": 59,
-            "name": "Abbas Jaffar AlShaikh",
+            "name": "Abbas Jaffar Al-Shaikh",
             "age": "26",
             "from": "Daih",
             "date_of_death": "2012-1-25",
-            "type_of_death": "Tear gas"
+            "type_of_death": "Tear gas",
+            "type_of_death_full": "The Bahrain Center for Human Rights said Abbas was a protester injured many times with birdshot and that exposure to tear gas may have sped up his cancer."
         },
         {
             "id": 58,
             "name": "Muntadher Saeed Fakhar",
             "age": 37,
-            "from": "Sanabis",
+            "from": "Daih",
             "date_of_death": "2012-1-25",
-            "type_of_death": "Torture"
+            "type_of_death": "Torture",
+            "type_of_death_full": "Witnesses say he was arrested after police crashed into his car, beat on the street, and later tortured in Hoora police station [7]."
         },
         {
             "id": 57,
             "name": "Mohamed Ebrahim Yaqoob",
-            "age": 18,
+            "age": 19,
             "from": "Sitra",
             "date_of_death": "2012-1-25",
-            "type_of_death": "Torture"
+            "type_of_death": "Run over by police car, torture",
+            "type_of_death_full": "Mohammed was run over by a police car, as shown by a video on YouTube.  Upon receiving his body, he had a broken skull and signs of torture. (<a href='http://nasiriaelc.com/index.php/permalink/5611.html'>source</a>)"
         },
         {
             "id": 56,
-            "name": "Mohamed Khamis AlKhunaizi",
+            "name": "Mohamed Khamis Al-Khunaizi",
             "age": 26,
             "from": "Jidhafs",
             "date_of_death": "2012-1-20",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 55,
-            "name": "Yaseen Jassim AlAsfoor",
+            "name": "Yaseen Jassim Al-Asfoor",
             "age": 14,
-            "from": "Maameer",
+            "from": "Ma'ameer",
             "date_of_death": "2012-1-20",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Complications following exposure to tear gas."
         },
         {
             "id": 54,
@@ -338,80 +406,99 @@
             "age": 81,
             "from": "Barbar",
             "date_of_death": "2012-1-15",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
+        },
+        {
+            "id": 108,
+            "name": "Badriya Ali",
+            "age": 59,
+            "from": "Sanabis",
+            "date_of_death": "2012-1-14",
+            "type_of_death": "Depression",
+            "type_of_death_full": "Bahrain Center for Human Rights claims that she set herself on fire after she 'suffered from sever depression for months' after her son was arrested and beaten by security forces in front of her."
         },
         {
             "id": 53,
             "name": "Yousif Ahmed Muwali",
             "age": 24,
-            "from": "Qalali/Muharraq",
+            "from": "Muharraq",
             "date_of_death": "2012-1-13",
-            "type_of_death": "Torture"
+            "type_of_death": "Torture",
+            "type_of_death_full": "Yousif's body washed ashore on Amwaj Island. His family, who were not allowed to see the body until the following morning said there were obvious signs of torture such as cigarette burns and bruises on his body, especially head, neck and arm."
         },
         {
             "id": 52,
-            "name": "Fakhria Jassim AlSakran",
+            "name": "Fakhria Jassim Al-Sakran",
             "age": 55,
-            "from": "Isa Town/Muharraq",
+            "from": "Isa Town",
             "date_of_death": "2012-1-3",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 51,
-            "name": "Sayed Hashim Sayed Saeed",
+            "name": "Sayed Hashim Saeed Almumin",
             "age": 15,
             "from": "Sitra",
             "date_of_death": "2011-12-31",
-            "type_of_death": "Shot"
+            "type_of_death": "Shot",
+            "type_of_death_full": "A medical report gave the cause of death as hematomas and bleeding as a result of a neck injury, and noted burns on the bottom-left of his chest and his left forearm. Police allegedly fired two tear gas canisters at his chest and neck from close range."
         },
         {
             "id": 50,
             "name": "Abdulali Ali Ahmed",
             "age": 73,
-            "from": "Muqsha",
+            "from": "Miqsha'a",
             "date_of_death": "2011-12-17",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 49,
-            "name": "Ali Ahmed AlQassab",
+            "name": "Ali Ahmed Al-Qassab",
             "age": 21,
-            "from": "AbuSaiba",
+            "from": "Abu Saiba'a",
             "date_of_death": "2011-12-15",
-            "type_of_death": "Run over after being chased by police"
+            "type_of_death": "Run over while chased by police",
+            "type_of_death_full": "Allegedly struck by a civilian car while being chased by police."
         },
         {
             "id": 48,
             "name": "Sajida Faisal",
             "age": 0.01,
             "actual_age": "5 days",
-            "from": "Bilad AlQadeem",
+            "from": "Bilad Alqadeem",
             "date_of_death": "2011-12-11",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 47,
             "name": "Zahra Saleh",
             "age": 27,
-            "from": "Safera/Daih",
+            "from": "Daih",
             "date_of_death": "2011-12-7",
-            "type_of_death": "Metal rod to the head"
+            "type_of_death": "Metal rod to the head",
+            "type_of_death_full": "Zahra died after a metal rod thrown by police entered her head."
         },
         {
             "id": 46,
-            "name": "AbdulNabi Kadhem Alaagil",
+            "name": "Abdulnabi Kadhem Alaagil",
             "age": 44,
             "from": "Aali",
             "date_of_death": "2011-11-23",
-            "type_of_death": "Hit by police car, crushed into wall"
+            "type_of_death": "Hit by police car, crushed into wall",
+            "type_of_death_full": "Bahrain Center for Human Rights claims he died after his car was rammed into a wall by a speeding police SUV."
         },
         {
             "id": 45,
-            "name": "Ali Yousif Badah",
+            "name": "Ali Yousif Baddah",
             "age": 16,
             "from": "Sitra",
             "date_of_death": "2011-11-19",
-            "type_of_death": "Run over by police car"
+            "type_of_death": "Run over by police car",
+            "type_of_death_full": "Died when a speeding police vehicle squeezed him into a wall in Juffair."
         },
         {
             "id": 44,
@@ -419,7 +506,8 @@
             "age": 70,
             "from": "Daih",
             "date_of_death": "2011-11-3",
-            "type_of_death": "Beaten to death"
+            "type_of_death": "Beaten to death",
+            "type_of_death_full": "Suffered cardiac arrest the day after he was attacked in the evening by police."
         },
         {
             "id": 95,
@@ -428,7 +516,8 @@
             "actual_age": "1 month",
             "from": "Dair",
             "date_of_death": "2011-10-30",
-            "type_of_death": "Complications from tear gas"
+            "type_of_death": "Complications from tear gas",
+            "type_of_death_full": "According to his family, Mohammed died of complications from tear gas inhalation. (<a href='http://bahrainonline.org/showthread.php?t=489127'>source</a>)"
         },
         {
             "id": 96,
@@ -436,15 +525,17 @@
             "age": 50,
             "from": "Karraneh",
             "date_of_death": "2011-10-29",
-            "type_of_death": "Complications from shotgun"
+            "type_of_death": "Complications from gunshot",
+            "type_of_death_full": "Died due to sustained injuries. The official reason for death is heart failure. He lost his eye allegedly due to a rubber bullet fired by Bahraini security forces and traveled to Iran for treatment. According to an activist Riyadh had birdshot injuries and underwent a number of surgeries in Iran to remove their remains."
         },
         {
             "id": 43,
-            "name": "Ahmed Jaber AlQattan",
+            "name": "Ahmed Jaber Al-Qattan",
             "age": 16,
             "from": "Shakhura",
             "date_of_death": "2011-10-6",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shotgun",
+            "type_of_death_full": "Birdshot injuries to the chest. Witnesses report that police shot him."
         },
         {
             "id": 42,
@@ -452,56 +543,62 @@
             "age": 74,
             "from": "Abu Saiba'a",
             "date_of_death": "2011-9-30",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 41,
-            "name": "Jaffar Hasan Yusuf",
-            "age": 28,
+            "name": "Jafar Hasan Yusuf",
+            "age": 29,
             "from": "Demistan",
             "date_of_death": "2011-9-18",
-            "type_of_death": "Beaten to death"
+            "type_of_death": "Beaten to death",
+            "type_of_death_full": "Witnesses say police physically attacked him on two occasions in March, causing severe bruising to his body. He was admitted to a hospital for three days and eventually died."
         },
         {
             "id": 40,
-            "name": "Sayyed Jawad Ahmed",
+            "name": "Sayed Jawad Ahmed Marhoon",
             "age": 36,
             "from": "Sitra",
             "date_of_death": "2011-9-14",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 39,
-            "name": "Ali Alshaikh",
+            "name": "Ali Jawad Alshaikh",
             "age": 14,
             "from": "Sitra",
             "date_of_death": "2011-8-31",
-            "type_of_death": "Shot"
+            "type_of_death": "Shot",
+            "type_of_death_full": "The cause of death was 'a fractured spine, internal bleeding, and shock'. Witnesses report that they heard shots immediately after seeing a policeman holding a tear gas gun standing out of the top window of a police SUV that was chasing protesters."
+        },
+        {
+            "id": 110,
+            "name": "Hussain Ali Alameer",
+            "age": 36,
+            "from": "Bild Alqadeem",
+            "date_of_death": "2011-8-13",
+            "type_of_death": "Torture",
+            "type_of_death_full": "According to his wife, Hussain who is blind, was brutally tortured while in prison, which resulted in him urinating blood and damaged his internal organs.  He died shortly after being released."
         },
         {
             "id": 38,
-            "name": "Isa AlTaweel",
+            "name": "Isa Altaweel",
             "age": 50,
             "from": "Sitra",
             "date_of_death": "2011-7-31",
-            "type_of_death": "Suffocation from tear gas"
-        },
-        {
-            "id": 97,
-            "name": "Husain Al-Aameer",
-            "age": 40,
-            "other": "don't know age",
-            "from": "Bilad Alqadeem",
-            "date_of_death": "2011-8-13",
-            "type_of_death": "Complications from torture"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 37,
-            "name": "Zainab Hassan Ahmed al-Jumaa",
+            "name": "Zainab Hassan Al-Jumaa",
             "age": 39,
             "from": "Sitra",
             "date_of_death": "2011-7-15",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 98,
@@ -510,31 +607,35 @@
             "other": "don't know age",
             "from": "Sanabis",
             "date_of_death": "2011-7-19",
-            "type_of_death": "Tortured to death"
+            "type_of_death": "Tortured to death",
+            "type_of_death_full": "Tortured to death."
         },
         {
             "id": 36,
             "name": "Majeed Mohammed Abdulaal",
             "age": 30,
-            "from": "Northern Sehla",
+            "from": "Sehla",
             "date_of_death": "2011-6-30",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shotgun",
+            "type_of_death_full": "A shotgun injury sustained on 14 March 2011 to the right side of his head"
         },
         {
             "id": 35,
-            "name": "Jaber Al Elewat",
-            "age": 43,
-            "from": "Al Musalla",
+            "name": "Jaber Ibrahim Alelewat",
+            "age": 41,
+            "from": "Khamis",
             "date_of_death": "2011-6-12",
-            "type_of_death": "Torture"
+            "type_of_death": "Torture",
+            "type_of_death_full": "Injuries sustained while in custody. 20 days after his detention, Jaber's family was allowed to visit him and reported seeing bruises on his face, head and the left hand, which he was unable to move. He was released from custody on June 9 and left outside the entrance to a hospital. He died after three days complaining of stomach pains."
         },
         {
             "id": 34,
-            "name": "Sayed Adnan Sayed Hassan",
+            "name": "Adnan Hassan Almosawi",
             "age": 44,
-            "from": "Al Markh",
+            "from": "Markh",
             "date_of_death": "2011-6-23",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 99,
@@ -542,55 +643,62 @@
             "age": 60,
             "from": "Nuwaidrat",
             "date_of_death": "2011-6-19",
-            "type_of_death": "Stabbed by government loyalists"
+            "type_of_death": "Stabbed by government loyalists",
+            "type_of_death_full": "Stabbed in the head with a sharp object by unknowns while returning home from the mosque after morning prayer."
         },
         {
             "id": 33,
-            "name": "Salman Isa AbuIdrees",
+            "name": "Salman Isa Abuidrees",
             "age": 63,
             "from": "Manama",
             "date_of_death": "2011-6-3",
-            "type_of_death": "Shot with rubber bullet"
+            "type_of_death": "Shot with rubber bullet",
+            "type_of_death_full": "A heart attack caused by heightened blood pressure. He suffered from diabetes. He was allegedly stopped, beaten, and abducted by police."
         },
         {
             "id": 32,
-            "name": "Zainab AlTajar",
+            "name": "Zainab Altajir",
             "age": 69,
             "from": "Sanabis",
             "date_of_death": "2011-6-2",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "A sharp decline in circulation and respiration. She suffered from asthma. She allegedly inhaled tear gas fired by police, and fell over. An ambulance taking her to the hospital was allegedly subjected to delays at several checkpoints, including two checkpoints where a medic providing breathing assistance to Zainab was questioned."
         },
         {
             "id": 31,
-            "name": "Mohammed Abdulhussain Farhan",
+            "name": "Mohammed A. Hussain Farhan",
             "age": 6,
             "from": "Sitra",
             "date_of_death": "2011-4-30",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Allegedly died from suffocation after inhaling tear gas fired by police outside his home."
         },
         {
             "id": 30,
             "name": "Aziza Hassan Khamis",
             "age": 25,
-            "from": "Bilad AlQadeem",
+            "from": "Bilad Alqadeem",
             "date_of_death": "2011-4-16",
-            "type_of_death": "Abuse"
+            "type_of_death": "Abuse",
+            "type_of_death_full": "Cardiac arrest and cessation of breathing. She allegedly turned yellow and died from extreme stress after police broke down the door to her house and began choking her brother, and beating and kicking a neighbor's son. A medical report states that she suffered from type 1 diabetes, rendering her vulnerable to psychological stress."
         },
         {
             "id": 29,
-            "name": "Kareem Fakhrawi",
+            "name": "Abdulkareem Fakhrawi",
             "age": 49,
             "from": "Karbabad",
             "date_of_death": "2011-4-12",
-            "type_of_death": "Tortured to death"
+            "type_of_death": "Tortured to death",
+            "type_of_death_full": "Injuries sustained during torture while in custody.  Witnesses reported hearing Abdulkareem screaming while receiving beatings and then suddenly the screaming stopped, after which one individual said to another, 'you killed him.'"
         },
         {
             "id": 28,
-            "name": "Zakariya Rashid Hassan AlAshiri",
+            "name": "Zakariya Rashid Alashiri",
             "age": 40,
-            "from": "AlDair",
+            "from": "Dair",
             "date_of_death": "2011-4-9",
-            "type_of_death": "Tortured to death"
+            "type_of_death": "Tortured to death",
+            "type_of_death_full": "A blindfolded cellmate described hearing prison guards enter their cell and beat Zakariya to death when he refused to be quiet."
         },
         {
             "id": 27,
@@ -598,55 +706,71 @@
             "age": 31,
             "from": "Sehla",
             "date_of_death": "2011-4-9",
-            "type_of_death": "Tortured to death"
+            "type_of_death": "Tortured to death",
+            "type_of_death_full": "Hypovolemic shock due to multiple traumas sustained during torture in the custody of the Ministry of the Interior. His body was covered with red bruises, in particular on the back of the hands and around the right eye."
         },
         {
             "id": 26,
             "name": "Sayed Hameed Mahfoodh Alsari",
             "age": 61,
-            "from": "Sarr",
+            "from": "Sar",
             "date_of_death": "2011-4-6",
-            "type_of_death": "Beaten to death"
+            "type_of_death": "Beaten to death",
+            "type_of_death_full": "His family report that they found his body in a black plastic bag with signs of physical assault and suffocation."
+        },
+        {
+            "id": 107,
+            "name": "Khadija Merza Abbas Yusuf Abdulhay",
+            "age": 40,
+            "from": "Sanabis",
+            "date_of_death": "2011-4-5",
+            "type_of_death": "Tear gas inhalation",
+            "type_of_death_full": "The cause of death was bilateral nodular disease and acute pneumonitis caused by severe septic shock. Her family says they took her to the hospital after she inhaled a large amount of tear gas fired by police on 15 March, and were told to come back the following day. They could not access the hospital until 20 March, at which point she was hospitalized and treated for 5 days. Her condition progressively worsened until she died."
         },
         {
             "id": 25,
-            "name": "Hassan Jassim Mohammed Makki",
+            "name": "Hassan Jassim Makki",
             "age": 39,
-            "from": "Karzakan",
+            "from": "Karzakkan",
             "date_of_death": "2011-4-3",
-            "type_of_death": "Torture"
+            "type_of_death": "Torture",
+            "type_of_death_full": "Cardiac arrest induced by sickle-cell disease.  Hassan was tortured as noted by Amnesty International and Médecins Sans Frontières both of which examined his body."
         },
         {
             "id": 24,
-            "name": "Sayed-Ahmad Sa’eed Shams",
+            "name": "Sayed Ahmed Saeed Shams",
             "age": 15,
-            "from": "Saar",
+            "from": "Sar",
             "date_of_death": "2011-3-30",
-            "type_of_death": "Shot"
+            "type_of_death": "Shot",
+            "type_of_death_full": "Hit in the head with a tear gas canister fired by police."
         },
         {
             "id": 23,
-            "name": "Isa Mohammed",
+            "name": "Isa Mohammed Ali",
             "age": 71,
             "from": "Ma'ameer",
             "date_of_death": "2011-3-25",
-            "type_of_death": "Suffocation from tear gas"
+            "type_of_death": "Suffocation from tear gas",
+            "type_of_death_full": "Tear gas inhalation."
         },
         {
             "id": 22,
             "name": "Aziz Jumma Ayyad",
             "age": 33,
-            "from": "Al-Hajar",
+            "from": "Hajar",
             "date_of_death": "2011-3-24",
-            "type_of_death": "Tortured to death"
+            "type_of_death": "Tortured to death",
+            "type_of_death_full": "Torture.  Aziz's family reports there were signs of electric shocks on the body, marks on his hands, chest, and a piercing in his stomach."
         },
         {
             "id": 21,
-            "name": "Hani Abdul-Aziz Abdullah Jumah",
+            "name": "Hani Abdulaziz Abdullah",
             "age": 33,
             "from": "Khamis",
             "date_of_death": "2011-3-24",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shotgun",
+            "type_of_death_full": "Shot point blank in an uninhabited building a and left to die by police officers. [11]"
         },
         {
             "id": 20,
@@ -654,7 +778,8 @@
             "age": 51,
             "from": "Manama",
             "date_of_death": "2011-3-21",
-            "type_of_death": "Shot in head while driving"
+            "type_of_death": "Shot in head while driving",
+            "type_of_death_full": "A gunshot injury to the head by the Bahrain Defence Force."
         },
         {
             "id": 100,
@@ -662,95 +787,116 @@
             "age": 28,
             "from": "Markh",
             "date_of_death": "2011-3-31",
-            "type_of_death": "Complications from abuse"
+            "type_of_death": "Complications from abuse",
+            "type_of_death_full": "According to her family, Fatima died of abuse while at Salmaniyya hospital.  She suffered from sickle-cell anemia. (<a href='http://bahrainonline.org/showthread.php?t=489127'>source</a>)"
         },
         {
             "id": 19,
-            "name": "Jawad Mohammed Ali Shamlan",
-            "age": 48,
-            "from": "Al-Hajar",
+            "name": "Jawad Mohammed Shamlan",
+            "age": 47,
+            "from": "Hajar",
             "date_of_death": "2011-3-20",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Gunfire",
+            "type_of_death_full": "A bullet fired from a Browning .50 caliber machine gun by the Bahrain Defence Force."
         },
         {
             "id": 18,
-            "name": "Abdul-Rasoul Hassan al-Hujairi",
-            "age": 38,
+            "name": "Abdul-Rasool Hassan Al-Hujairi",
+            "age": 37,
             "from": "Bouri",
             "date_of_death": "2011-3-20",
-            "type_of_death": "Beaten to death"
+            "type_of_death": "Beaten to death",
+            "type_of_death_full": "Traumatic injuries to the chest, stomach, back and limbs, which led to bleeding and shock. His body was found in Awali."
         },
         {
             "id": 17,
             "name": "Aklas Miah",
-            "age": 50,
-            "from": "Bangladish",
+            "age": 57,
+            "from": "Bangladesh (expat)",
             "date_of_death": "2011-3-15",
-            "type_of_death": "Shot in head"
+            "type_of_death": "Attacked",
+            "type_of_death_full": "Attacked by unknown individuals; died of injuries to the head."
         },
         {
             "id": 16,
-            "name": "Isa Radhi al-Radhi",
+            "name": "Isa Radhi Al-Radhi",
             "age": 47,
             "from": "Sitra",
             "date_of_death": "11-3-19",
-            "type_of_death": "Shotgun, then beaten to death"
+            "type_of_death": "Shotgun, then beaten to death",
+            "type_of_death_full": "According to a witness' account, Isa was beaten to death by 15 police officers for around 20 minutes [12]."
         },
         {
             "id": 15,
-            "name": "Ali Ahmad Al-Mraisi",
+            "name": "Ali Ahmad Al-Muraisi",
             "age": 30,
-            "from": "Rifa (police officer)",
+            "from": "Rifa (officer)",
             "date_of_death": "2011-3-17",
-            "type_of_death": "Run over by car"
+            "type_of_death": "Run over by car",
+            "type_of_death_full": "Struck by a car driven by demonstrators in Sitra."
         },
         {
             "id": 14,
-            "name": "Mohammed Faruq al-Balooshi",
+            "name": "Mohammed Faruq Abdulsamad",
             "age": 27,
-            "from": "Pakistan (police officer)",
+            "from": "Pakistan (officer)",
             "date_of_death": "2011-3-16",
-            "type_of_death": "Run over by car"
+            "type_of_death": "Run over by car",
+            "type_of_death_full": "Severe head injury and hypovolemic shock; struck by a car driven by demonstrators near the Pearl Roundabout."
         },
         {
             "id": 13,
             "name": "Kashif Ahmed Mandhour",
             "age": 21,
-            "from": "Pakistan (police officer)",
+            "from": "Pakistan (officer)",
             "date_of_death": "2011-3-16",
-            "type_of_death": "Run over by car"
+            "type_of_death": "Run over by car",
+            "type_of_death_full": "Head and chest trauma, damage to internal organs and internal bleeding; struck by a car driven by demonstrators near the Pearl Roundabout."
         },
         {
             "id": 12,
             "name": "Ahmed Abdulla Alarnoot",
             "age": 22,
-            "from": "Daih",
+            "from": "Hamad Town",
             "date_of_death": "2011-3-16",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shotgun",
+            "type_of_death_full": "Three close range birdshot injuries to the back"
         },
         {
             "id": 11,
-            "name": "Jaffer Mohammed Abd-Ali",
-            "age": 41,
+            "name": "Jaffer Mohammed Abdali",
+            "age": 40,
             "from": "Karraneh",
             "date_of_death": "2011-3-16",
-            "type_of_death": "Shot by live bullet in chest"
+            "type_of_death": "Shot by live bullet in chest",
+            "type_of_death_full": "Police gunshot injury to the chest."
         },
         {
             "id": 10,
             "name": "Jaffer Abdulla Ma’yuf",
             "age": 30,
-            "from": "Aali",
+            "from": "A'ali",
             "date_of_death": "2011-3-16",
-            "type_of_death": "Shotgun and live bullet"
+            "type_of_death": "Shotgun and live bullet",
+            "type_of_death_full": "Close range gunshot injuries to the back and chest area; shot by security forces."
         },
         {
             "id": 9,
             "name": "Steven Ebraham",
             "age": 48,
-            "from": "India",
+            "from": "India (expat)",
             "date_of_death": "2011-3-16",
-            "type_of_death": "Shot by live bullet"
+            "type_of_death": "Shot by live bullet",
+            "type_of_death_full": ".50 caliber Browning Gun bullet to the right side of his chest fired by the Bahrain Defence Force"
+        },
+        {
+            "id": 104,
+            "name": "Mohammad Ikhlas Tozzumul Ali",
+            "age": 50,
+            "from": "Bangladesh (expat)",
+            "date_of_death": "2011-3-15",
+            "type_of_death": "Run over by a car",
+            "type_of_death_full": "Hit by vehicles without license plates driven by unknown individuals, one of whom was associated with government forces."
         },
         {
             "id": 8,
@@ -758,7 +904,8 @@
             "age": 30,
             "from": "Sitra",
             "date_of_death": "2011-3-15",
-            "type_of_death": "Shot point blank at a checkpoint"
+            "type_of_death": "Gunshot from close range",
+            "type_of_death_full": "Gunshot to the head from close range by a police officer.  According to some witnesses, the officer was a Saudi soldier [10]."
         },
         {
             "id": 101,
@@ -766,15 +913,26 @@
             "age": 18,
             "from": "Demistan",
             "date_of_death": "2011-3-13",
-            "type_of_death": "Car crash after being chased by government loyalists"
+            "type_of_death": "Run over by a car",
+            "type_of_death_full": "Struck by a car driven by unknowns near the Pearl Roundabout."
+        },
+        {
+            "id": 102,
+            "name": "Abdulmalik Ghulam Rasool",
+            "age": 34,
+            "from": "Pakistan (expat)",
+            "date_of_death": "2011-3-13",
+            "type_of_death": "Attacked by a mob",
+            "type_of_death_full": "Severe chest contusion resulting in acute heart failure, attacked by a mob."
         },
         {
             "id": 7,
-            "name": "Abdul-Redha Mohammed Buhmeid",
+            "name": "Abdulredha Buhmeid",
             "age": 32,
             "from": "AlMalkiya",
             "date_of_death": "2011-2-21",
-            "type_of_death": "Shot in head with live bullet"
+            "type_of_death": "Shot in head with live bullet",
+            "type_of_death_full": "Sustained at least two live bullets to the head when the Bahrain Defence Force opened fire on mourners with M16 rifles, Dilmun rifles, and Browning .50 caliber machine guns mounted on armored vehicles."
         },
         {
             "id": 6,
@@ -782,39 +940,44 @@
             "age": 53,
             "from": "Sitra",
             "date_of_death": "2011-2-17",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shotgun",
+            "type_of_death_full": "Police birdshot wound to the back from close range."
         },
         {
             "id": 5,
-            "name": "Mahmood Ahmed Makki (Abu-Takki)",
+            "name": "Mahmood Ahmed Abu-Takki",
             "age": 23,
             "from": "Sitra",
             "date_of_death": "2011-2-17",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shotgun",
+            "type_of_death_full": "Police birdshot wound to the back from close range."
         },
         {
             "id": 4,
-            "name": "Ali Ahmed Abdulla al-Moumen",
+            "name": "Ali Ahmed Abdulla Al-Mumin",
             "age": 23,
             "from": "Sitra",
             "date_of_death": "2011-2-17",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shotgun",
+            "type_of_death_full": "Police birdshot wound to the thighs from close range."
         },
         {
             "id": 3,
-            "name": "Isa Abdul-Hassan",
+            "name": "Isa Abdulhassan",
             "age": 60,
             "from": "Karzakkan",
             "date_of_death": "2011-2-17",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shotgun",
+            "type_of_death_full": "Police birdshot wound to the head from a distance of a few centimeters."
         },
         {
             "id": 2,
-            "name": "Fadhel Salman Al-Matrook",
+            "name": "Fadhel Salman Almatrook",
             "age": 31,
             "from": "Mahooz",
             "date_of_death": "2011-2-15",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shotgun",
+            "type_of_death_full": "Police birdshot wound to the back from close range."
         },
         {
             "id": 1,
@@ -822,7 +985,8 @@
             "age": 21,
             "from": "Daih",
             "date_of_death": "2011-2-14",
-            "type_of_death": "Shotgun"
+            "type_of_death": "Shotgun",
+            "type_of_death_full": "Police birdshot wound to the back from close range."
         }
     ]
 }
