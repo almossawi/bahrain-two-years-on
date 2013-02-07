@@ -2,7 +2,10 @@
 
 var LANG,
 	default_opacity = 0.7,
-	fixed_card = true;
+	fixed_card = true,
+	default_stroke_width = 1,
+	highlighted_stroke_width = 4,
+	death_count = 0;
 
 $(document).ready(function () {	
 	//provide lang literals globally
@@ -79,7 +82,7 @@ function assignEventListeners() {
 		$.uniform.update();
 		
 		if(d_event.target.value == "cancel_all") {
-			$("#count").html("");
+			$("#count").html(death_count + " LIVES");
 			
 			$(".treebranch")
 				.attr("class", "treebranch")
@@ -119,7 +122,7 @@ function assignEventListeners() {
 		$.uniform.update();
 		
 		if(d_event.target.value == "cancel_all") {
-			$("#count").html("");
+			$("#count").html(death_count + " LIVES");
 			
 			$(".treebranch")
 				.attr("class", "treebranch")
@@ -159,7 +162,7 @@ function assignEventListeners() {
 		$.uniform.update();
 		
 		if(d_event.target.value == "cancel_all") {
-			$("#count").html("");
+			$("#count").html(death_count + " LIVES");
 			
 			$(".treebranch")
 				.attr("class", "treebranch")
@@ -407,6 +410,8 @@ function drawMainVisual(container) {
  	d3.json("data/annotations.json", function(annotations) {
 		//data.deaths = data.deaths.shuffle();
 		
+		death_count = data.deaths.length;
+		
 		var format = "s",
 			humanify_numbers = false,
 			custom_units = "";
@@ -422,7 +427,7 @@ function drawMainVisual(container) {
 
 		var p1 = 427, //start x
 			p2 = 480, //start y
-			p3 = -390, //end x
+			p3 = -420, //end x
 			p4 = -425, //end y
 			horizontal_skew = 3;
 		
@@ -476,7 +481,7 @@ function drawMainVisual(container) {
 					//return Math.floor((Math.random()*1)+0.5)
 				})
 				.attr("id", function(d) { return "p" + d.id; })
-				.attr("stroke-width", 1)
+				.attr("stroke-width", default_stroke_width)
 				.attr("stroke", "cyan")
 				.attr("class", "treebranch")
 				.attr("d", function(d) {
@@ -494,11 +499,11 @@ function drawMainVisual(container) {
 				
 					//reset all strokes
 					$("path")
-						.attr("stroke-width", 1)
+						.attr("stroke-width", default_stroke_width)
 						.attr("opacity", default_opacity);
 				
 					$("#p" + d.id)
-						.attr("stroke-width", 4)
+						.attr("stroke-width", highlighted_stroke_width)
 						.attr("opacity", 1);
 	
 					var age = (d.age < 1) ? d.actual_age : d.age + " years";
@@ -579,6 +584,8 @@ function drawMainVisual(container) {
 							$("#p"+d.id).css("opacity", 0.1);
 						}
 					});*/
+					
+		$("#count").html(data.deaths.length + " LIVES");
 	});
 	});
 }
