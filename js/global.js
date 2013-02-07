@@ -36,6 +36,30 @@ function assignEventListeners() {
 		return false;
 	});*/
 	
+	/*$("#color_using").on("change", function(d_event) {
+		if(d_event.target.value == "by_age") {
+			$(".treebranch")
+				.attr("stroke", function(d) {
+					var colorScale = d3.scale.linear().domain([0, yMax]).range(["#e33258", "cyan"]);
+					return colorScale(d.death_code);
+				});
+			return false;
+		}
+		else if(d_event.target.value == "by_death_code") {
+			d3.selectAll(".treebranch")
+				.attr("stroke", function(d) {
+					var colorScale = d3.scale.ordinal().domain([1,2,3,4,5,6,7]).range(["#e33258", "cyan", "#C7003F", "#FAAB00", "#e33232", "#FCF0D0", "#DAF204"]);
+					return colorScale(d.death_code);
+				});
+				
+			return false;
+		}
+		else if(d_event.target.value == "by_hometown") {
+			//TODO
+			return false;
+		}
+	});*/
+	
 	$("#from").on("change", function(d_event) {
 		if(d_event.target.value == "cancel_all") {
 			$(".treebranch")
