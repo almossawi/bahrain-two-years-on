@@ -292,3 +292,7 @@ img {
 	height:200px;
 	border:1px solid #3b3b3b;
 }
+
+select {
+	width:150px;
+}

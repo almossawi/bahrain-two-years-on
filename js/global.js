@@ -31,20 +31,24 @@ function assignEventListeners() {
 	
 	$("#from").on("change", function(d_event) {
 		if(d_event.target.value == "cancel_all") {
-			$(".treebranch").css("opacity", default_opacity);
+			$(".treebranch")
+				.attr("class", "treebranch")
+				.css("opacity", default_opacity);
 			return false;
 		}
-		
+
 		d3.selectAll(".treebranch")
 			.each(function(d, i) {
-				if(d.from != d_event.target.value) {
+				if(d.from != $(d_event.target).val()) {
 					$("#p"+d.id)
+						.attr("class", "treebranch off")
 						//.animate({ opacity: 0.1}, 200);
 						.css("opacity", 0.1);
 				}
 				else {
 					$("#p"+d.id)
 						.delay(500)
+						.attr("class", "treebranch")
 						//.animate({ opacity: 1}, 1000);
 						.css("opacity", default_opacity);
 				}
@@ -55,7 +59,9 @@ function assignEventListeners() {
 	
 	$("#age").on("change", function(d_event) {
 		if(d_event.target.value == "cancel_all") {
-			$(".treebranch").css("opacity", default_opacity);
+			$(".treebranch")
+				.attr("class", "treebranch")
+				.css("opacity", default_opacity);
 			return false;
 		}
 		
@@ -63,12 +69,14 @@ function assignEventListeners() {
 			.each(function(d, i) {
 				if(d.age < Number(d_event.target.value) || d.age > (Number(d_event.target.value)+9)) {
 					$("#p"+d.id)
+						.attr("class", "treebranch off")
 						//.animate({ opacity: 0.1}, 200);
 						.css("opacity", 0.1);
 				}
 				else {
 					$("#p"+d.id)
 						.delay(500)
+						.attr("class", "treebranch")
 						//.animate({ opacity: 1}, 1000);
 						.css("opacity", default_opacity);
 				}
@@ -79,7 +87,9 @@ function assignEventListeners() {
 	
 	$("#death_code").on("change", function(d_event) {
 		if(d_event.target.value == "cancel_all") {
-			$(".treebranch").css("opacity", default_opacity);
+			$(".treebranch")
+				.attr("class", "treebranch")
+				.css("opacity", default_opacity);
 			return false;
 		}
 		
@@ -87,12 +97,14 @@ function assignEventListeners() {
 			.each(function(d, i) {
 				if(d.death_code != Number(d_event.target.value)) {
 					$("#p"+d.id)
+						.attr("class", "treebranch off")
 						//.animate({ opacity: 0.1}, 200);
 						.css("opacity", 0.1);
 				}
 				else {
 					$("#p"+d.id)
 						.delay(500)
+						.attr("class", "treebranch")
 						//.animate({ opacity: 1}, 1000);
 						.css("opacity", default_opacity);
 				}
@@ -109,7 +121,7 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
 	$.each(data.deaths, function(i, d) {
 
 		if(histogram[d.date_of_death] == undefined) {
-			histogram[d.date_of_death] = {"date": 0, "count":0};
+			histogram[d.date_of_death] = {"date": 0, "count": 0};
 							
 			histogram[d.date_of_death].date = +new Date(d.date_of_death);
 			histogram[d.date_of_death].count = 1;
@@ -279,9 +291,9 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
 		  		d3.selectAll(".tooltip").remove(); //timestamp is used as id
 				d3.select(which_metric + " svg")
 					.append("svg:rect")
-						.attr("width", 44)
+						.attr("width", 15)
 						.attr("height", 16)
-						.attr("x", xScale(d.date)-24)
+						.attr("x", xScale(d.date)-10)
 						.attr("y", function() {
 							return yScale(d.count)-24;
 						})
@@ -398,8 +410,9 @@ function drawMainVisual(container) {
 				
 					return "m " + p1 + "," + (p2+200) + " L " + p1 + "," + p2 + " c 0,0 0,0 0,0"; 
 				})
-				.on('mouseover', function(d) {
-					console.log(d);
+				.on('mouseover', function(d) {					
+					if($("#p"+d.id).attr("class") == "treebranch off")
+						return false;
 				
 					//reset all strokes
 					$("path")
@@ -437,11 +450,12 @@ function drawMainVisual(container) {
 						.attr("stroke-width", 1);
 				})*/
 				.transition()
-					.duration(2500)
-					.delay(function(d, i){ 
+					//.duration(2500)
+					.duration(1)
+					/*.delay(function(d, i){ 
 						//console.log(d);
 						return 10*(i*2);
-					})
+					})*/
 					.attr("d", function(d) {
 						//once go left and once go right (first one always right for now (id == 1))
 						var p3_d = (d.id % 2 == 1 && d.id != 1) ? p3 : p3 * -1;
