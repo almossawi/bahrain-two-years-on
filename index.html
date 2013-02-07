@@ -11,7 +11,8 @@
    		<script type="text/javascript" src="js/global.js"></script>
    		<script type="text/javascript" src="js/jquery.uniform.min.js" charset="utf-8"></script>
 
-   		<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+   		<link rel="stylesheet" href="css/styles.css" type="text/css" />
+   		<link rel="stylesheet" href="css/uniform.default.min.css" type="text/css" />
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
@@ -26,11 +27,33 @@
 				Bahrain: Two Years On
 			</div>
 			
+			<div id="controls">
+				<a href="#" id="cancel_all_filters">Cancel all filters</a>
+				<!--<a href="#" class="from">A'ali</a>
+				<a href="#" class="age">60</a>-->
+				<a href="#" id="death_code">6</a>
+				
+				<select id="age">
+					<option value="cancel_age">All ages</option>
+					<option value="60">60 or older</option>
+					<option value="40">40 to 59</option>
+					<option value="20">20 to 39</option>
+					<option value="10">10 to 19</option>
+					<option value="0">Younger than 10</option>
+				</select>
+				
+				<select id="from">
+					<option value="cancel_from">All areas</option>
+					<option value="A'ali">A'ali</option>
+					<option value="0">Younger than 10</option>
+				</select>
+			</div>
+			
 			<div id="details">
 			</div>
 			
 			<div class="copy">
-				<p>Bahrain is a small island with a population of 1.2 million. Unlike most of its neighbors, Bahrain's history is one of pearl diving.  Assyrian inscriptions from 2000 B.C. mentioned Bahrain's pearls, which were a gem so unique to the island that they lured the likes of Jacques Cartier [1].</p>
+				<p>Bahrain is a small island with a population of 1.2 million. Unlike most of its neighbors, Bahrain's history is one of pearl diving.  Assyrian inscriptions from 2000 B.C. mentioned the island's pearls, which were a gem so unique to it that they lured the likes of Jacques Cartier [1].</p>
 				<p>For over a century, Bahrain has been the scene of conflict at the approximate rate of once every ten years [2].  The civil unrest has centered around such issues as civil liberties and political freedom.  In 1921, while Bahrain was still a British protectorate, Major A. P. Trevor wrote to the government of India about the country's exploding civil situation [3].  Later accounts by Sir Charles Belgrave told of similar unrest [4].  The current conflict began on February 14, 2011 and has so far resulted in the deaths of 109 civilians including eight expatriates, three police officers and 20 unborn babies [5][6][7][8][9].  As a percentage of total citizens, Bahrain has one of the highest death rates of the uprisings that have become known as the  <i>Arab Spring</i>.</p>
 				<p>This visualization depicts the 109 documented deaths of individuals one day or older, as reported by human rights organizations, the independent commission of inquiry and the government, abstracted to take the form of a palm tree.  Mouse-over or press the play button for more details.  Unless noted otherwise, the causes of death are from [9], either verbatim or paraphrased.</p>
 				
@@ -58,19 +81,19 @@
 				
 				<p style="font-size:10px;margin-top:120px">
 				[1] Cartier by Hans Nadelhoffer, 2007.<br />
-				[2] <i>Political Movements in Bahrain: Past, Present, and Future</i> by Omar Shehabi, <a href="http://bit.ly/z2hy1p">http://bit.ly/z2hy1p (jadaliyya.com)</a><br />
+				[2] Political Movements in Bahrain: Past, Present, and Future by Omar Shehabi, <a href="http://bit.ly/z2hy1p">http://bit.ly/z2hy1p (jadaliyya.com)</a><br />
 				[3] The History of Bahrain as told in British documents (Arabic)<br />
-				[4] <i>Belgrave Diaries: Papers of Charles Dalrymple-Belgrave (1926-1957)</i>, <a href="http://bit.ly/bvC2Xy">http://bit.ly/bvC2Xy (scribd.com)</a><br />
+				[4] Belgrave Diaries: Papers of Charles Dalrymple-Belgrave (1926-1957), <a href="http://bit.ly/bvC2Xy">http://bit.ly/bvC2Xy (scribd.com)</a><br />
 				[5] Bahrain Center for Human Rights, <a href="http://www.bahrainrights.org/en">http://www.bahrainrights.org/en</a><br />
 				[6] Police Media Center, <a href="http://www.policemc.gov.bh/en">http://www.policemc.gov.bh/en</a><br />
 				[7] Bahrain Watch, <a href="http://bahrainwatch.org/bici/deaths.php">http://bahrainwatch.org/bici/deaths.php</a>
-				[8] <i>Report of the Bahrain Independent Commission of Inquiry</i>, <a href="http://www.bici.org.bh/BICIreportEN.pdf">http://www.bici.org.bh/BICIreportEN.pdf</a><br />
+				[8] Report of the Bahrain Independent Commission of Inquiry, <a href="http://www.bici.org.bh/BICIreportEN.pdf">http://www.bici.org.bh/BICIreportEN.pdf</a><br />
 				[9] Casualties of the Bahraini uprising (2011-present), <a href="http://en.wikipedia.org/wiki/Casualties_of_the_Bahraini_uprising_%282011%E2%80%93present%29">http://bit.ly/THTvkh (wikipedia.org)</a><br />
-				[10] <i>Unarmed Bahraini man Ahmed Farhan shot in the head...</i>, Finian Cunningham, <a href="http://dandelionsalad.wordpress.com/2011/04/10/unarmed-bahraini-man-ahmed-farhan-shot-in-the-head-because-he-asked-for-freedom-say-witnesses/">http://bit.ly/eQ85yh (dandelionsalad.wordpress.com)</a><br />
-				[11] <i>Bahrain: Investigate Shooting, Arrest of Man Caught Up in Police Sweep</i>, Human Rights Watch, <a href="http://www.hrw.org/en/news/2011/03/23/bahrain-investigate-shooting-arrest-man-caught-police-sweep">http://bit.ly/ev567s (hrw.org)</a><br />
-				[12] <i>Bahrain: Investigate Deaths Linked to Crackdown</i>, Human Rights Watch, <a href="http://www.hrw.org/news/2011/03/29/bahrain-investigate-deaths-linked-crackdown">http://bit.ly/11WHqa5 (hrw.org)</a><br />
+				[10] Unarmed Bahraini man Ahmed Farhan shot in the head..., Finian Cunningham, <a href="http://dandelionsalad.wordpress.com/2011/04/10/unarmed-bahraini-man-ahmed-farhan-shot-in-the-head-because-he-asked-for-freedom-say-witnesses/">http://bit.ly/eQ85yh (dandelionsalad.wordpress.com)</a><br />
+				[11] Bahrain: Investigate Shooting, Arrest of Man Caught Up in Police Sweep, Human Rights Watch, <a href="http://www.hrw.org/en/news/2011/03/23/bahrain-investigate-shooting-arrest-man-caught-police-sweep">http://bit.ly/ev567s (hrw.org)</a><br />
+				[12] Bahrain: Investigate Deaths Linked to Crackdown, Human Rights Watch, <a href="http://www.hrw.org/news/2011/03/29/bahrain-investigate-deaths-linked-crackdown">http://bit.ly/11WHqa5 (hrw.org)</a><br />
 				[13] Tear-Gas Related Deaths in Bahrain, Physicians for Human Rights, <a href="http://physiciansforhumanrights.org/issues/persecution-of-health-workers/bahrain/bahrain-tear-gas-deaths.html">http://bit.ly/GKoo0Z (physiciansforhumanrights.org)</a><br />
-				[14] <i>Bahrain Takes the Stage With a Raucous Protest</i> by Michael Slackman, <a href="http://www.nytimes.com/2011/02/16/world/middleeast/16bahrain.html?_r=0">http://www.nytimes.com/2011/02/16/world/middleeast/16bahrain.html?_r=0</a><br />
+				[14] Bahrain Takes the Stage With a Raucous Protest by Michael Slackman, <a href="http://www.nytimes.com/2011/02/16/world/middleeast/16bahrain.html?_r=0">http://www.nytimes.com/2011/02/16/world/middleeast/16bahrain.html?_r=0</a><br />
 				</p>
 			</div>
 		</div> <!-- end page -->
@@ -83,7 +106,7 @@
 				</div>
 				
 				<div style="float:left;padding-top:13px;padding-left:165px;width:950px;z-index:1;position:absolute;font-size:12px">
-					The visualization presents the conflict in Bahrain from a neutral point-of-view.  The author is not affiliated with any political organization.  To report inaccuracies or share your thoughts, please email almossawi/at/sdm/dot/mit/edu.  This work is being released under a Creative Commons Attribution-NonCommercial license (<a href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>).
+					The visualization presents the conflict in Bahrain from a neutral point-of-view.  The author is not affiliated with any political organization.  To report inaccuracies or share your thoughts, please email almossawi/at/sdm/dot/mit/dot/edu.  This work is being released under a Creative Commons Attribution-NonCommercial license (<a href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>).
 				</div>
 				
 				<div style="float:right;z-index:3;padding-top:13px;padding-right:15px">

@@ -1,7 +1,7 @@
 "use strict";
 
 var LANG,
-	default_opacity = 0.8;
+	default_opacity = 0.7;
 
 $(document).ready(function () {	
 	//provide lang literals globally
@@ -20,6 +20,49 @@ $(document).ready(function () {
 function assignEventListeners() {
 	$("body").on("click", function() {
 		$("#details").fadeOut();
+	});
+	
+	$("#cancel_all_filters").on("click", function(d_event) {
+		$(".treebranch")
+			.animate({ opacity: default_opacity}, 1000);
+			
+		return false;
+	});
+	
+	$("#from").on("change", function(d_event) {
+		d3.selectAll(".treebranch")
+			.each(function(d, i) {
+				if(d.from != d_event.target.text) {
+					$("#p"+d.id)
+						.animate({ opacity: 0.1}, 500);
+				}
+			});
+			
+		return false;
+	});
+	
+	$("#age").on("change", function(d_event) {console.log(d_event);
+		d3.selectAll(".treebranch")
+			.each(function(d, i) {
+				if(d.age < d_event.target.text) {
+					$("#p"+d.id)
+						.animate({ opacity: 0.1}, 500);
+				}
+			});
+			
+		return false;
+	});
+	
+	$("#death_code").on("change", function(d_event) {
+		d3.selectAll(".treebranch")
+			.each(function(d, i) {
+				if(d.death_code != d_event.target.text) {
+					$("#p"+d.id)
+						.animate({ opacity: 0.1}, 500);
+				}
+			});
+			
+		return false;
 	});
 }
 
@@ -302,10 +345,14 @@ function drawMainVisual(container) {
 		svg.selectAll("path")
 			.data(data.deaths)
 			.enter().append("svg:path")
-				.attr("opacity", default_opacity)
+				.attr("opacity", function() {
+					return default_opacity;
+					//return Math.floor((Math.random()*1)+0.5)
+				})
 				.attr("id", function(d) { return "p" + d.id; })
 				.attr("stroke-width", 1)
 				.attr("stroke", "cyan")
+				.attr("class", "treebranch")
 				.attr("d", function(d) {
 					//once go left and once go right
 					//p3 = (d.id % 2 == 0) ? p3 : p3 * -1;
@@ -381,6 +428,16 @@ function drawMainVisual(container) {
 
 					return colorScale(d.age);
 				});
+				
+				
+				//DO THIS FOR ALL FILTERS
+				//TODO
+				/*d3.selectAll(".treebranch")
+					.each(function(d, i) {
+						if(d.from != "A'ali") {
+							$("#p"+d.id).css("opacity", 0.1);
+						}
+					});*/
 	});
 	});
 }
