@@ -192,12 +192,10 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
 	var which_metric = container;
 	
 	d3.entries(data).sort(function(a,b) { return a.date-b.date; });
-	console.log(data);
+	//console.log(data);
 	
     //prepare our scales and axes
-    //var xMin = 1,
-	//    xMax = Object.keys(data).length,
-	//var xMin = d3.min(d3.values(data), function(d) { return d.date; }),
+  	//var xMin = d3.min(d3.values(data), function(d) { return d.date; }),
 	//    xMax = d3.max(d3.values(data), function(d) { return d.date; }),
 	var xMin = +new Date("2011-01-01"),
 	    xMax = +new Date("2013-02-14"),
@@ -238,7 +236,7 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
     	.enter()
     		.append('svg:g')
     		.attr('transform', function(d) {
-      			return "translate(0, " + (yScale(d)) + ")";
+      			return "translate(0, " + (yScale(d)+1) + ")";
     		})
     		.attr('class', 'ticky')
     	.append('svg:line')
@@ -250,7 +248,7 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
 	//draw x axis
 	var xAxis = svg.append("g")
     	.attr("class", "axis x")
-	    .attr("transform", "translate(0," + (h-xPadding-3) + ")")
+	    .attr("transform", "translate(2," + (h-xPadding-6) + ")")
     	.call(xAxis);
     	    	
 	//draw y axis
@@ -470,7 +468,7 @@ function drawMainVisual(container) {
 						.attr("opacity", 1);
 	
 					var age = (d.age < 1) ? d.actual_age : d.age + " years";
-					var html = "<strong>" + d.name + "</strong><br />"
+					var html = "<span style='font-weight:bold;font-size:15px'>" + d.name + "</span><br />"
 						+ age + ", from " + d.from + "<br />"
 						+ "Killed " + Date.parse(d.date_of_death).toString('dddd, MMM d, yyyy') + "<br />"
 						+ "<p>&ldquo;" + d.type_of_death_full + "&rdquo;</p>";

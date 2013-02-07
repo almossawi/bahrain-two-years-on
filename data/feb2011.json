@@ -46,20 +46,20 @@
             "id": 106,
             "name": "Thirunavukkarasu Murugaiiyan",
             "age": 29,
-            "from": "India (expat)",
+            "from": "India",
             "date_of_death": "2012-11-05",
             "type_of_death": "Explosive device",
-            "type_of_death_full": "Died as a result of injuries sustained from explosives devices in Gudaibiya area of Manama when he kicked an object wrapped in plastic bag.",
+            "type_of_death_full": "Expat. Died as a result of injuries sustained from an explosives device in the Gudaibiya area of Manama when he kicked an object wrapped in a plastic bag.",
             "death_code": 7
         },
         {
             "id": 105,
             "name": "Shajib Mian Shukur Mian",
             "age": 33,
-            "from": "Bangladesh (expat)",
+            "from": "Bangladesh",
             "date_of_death": "2012-11-05",
             "type_of_death": "Explosive device",
-            "type_of_death_full": "Died of injuries from explosives devices in Gudaibiya.",
+            "type_of_death_full": "Expat.  Died of injuries from explosives devices in Gudaibiya.",
             "death_code": 7
         },
         {
@@ -147,10 +147,10 @@
             "id": 79,
             "name": "Shabeer Mammed",
             "age": 27,
-            "from": "India (expat)",
+            "from": "India",
             "date_of_death": "2012-04-22",
             "type_of_death": "Suffocation from tear gas",
-            "type_of_death_full": "Tear gas inhalation.",
+            "type_of_death_full": "Expat.  Died of tear gas inhalation.",
             "death_code": 6
         },
         {
@@ -318,10 +318,10 @@
             "id": 65,
             "name": "Rose Nisha Varghese",
             "age": 28,
-            "from": "India (expat)",
+            "from": "India",
             "date_of_death": "2012-02-21",
             "type_of_death": "Suffocation from tear gas",
-            "type_of_death_full": "Tear gas inhalation.",
+            "type_of_death_full": "Expat.  Died of tear gas inhalation.",
             "death_code": 6
         },
         {
@@ -811,7 +811,7 @@
             "id": 25,
             "name": "Hassan Jassim Makki",
             "age": 39,
-            "from": "Karzakkan",
+            "from": "Karzakan",
             "date_of_death": "2011-04-03",
             "type_of_death": "Torture",
             "type_of_death_full": "Cardiac arrest induced by sickle-cell disease.  Hassan was tortured as noted by Amnesty International and Médecins Sans Frontières both of which examined his body.",
@@ -884,14 +884,14 @@
             "from": "Hajar",
             "date_of_death": "2011-03-20",
             "type_of_death": "Gunfire",
-            "type_of_death_full": "A bullet fired from a Browning .50 caliber machine gun by the Bahrain Defence Force.",
+            "type_of_death_full": "A bullet fired from a Browning .50 caliber machine gun by the Bahrain Defence Force.  The police first claimed to not know Jawad's whereabouts, then stated Jawad was on 'a special mission' and could not talk on the phone, and finally stated that Jawad had entered a brawl with the army and they were detaining him until the morning. The family later called Jawad's mobile phone, and reached an individual who claimed to have killed Jawad. The family continued receiving calls from Jawad's mobile phone, including one call impersonating Jawad. Jawad's family has been unable to recover his car or his mobile phones [8].",
             "death_code": 2
         },
         {
             "id": 18,
             "name": "Abdul-Rasool Hassan Al-Hujairi",
             "age": 37,
-            "from": "Bouri",
+            "from": "Boori",
             "date_of_death": "2011-03-20",
             "type_of_death": "Beaten to death",
             "type_of_death_full": "Traumatic injuries to the chest, stomach, back and limbs, which led to bleeding and shock. His body was found in Awali.",
@@ -901,10 +901,10 @@
             "id": 17,
             "name": "Aklas Miah",
             "age": 57,
-            "from": "Bangladesh (expat)",
+            "from": "Bangladesh",
             "date_of_death": "2011-03-15",
             "type_of_death": "Attacked",
-            "type_of_death_full": "Attacked by unknown individuals; died of injuries to the head.",
+            "type_of_death_full": "Expat.  Attacked by unknown individuals; died of injuries to the head.",
             "death_code": 4
         },
         {
@@ -919,32 +919,32 @@
         },
         {
             "id": 15,
-            "name": "Ali Ahmad Al-Muraisi",
+            "name": "Ali Ahmad Almuraysi",
             "age": 30,
             "from": "Rifa'a",
             "date_of_death": "2011-03-17",
             "type_of_death": "Run over by car",
-            "type_of_death_full": "Police officer Ali Al-Muraisi was reportedly struck by a car driven by demonstrators in Sitra.",
+            "type_of_death_full": "According to the independent commission of inquiry, police officer Ali Al-Muraisi was reportedly struck by a car driven by demonstrators in Sitra.",
             "death_code": 5
         },
         {
             "id": 14,
             "name": "Mohammed Faruq Abdulsamad",
             "age": 27,
-            "from": "Pakistan (officer)",
+            "from": "Pakistan",
             "date_of_death": "2011-03-16",
             "type_of_death": "Run over by car",
-            "type_of_death_full": "Severe head injury and hypovolemic shock; struck by a car driven by demonstrators near the Pearl Roundabout.",
+            "type_of_death_full": "Police officer.  Died of severe head injury and hypovolemic shock; struck by a car driven by demonstrators near the Pearl Roundabout.",
             "death_code": 5
         },
         {
             "id": 13,
             "name": "Kashif Ahmed Mandhour",
             "age": 21,
-            "from": "Pakistan (officer)",
+            "from": "Pakistan",
             "date_of_death": "2011-03-16",
             "type_of_death": "Run over by car",
-            "type_of_death_full": "Head and chest trauma, damage to internal organs and internal bleeding; struck by a car driven by demonstrators near the Pearl Roundabout.",
+            "type_of_death_full": "Police officer. Died of head and chest trauma, damage to internal organs and internal bleeding; struck by a car driven by demonstrators near the Pearl Roundabout.",
             "death_code": 5
         },
         {
@@ -989,12 +989,12 @@
         },
         {
             "id": 104,
-            "name": "Mohammad Ikhlas Tozzumul Ali",
+            "name": "Mohammad Ikhlas Tozzumul",
             "age": 50,
-            "from": "Bangladesh (expat)",
+            "from": "Bangladesh",
             "date_of_death": "2011-03-15",
             "type_of_death": "Run over by a car",
-            "type_of_death_full": "Hit by vehicles without license plates driven by unknown individuals, one of whom was associated with government forces.",
+            "type_of_death_full": "Expat.  Hit by vehicles without license plates driven by unknown individuals, one of whom was associated with government forces.",
             "death_code": 5
         },
         {
@@ -1021,10 +1021,10 @@
             "id": 102,
             "name": "Abdulmalik Ghulam Rasool",
             "age": 34,
-            "from": "Pakistan (expat)",
+            "from": "Pakistan",
             "date_of_death": "2011-03-13",
             "type_of_death": "Attacked by a mob",
-            "type_of_death_full": "Severe chest contusion resulting in acute heart failure, attacked by a mob.",
+            "type_of_death_full": "Expat.  Died of severe chest contusion resulting in acute heart failure, attacked by a mob.",
             "death_code": 4
         },
         {
@@ -1071,7 +1071,7 @@
             "id": 3,
             "name": "Isa Abdulhassan",
             "age": 60,
-            "from": "Karzakkan",
+            "from": "Karzakan",
             "date_of_death": "2011-02-17",
             "type_of_death": "Shotgun",
             "type_of_death_full": "Police birdshot wound to the head from a distance of a few centimeters.",

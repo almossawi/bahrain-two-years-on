@@ -27,15 +27,6 @@ h1 {
 	margin-top:0px;
 }
 
-#title_caption {
-	font-weight:300;
-	font-size:28px;
-	color:#bebebe;
-	position:relative;
-	letter-spacing:-1px;
-	font-family:'Open Sans';
-}
-
 h2 {
 	font-weight:400;
 	font-size:30px;
@@ -113,16 +104,10 @@ path {
 	
 }
 
-.tick {
-	fill:none;
+.ticky {
+	stroke:#282828;
+	shape-rendering:crispedges;
 }
-
-.tickx {
-}
-
-/*.x g .tick {
-	stroke:#676767;
-}*/
 
 .tooltip {
 	fill:#fff;
@@ -152,7 +137,7 @@ img {
 
 .annotation_text {
 	stroke:none;
-	fill:#fff;
+	fill:#f1f1f1;
 	font-size:11px;
 }
 
