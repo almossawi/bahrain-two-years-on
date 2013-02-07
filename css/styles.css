@@ -16,37 +16,6 @@ p {
 	line-height:1.8;
 }
 
-
-#container {
-	width:1450px;
-	height:900px;
-	margin-top:80px;
-	margin-bottom:80px;
-	margin-left:auto;
-	margin-right:auto;
-	position:relative;
-	background-color:#d7d7d7;
-	border-radius:0px;
-}
-
-#container1 {
-	width:730px;
-	position:absolute;
-	height:880px;
-	top:0;
-	margin-top:15px;
-	padding-top:0;
-}
-
-#container2 {
-	left:730px;
-	width:730px;
-	position:absolute;
-	height:880px;
-	top:0;
-	margin-top:15px;
-}
-
 h1 {
 	font-size:34px;
 	font-weight:400;
@@ -83,74 +52,15 @@ a,a:active,a:link,a:visited,a:hover {
 	border-bottom:1px #cccccc dotted;
 }
 
-.chart_container {
-	font-weight:200;
-	font-size:18px;
-	float:left;
-	margin-bottom:10px;
-	margin-left:18px;
-	width:680px;
-	height:152px;
-	border:0px solid #000000;
-	text-align:center;
-	color:white;
-}
-
-.chart_container span {
-	margin-left:20px;
-}
-
-.chart_container svg {
-	background-color:white;
-	margin-top:0px;
-	border:0px solid #494949;
-}
-
-.container_title {
-	font-weight:300;
-	width:100%;
-	color:#1c1c1c;
-	height:20px;
-	text-align:center;
-}
-
-#container2 .container_title {
-	padding-bottom:10px;
-}
-
-.container_x_label {
-	font-weight:300;
-	width:100%;
-	color:#1c1c1c;
-	height:20px;
-	text-align:center;
-	clear:both;
-	position:absolute;
-}
-
-.chart_container div {
-	background-color:white;
-	margin-top:5px;
-	border:1px solid #b6b6b6;
-	/*-moz-border-radius:4px;
-	border-radius:4px;*/
-	width:680px;
-	height:160px
-}
-
-#chart_container_container {
-	position:absolute;
-	top:30px;
-	left:40px;
-}
-
 .shadow {
 	text-shadow:0.03em 0.03em #000
 }
 
 .axis g text {
-	fill:#3b3b3b;
-	font-size:12px;
+	stroke:none;
+	fill:#f1f1f1;
+	font-size:11px;
+	opacity:1;
 }
 
 text {
@@ -187,12 +97,11 @@ path {
 }
 
 .axis {
-	font-size:7.5pt;
 	fill:none;
 	stroke-width:1;
 	font-weight:300;
 	stroke:#fff;
-	stroke-opacity:0.1; /* adding a white stroke around black text makes it more legible */
+	stroke-opacity:0.2; /* adding a white stroke around black text makes it more legible */
 	shape-rendering:crispedges;
 	/*text-transform:uppercase;*/
 }
@@ -247,16 +156,6 @@ img {
 	font-family:Lato;
 }
 
-img.label {
-	border:1px solid #b6b6b6;
-}
-
-@-moz-document url-prefix() {
-    img.label {
-		margin-top:2px;
-	}
-}
-
 .annotation_line {
 	stroke:#fff;
 	stroke-width:1;
@@ -268,13 +167,6 @@ img.label {
 	font-size:11px;
 }
 
-.mean_text {
-	stroke:none;
-	/*fill:#649be7;*/
-	fill:#000000;
-	font-size:11px;
-}
-
 #page {
 	width:1100px;
 	margin-left:auto;
@@ -283,7 +175,7 @@ img.label {
 	margin-bottom:30px;
 }
 
-#trend {
+#tree {
 	border-radius:0px;
 	height:600px;
 	padding:10px;
@@ -293,98 +185,16 @@ img.label {
 	width:100%;
 }
 
-#ranked_table_and_map {
-	margin-top:30px;
-	margin-bottom:15px;
-	border-radius:0px;
-	height:770px;
-	padding:10px;
-	background-color:#ffffff;
-	border:1px solid #cccccc;
-	overflow:hidden;
-}
-
-#map {
-	margin-top:32px;
-	margin-left:20px
-	border-radius:0px;
-	height:600px;
-	padding:10px;
-	background-color:#ffffff;
-	border:1px solid #cccccc;
-}
-
-#map svg {
-	position:relative;
-	margin-top:25px;
-}
-
 #full_date {
 	position:absolute;
 	height:50px;
 	z-index:9999;
-	margin-left:835px;
+	margin-top:0px;
 	font-size:11px;
 	color:#fff;
-}
-
-#options {
-	position:absolute;
-	margin-left:15px;
-	width:285px;
-	height:22px;
-	z-index:99;
-	margin-left:700px;
-	margin-top:6px;
-	border-radius:5px;
-	/*background-color:#e33258;*/
-	font-family:'Open Sans';
-	font-size:11px;
-	padding-left:8px;
-	padding-right:4px;
-	padding-top:4px;
-}
-
-#options2 {
-	position:absolute;
-	margin-left:15px;
-	width:285px;
-	height:22px;
-	z-index:99;
-	margin-left:868px;
-	margin-top:-4px;
-	border-radius:5px;
-	/*background-color:#e33258;*/
-	font-family:'Open Sans';
-	font-size:11px;
-	padding-left:8px;
-	padding-right:4px;
-	padding-top:4px;
-}
-
-#options3 {
-	position:absolute;
-	margin-left:15px;
-	width:285px;
-	height:22px;
-	z-index:99;
-	margin-left:758px;
-	margin-top:-4px;
-	border-radius:5px;
-	/*background-color:#e33258;*/
-	font-family:'Open Sans';
-	font-size:11px;
-	padding-left:8px;
-	padding-right:4px;
-	padding-top:4px;
-}
-
-#top_logo {
-	position:absolute;
-	top:10px;
-	z-index:-1;
-	margin-left:-100px;
-	left:50%;
+	width:900px;
+	text-align:center;
+	display:none;
 }
 
 #wide_pane {
