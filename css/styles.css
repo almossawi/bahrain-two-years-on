@@ -145,17 +145,6 @@ img {
 	border:0;
 }
 
-#copyright {
-	position:absolute;
-	text-align:center;
-	width:1160px;
-	bottom:-20px;
-	color:black;
-	font-size:9pt;
-	font-weight:400;
-	font-family:Lato;
-}
-
 .annotation_line {
 	stroke:#fff;
 	stroke-width:1;

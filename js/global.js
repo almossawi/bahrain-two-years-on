@@ -1,7 +1,8 @@
 "use strict";
 
 var LANG,
-	default_opacity = 0.7;
+	default_opacity = 0.7,
+	fixed_card = true;
 
 $(document).ready(function () {	
 	//provide lang literals globally
@@ -60,8 +61,20 @@ function assignEventListeners() {
 		}
 	});*/
 	
+	$("#fix_or_float").on("change", function(d_event) {
+		if(d_event.target.value == "fix") {
+			fixed_card = true;
+		}
+		else if(d_event.target.value == "float") {
+			fixed_card = false;
+		}
+
+		return false;
+	});
+	
 	$("#from").on("change", function(d_event) {
 		if(d_event.target.value == "cancel_all") {
+			//$("#details").fadeOut();
 			$(".treebranch")
 				.attr("class", "treebranch")
 				.css("opacity", default_opacity);
@@ -90,6 +103,7 @@ function assignEventListeners() {
 	
 	$("#age").on("change", function(d_event) {
 		if(d_event.target.value == "cancel_all") {
+			//$("#details").fadeOut();
 			$(".treebranch")
 				.attr("class", "treebranch")
 				.css("opacity", default_opacity);
@@ -118,6 +132,7 @@ function assignEventListeners() {
 	
 	$("#death_code").on("change", function(d_event) {
 		if(d_event.target.value == "cancel_all") {
+			//$("#details").fadeOut();
 			$(".treebranch")
 				.attr("class", "treebranch")
 				.css("opacity", default_opacity);
@@ -460,21 +475,34 @@ function drawMainVisual(container) {
 						+ "Killed " + Date.parse(d.date_of_death).toString('dddd, MMM d, yyyy') + "<br />"
 						+ "<p>&ldquo;" + d.type_of_death_full + "&rdquo;</p>";
 
-					$("#details").fadeIn().html(html);
+					//are we floating the pane or showing it at its fixed location?
+					if(fixed_card) {
+						//position the details block at fixed coords
+						$("#details")
+							.css("top", function() {
+								return "100px";
+							})
+							.css("margin-left", function() {
+								return "990px";
+							})
+					}
+					else {	
+						//reposition the details block
+						$("#details")
+							.css("top", function() {
+								return p2 + yScale(d.age);
+							})
+							.css("margin-left", function() {
+								if(d.id == 1)
+									return "990px";
+								else if(d.id % 2 == 1)
+									return "-160px";
+								else
+									return "990px";
+							})
+					}
 					
-					//reposition the details block
-					$("#details")
-						.css("top", function() {
-							return p2 + yScale(d.age);
-						})
-						.css("margin-left", function() {
-							if(d.id == 1)
-								return "990px";
-							else if(d.id % 2 == 1)
-								return "-160px";
-							else
-								return "990px";
-						})
+					$("#details").fadeIn().html(html);
 				})
 				/*.on('mouseout', function(d) {
 					$("#p" + d.id)
