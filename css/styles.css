@@ -44,7 +44,7 @@ a,a:active,a:link,a:visited,a:hover {
 }
 
 .shadow {
-	text-shadow:0.03em 0.03em #000
+	text-shadow:0.07em 0.07em #000
 }
 
 .axis g text {
@@ -224,6 +224,18 @@ img {
 	border:0px solid white;
 	text-align:center;
 	margin-top:10px;
+}
+
+#count {
+	font-size:12px;
+	font-weight:300;
+	margin-left:30px;
+	clear:both;
+	position:absolute;
+	z-index:99999;
+	width:50px;
+	height:40px;
+	margin-top:-120px;
 }
 
 #controls {

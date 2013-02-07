@@ -73,14 +73,21 @@ function assignEventListeners() {
 	});
 	
 	$("#from").on("change", function(d_event) {
+		//reset others
+		$("#age").val($("#age option:first").val())
+		$("#death_code").val($("#death_code option:first").val())
+		$.uniform.update();
+		
 		if(d_event.target.value == "cancel_all") {
-			//$("#details").fadeOut();
+			$("#count").html("");
+			
 			$(".treebranch")
 				.attr("class", "treebranch")
 				.css("opacity", default_opacity);
 			return false;
 		}
 
+		var count = 0;
 		d3.selectAll(".treebranch")
 			.each(function(d, i) {
 				if(d.from != $(d_event.target).val()) {
@@ -95,21 +102,32 @@ function assignEventListeners() {
 						.attr("class", "treebranch")
 						//.animate({ opacity: 1}, 1000);
 						.css("opacity", default_opacity);
+						
+					count++;
 				}
 			});
+			
+		var suffix = (count == 1) ? "LIFE" : "LIVES";
+		$("#count").html(count + " " + suffix);
 			
 		return false;
 	});
 	
 	$("#age").on("change", function(d_event) {
+		$("#from").val($("#from option:first").val())
+		$("#death_code").val($("#death_code option:first").val())
+		$.uniform.update();
+		
 		if(d_event.target.value == "cancel_all") {
-			//$("#details").fadeOut();
+			$("#count").html("");
+			
 			$(".treebranch")
 				.attr("class", "treebranch")
 				.css("opacity", default_opacity);
 			return false;
 		}
 		
+		var count = 0;
 		d3.selectAll(".treebranch")
 			.each(function(d, i) {
 				if(d.age < Number(d_event.target.value) || d.age > (Number(d_event.target.value)+9)) {
@@ -123,22 +141,33 @@ function assignEventListeners() {
 						.delay(500)
 						.attr("class", "treebranch")
 						//.animate({ opacity: 1}, 1000);
-						.css("opacity", default_opacity);
+						.css("opacity", default_opacity);	
+
+					count++;
 				}
 			});
 			
+		var suffix = (count == 1) ? "LIFE" : "LIVES";
+		$("#count").html(count + " " + suffix);
+		
 		return false;
 	});
 	
 	$("#death_code").on("change", function(d_event) {
+		$("#age").val($("#age option:first").val())
+		$("#from").val($("#from option:first").val())
+		$.uniform.update();
+		
 		if(d_event.target.value == "cancel_all") {
-			//$("#details").fadeOut();
+			$("#count").html("");
+			
 			$(".treebranch")
 				.attr("class", "treebranch")
 				.css("opacity", default_opacity);
 			return false;
 		}
 		
+		var count = 0;
 		d3.selectAll(".treebranch")
 			.each(function(d, i) {
 				if(d.death_code != Number(d_event.target.value)) {
@@ -152,10 +181,15 @@ function assignEventListeners() {
 						.delay(500)
 						.attr("class", "treebranch")
 						//.animate({ opacity: 1}, 1000);
-						.css("opacity", default_opacity);
+						.css("opacity", default_opacity);	
+
+					count++;
 				}
 			});
 			
+		var suffix = (count == 1) ? "LIFE" : "LIVES";
+		$("#count").html(count + " " + suffix);
+		
 		return false;
 	});
 }
@@ -330,7 +364,7 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
    			.on('mouseover.tooltip', function(d) {
    				var d_orig = d;
    				d=d.value;
-   							
+   				
 	    		d3.select(".tooltip_box").remove();
 		  		d3.selectAll(".tooltip").remove(); //timestamp is used as id
 				d3.select(which_metric + " svg")
