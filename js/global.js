@@ -22,6 +22,13 @@ function assignEventListeners() {
 		$("#details").fadeOut();
 	});
 	
+	$("#controls_cover").on("mouseenter", function() {
+		$("#controls_cover").fadeOut();
+		$("#controls")
+			.delay(500)
+			.animate({ opacity: 1}, 1000);
+	});
+	
 	/*$("#cancel_all_filters").on("click", function(d_event) {
 		$(".treebranch")
 			.animate({ opacity: default_opacity}, 1000);
