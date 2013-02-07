@@ -28,13 +28,10 @@
 			</div>
 			
 			<div id="controls">
-				<a href="#" id="cancel_all_filters">Cancel all filters</a>
-				<!--<a href="#" class="from">A'ali</a>
-				<a href="#" class="age">60</a>-->
-				<a href="#" id="death_code">6</a>
+				<!--<a href="#" id="cancel_all_filters">Cancel all filters</a>-->
 				
 				<select id="age">
-					<option value="cancel_age">All ages</option>
+					<option value="cancel_all">All ages</option>
 					<option value="60">60 or older</option>
 					<option value="40">40 to 59</option>
 					<option value="20">20 to 39</option>
@@ -42,10 +39,20 @@
 					<option value="0">Younger than 10</option>
 				</select>
 				
+				<select id="death_code">
+					<option value="cancel_all">All causes of death</option>
+					<option value="6">Tear gas</option>
+					<option value="1">Birdshot</option>
+					<option value="2">Gunshot</option>
+					<option value="5">Run over</option>
+					<option value="3">Torture</option>
+					<option value="4">Physical abuse</option>
+					<option value="7">Other</option>
+				</select>
+				
 				<select id="from">
-					<option value="cancel_from">All areas</option>
+					<option value="cancel_all">All areas</option>
 					<option value="A'ali">A'ali</option>
-					<option value="0">Younger than 10</option>
 				</select>
 			</div>
 			

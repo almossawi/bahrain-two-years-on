@@ -22,31 +22,55 @@ function assignEventListeners() {
 		$("#details").fadeOut();
 	});
 	
-	$("#cancel_all_filters").on("click", function(d_event) {
+	/*$("#cancel_all_filters").on("click", function(d_event) {
 		$(".treebranch")
 			.animate({ opacity: default_opacity}, 1000);
 			
 		return false;
-	});
+	});*/
 	
 	$("#from").on("change", function(d_event) {
+		if(d_event.target.value == "cancel_all") {
+			$(".treebranch").css("opacity", default_opacity);
+			return false;
+		}
+		
 		d3.selectAll(".treebranch")
 			.each(function(d, i) {
-				if(d.from != d_event.target.text) {
+				if(d.from != d_event.target.value) {
 					$("#p"+d.id)
-						.animate({ opacity: 0.1}, 500);
+						//.animate({ opacity: 0.1}, 200);
+						.css("opacity", 0.1);
+				}
+				else {
+					$("#p"+d.id)
+						.delay(500)
+						//.animate({ opacity: 1}, 1000);
+						.css("opacity", default_opacity);
 				}
 			});
 			
 		return false;
 	});
 	
-	$("#age").on("change", function(d_event) {console.log(d_event);
+	$("#age").on("change", function(d_event) {
+		if(d_event.target.value == "cancel_all") {
+			$(".treebranch").css("opacity", default_opacity);
+			return false;
+		}
+		
 		d3.selectAll(".treebranch")
 			.each(function(d, i) {
-				if(d.age < d_event.target.text) {
+				if(d.age < Number(d_event.target.value) || d.age > (Number(d_event.target.value)+9)) {
 					$("#p"+d.id)
-						.animate({ opacity: 0.1}, 500);
+						//.animate({ opacity: 0.1}, 200);
+						.css("opacity", 0.1);
+				}
+				else {
+					$("#p"+d.id)
+						.delay(500)
+						//.animate({ opacity: 1}, 1000);
+						.css("opacity", default_opacity);
 				}
 			});
 			
@@ -54,11 +78,23 @@ function assignEventListeners() {
 	});
 	
 	$("#death_code").on("change", function(d_event) {
+		if(d_event.target.value == "cancel_all") {
+			$(".treebranch").css("opacity", default_opacity);
+			return false;
+		}
+		
 		d3.selectAll(".treebranch")
 			.each(function(d, i) {
-				if(d.death_code != d_event.target.text) {
+				if(d.death_code != Number(d_event.target.value)) {
 					$("#p"+d.id)
-						.animate({ opacity: 0.1}, 500);
+						//.animate({ opacity: 0.1}, 200);
+						.css("opacity", 0.1);
+				}
+				else {
+					$("#p"+d.id)
+						.delay(500)
+						//.animate({ opacity: 1}, 1000);
+						.css("opacity", default_opacity);
 				}
 			});
 			
