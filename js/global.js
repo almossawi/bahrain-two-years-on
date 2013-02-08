@@ -17,8 +17,13 @@ $(document).ready(function () {
 		$("input, textarea, select").uniform();
 		
 		assignEventListeners();
-		$.uniform.update();
 		drawMainVisual("#tree");
+		
+		//In Firefox, reset dropdowns
+		$("#age").val($("#age option:first").val())
+		$("#death_code").val($("#death_code option:first").val())
+		$("#from").val($("#from option:first").val())
+		$.uniform.update();
 	});
 });
 
