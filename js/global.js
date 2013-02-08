@@ -4,6 +4,7 @@ var LANG,
 	default_opacity = 0.7,
 	fixed_card = true,
 	default_stroke_width = 1,
+	trans_stroke_width = 10,
 	highlighted_stroke_width = 4,
 	death_count = 0;
 
@@ -16,7 +17,7 @@ $(document).ready(function () {
 		$("input, textarea, select").uniform();
 		
 		assignEventListeners();
-		//drawCharts("ff_dnt_perc_weekly.json");
+		$.uniform.update();
 		drawMainVisual("#tree");
 	});
 });
@@ -24,14 +25,7 @@ $(document).ready(function () {
 function assignEventListeners() {
 	$("body").on("click", function() {
 		$("#details").fadeOut();
-	});
-	
-	$("#tree").on("mousemove", function(d, i) {
-		//console.log(d);
-		
-	    console.log(d.clientX, d.clientY)
-	});
-	
+	});	
 	
 	$("#controls_cover").on("mouseenter", function() {
 		$("#controls_cover").fadeOut();
@@ -39,13 +33,6 @@ function assignEventListeners() {
 			.delay(500)
 			.animate({ opacity: 1}, 1000);
 	});
-	
-	/*$("#cancel_all_filters").on("click", function(d_event) {
-		$(".treebranch")
-			.animate({ opacity: default_opacity}, 1000);
-			
-		return false;
-	});*/
 	
 	/*$("#color_using").on("change", function(d_event) {
 		if(d_event.target.value == "by_age") {
@@ -88,6 +75,11 @@ function assignEventListeners() {
 		$("#death_code").val($("#death_code option:first").val())
 		$.uniform.update();
 		
+		//bring back all transparent paths; to make the
+		//transparent paths more sensitive, remove the rest
+		$(".treebranch_transparent")
+			.attr("visibility", "visible");
+		
 		if(d_event.target.value == "cancel_all") {
 			$("#count").html(death_count + " LIVES");
 			
@@ -103,14 +95,16 @@ function assignEventListeners() {
 				if(d.from != $(d_event.target).val()) {
 					$("#p"+d.id)
 						.attr("class", "treebranch off")
-						//.animate({ opacity: 0.1}, 200);
 						.css("opacity", 0.1);
+						
+					//to make the transparent paths more sensitive, remove the rest
+					$("#transp"+d.id)
+						.attr("visibility", "hidden");
 				}
 				else {
 					$("#p"+d.id)
 						.delay(500)
 						.attr("class", "treebranch")
-						//.animate({ opacity: 1}, 1000);
 						.css("opacity", default_opacity);
 						
 					count++;
@@ -128,6 +122,11 @@ function assignEventListeners() {
 		$("#death_code").val($("#death_code option:first").val())
 		$.uniform.update();
 		
+		//bring back all transparent paths; to make the
+		//transparent paths more sensitive, remove the rest
+		$(".treebranch_transparent")
+			.attr("visibility", "visible");
+			
 		if(d_event.target.value == "cancel_all") {
 			$("#count").html(death_count + " LIVES");
 			
@@ -143,14 +142,16 @@ function assignEventListeners() {
 				if(d.age < Number(d_event.target.value) || d.age > (Number(d_event.target.value)+9)) {
 					$("#p"+d.id)
 						.attr("class", "treebranch off")
-						//.animate({ opacity: 0.1}, 200);
 						.css("opacity", 0.1);
+						
+						//to make the transparent paths more sensitive, remove the rest
+						$("#transp"+d.id)
+							.attr("visibility", "hidden");
 				}
 				else {
 					$("#p"+d.id)
 						.delay(500)
 						.attr("class", "treebranch")
-						//.animate({ opacity: 1}, 1000);
 						.css("opacity", default_opacity);	
 
 					count++;
@@ -168,6 +169,11 @@ function assignEventListeners() {
 		$("#from").val($("#from option:first").val())
 		$.uniform.update();
 		
+		//bring back all transparent paths; to make the
+		//transparent paths more sensitive, remove the rest
+		$(".treebranch_transparent")
+			.attr("visibility", "visible");
+			
 		if(d_event.target.value == "cancel_all") {
 			$("#count").html(death_count + " LIVES");
 			
@@ -183,14 +189,16 @@ function assignEventListeners() {
 				if(d.death_code != Number(d_event.target.value)) {
 					$("#p"+d.id)
 						.attr("class", "treebranch off")
-						//.animate({ opacity: 0.1}, 200);
 						.css("opacity", 0.1);
+						
+						//to make the transparent paths more sensitive, remove the rest
+						$("#transp"+d.id)
+							.attr("visibility", "hidden");
 				}
 				else {
 					$("#p"+d.id)
 						.delay(500)
 						.attr("class", "treebranch")
-						//.animate({ opacity: 1}, 1000);
 						.css("opacity", default_opacity);	
 
 					count++;
@@ -500,12 +508,59 @@ function drawMainVisual(container) {
 				
 					return "m " + p1 + "," + (p2+200) + " L " + p1 + "," + p2 + " c 0,0 0,0 0,0"; 
 				})
-				.on('mouseover', function(d) {									
-					if($("#p"+d.id).attr("class") == "treebranch off")
+				.attr("d", function(d) {
+						//once go left and once go right (first one always right for now (id == 1))
+						var p3_d = (d.id % 2 == 1 && d.id != 1) ? p3 : p3 * -1;
+	
+						//add a random amount to each
+						//we need to make sure that we cover the entire spread from 1 to 30
+						//TODO fill empty ones first before randomizing
+						//TODO
+						p1 += Math.floor((Math.random()*3)+1);
+				
+						return "m " + p1 + "," + (p2+200) + " L " + p1 + "," + p2 + " c " + horizontal_skew + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age);
+					})
+				.attr("stroke", function(d) {
+					var colorScale = d3.scale.linear().domain([0,yMax]).range(["#e33258", "cyan"]);
+					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["red", "cyan"]);
+					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#FAAB00", "#C7003F"]);
+					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#DAF204", "red"]);
+					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#FCF0D0", "#e33232"]);
+					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#30D5C8", "#F8F8FF"]);
+
+					return colorScale(d.age);
+				})
+				.each(function(d, i) {
+					//a transparent copy of each path to make it easier to hover over them
+					svg.append('svg:path')
+		    			.attr('shape-rendering', 'crispEdges')
+		    			.style('opacity', '0')
+				.attr("id", function() { console.log(d);return "transp" + d.id; })
+				.attr("stroke-width", trans_stroke_width)
+				.attr("stroke", "white")
+				.attr("class", "treebranch_transparent")
+				.attr("d", function() {
+					console.log($("#p"+d.id).attr("d"));
+					
+					return $("#p"+d.id).attr("d");
+					//once go left and once go right
+					//p3 = (d.id % 2 == 0) ? p3 : p3 * -1;
+				
+					//add a random amount to each
+					//p1 += Math.floor((Math.random()*1)+1);
+				
+					return "m " + p1 + "," + (p2+200) + " L " + p1 + "," + p2 + " c 0,0 0,0 0,0"; 
+				})
+				.on('mouseover', function() {									
+					if($("#p"+d.id).attr("class") == "treebranch off") {
+					console.log("RETURNING...");
 						return false;
+					}
+					
+					console.log("NOT REUTURNING");
 				
 					//reset all strokes
-					$("path")
+					$("path.treebranch")
 						.attr("stroke-width", default_stroke_width)
 						.attr("opacity", default_opacity);
 				
@@ -548,50 +603,8 @@ function drawMainVisual(container) {
 					
 					$("#details").fadeIn().html(html);
 				})
-				/*.on('mouseout', function(d) {
-					$("#p" + d.id)
-						.attr("stroke-width", 1);
-				})*/
-				.transition()
-					//.duration(2500)
-					.duration(1)
-					/*.delay(function(d, i){ 
-						//console.log(d);
-						return 10*(i*2);
-					})*/
-					.attr("d", function(d) {
-						//once go left and once go right (first one always right for now (id == 1))
-						var p3_d = (d.id % 2 == 1 && d.id != 1) ? p3 : p3 * -1;
-	
-						//add a random amount to each
-						//we need to make sure that we cover the entire spread from 1 to 30
-						//TODO fill empty ones first before randomizing
-						//TODO
-						p1 += Math.floor((Math.random()*3)+1);
-				
-						return "m " + p1 + "," + (p2+200) + " L " + p1 + "," + p2 + " c " + horizontal_skew + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age);
-					})
-				.attr("stroke", function(d) {
-					var colorScale = d3.scale.linear().domain([0,yMax]).range(["#e33258", "cyan"]);
-					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["red", "cyan"]);
-					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#FAAB00", "#C7003F"]);
-					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#DAF204", "red"]);
-					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#FCF0D0", "#e33232"]);
-					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#30D5C8", "#F8F8FF"]);
-
-					return colorScale(d.age);
 				});
 				
-				
-				//DO THIS FOR ALL FILTERS
-				//TODO
-				/*d3.selectAll(".treebranch")
-					.each(function(d, i) {
-						if(d.from != "A'ali") {
-							$("#p"+d.id).css("opacity", 0.1);
-						}
-					});*/
-					
 		$("#count").html(data.deaths.length + " LIVES");
 	});
 	});
