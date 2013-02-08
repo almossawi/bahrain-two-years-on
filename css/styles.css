@@ -56,6 +56,7 @@ a,a:active,a:link,a:visited,a:hover {
 
 text {
 	fill:#000000;
+	cursor:pointer;
 }
 
 /*text {
@@ -142,7 +143,7 @@ img {
 }
 
 #page {
-	width:1100px;
+	width:1150px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:20px;
@@ -150,6 +151,9 @@ img {
 }
 
 #tree {
+	/*background-image:url('../images/loading.png');
+	background-position:center center;
+	background-repeat:no-repeat;*/
 	border-radius:0px;
 	height:600px;
 	padding:10px;
@@ -157,6 +161,10 @@ img {
 	/*border:8px solid #e33258;*/
 	/*border:1px dotted #cccccc;*/
 	width:100%;
+}
+
+#tree svg {
+	fill:#2b2b2b;
 }
 
 #full_date {
@@ -195,7 +203,7 @@ img {
 	bottom:15px;
 	width:100%;
 	z-index:2;
-	color:white;
+	color:#a8a8a8;
 	font-size:13px;
 	font-weight:300;
 	font-family:'Open Sans';
@@ -256,7 +264,7 @@ img {
 	position:absolute;
 	margin-left:auto;
 	margin-right:auto;
-	margin-left:394px;
+	margin-left:420px;
 	width:300px;
 	padding:5px;
 	border:0px solid white;

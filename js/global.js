@@ -27,10 +27,34 @@ $(document).ready(function () {
 	});
 });
 
+function resetAllStrokes() {
+	//reset all strokes
+	$("path.treebranch")
+		.attr("stroke-width", default_stroke_width)
+		.attr("opacity", default_opacity);
+}
+
+function assignMainVisualListeners() {
+	$("#show_band_45yrs").toggle(function() {console.log("on");
+		$("#band_45yrs").show();
+	},
+	function() {console.log("two");
+		$("#band_45yrs").hide();
+	});
+	
+	$("#show_band_90yrs").toggle(function() {console.log("on");
+		$("#band_90yrs").show();
+	},
+	function() {console.log("two");
+		$("#band_90yrs").hide();
+	});
+}
+
 function assignEventListeners() {
 	$("body").on("click", function() {
 		$("#details").fadeOut();
-	});	
+		resetAllStrokes();
+	});
 	
 	$("#controls_cover").on("mouseenter", function() {
 		$("#controls_cover").fadeOut();
@@ -84,6 +108,9 @@ function assignEventListeners() {
 		//transparent paths more sensitive, remove the rest
 		$(".treebranch_transparent")
 			.attr("visibility", "visible");
+			
+		resetAllStrokes();
+		$("#details").hide(); //remove info box
 		
 		if(d_event.target.value == "cancel_all") {
 			$("#count").html(death_count + " LIVES");
@@ -132,6 +159,9 @@ function assignEventListeners() {
 		$(".treebranch_transparent")
 			.attr("visibility", "visible");
 			
+		resetAllStrokes();
+		$("#details").hide(); //remove info box
+			
 		if(d_event.target.value == "cancel_all") {
 			$("#count").html(death_count + " LIVES");
 			
@@ -157,8 +187,8 @@ function assignEventListeners() {
 					$("#p"+d.id)
 						.delay(500)
 						.attr("class", "treebranch")
-						.css("opacity", default_opacity);	
-
+						.css("opacity", default_opacity);
+						
 					count++;
 				}
 			});
@@ -178,6 +208,9 @@ function assignEventListeners() {
 		//transparent paths more sensitive, remove the rest
 		$(".treebranch_transparent")
 			.attr("visibility", "visible");
+			
+		resetAllStrokes();
+		$("#details").hide(); //remove info box
 			
 		if(d_event.target.value == "cancel_all") {
 			$("#count").html(death_count + " LIVES");
@@ -445,9 +478,9 @@ function drawMainVisual(container) {
 			x_axis_format = "%b %e",
 			yMax = d3.max(data.deaths, function(d) { return d.age; });
 
-		var p1 = 427, //start x
+		var p1 = 450, //start x
 			p2 = 480, //start y
-			p3 = -420, //end x
+			p3 = -400, //end x
 			p4 = -425, //end y
 			horizontal_skew = 3;
 		
@@ -466,14 +499,14 @@ function drawMainVisual(container) {
 			.attr("stroke", "#cccccc")
 			.attr("stroke-width", "1")
 	    	.attr('x1', 20)
-    		.attr('y1', 20)
+    		.attr('y1', 10)
 	    	.attr('y2', 460)
     		.attr('x2', 20);
     	
 	    svg.append("svg:text")
     		.attr("id", "ali")
 			.style("fill", "#cccccc")
-    		.attr('x', 10)
+    		.attr('x', 13)
 	    	.attr('y', 20)
     		.style("font-size", "10px")
 	    	.attr("transform", "rotate(-90, 10 , 20) translate(-240, 0)")
@@ -482,9 +515,38 @@ function drawMainVisual(container) {
     	svg.append("svg:text")
 			.style("fill", "#cccccc")
     		.attr('x', 26)
-	    	.attr('y', 30)
+	    	.attr('y', 20)
     		.style("font-size", "10px")
+	    	.attr("id", "show_band_90yrs")
 	    	.text("90 years");
+	    	
+	    svg.append('svg:rect')
+	    	.attr("fill", "#7b7b7b")
+	    	.attr("opacity", "0.1")
+	    	.attr("id", "band_90yrs")
+	    	.style("display", "none")
+    		.attr('x', 18)
+    		.attr('y', 20)
+    		.attr('height',215)
+    		.attr('width', 1150);
+	    	
+	    svg.append("svg:text")
+			.style("fill", "#cccccc")
+    		.attr('x', 26)
+	    	.attr('y', 235)
+	    	.attr("id", "show_band_45yrs")
+    		.style("font-size", "10px")
+	    	.text("45 years");
+	    	
+	    svg.append('svg:rect')
+	    	.attr("fill", "#7b7b7b")
+	    	.attr("opacity", "0.1")
+	    	.attr("id", "band_45yrs")
+	    	.style("display", "none")
+    		.attr('x', 18)
+    		.attr('y', 235)
+    		.attr('height',215)
+    		.attr('width', 1150);
     	
 	    svg.append("svg:text")
 			.style("fill", "#cccccc")
@@ -540,12 +602,12 @@ function drawMainVisual(container) {
 					svg.append('svg:path')
 		    			.attr('shape-rendering', 'crispEdges')
 		    			.style('opacity', '0')
-				.attr("id", function() { console.log(d);return "transp" + d.id; })
+				.attr("id", function() { return "transp" + d.id; })
 				.attr("stroke-width", trans_stroke_width)
 				.attr("stroke", "white")
 				.attr("class", "treebranch_transparent")
 				.attr("d", function() {
-					console.log($("#p"+d.id).attr("d"));
+					//console.log($("#p"+d.id).attr("d"));
 					
 					return $("#p"+d.id).attr("d");
 					//once go left and once go right
@@ -558,16 +620,10 @@ function drawMainVisual(container) {
 				})
 				.on('mouseover', function() {									
 					if($("#p"+d.id).attr("class") == "treebranch off") {
-					console.log("RETURNING...");
 						return false;
 					}
 					
-					console.log("NOT REUTURNING");
-				
-					//reset all strokes
-					$("path.treebranch")
-						.attr("stroke-width", default_stroke_width)
-						.attr("opacity", default_opacity);
+					resetAllStrokes();
 				
 					$("#p" + d.id)
 						.attr("stroke-width", highlighted_stroke_width)
@@ -611,6 +667,8 @@ function drawMainVisual(container) {
 				});
 				
 		$("#count").html(data.deaths.length + " LIVES");
+		
+		assignMainVisualListeners();
 	});
 	});
 }
