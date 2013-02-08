@@ -302,3 +302,7 @@ select {
 	width:150px;
 	color:white;
 }
+
+#tree svg {
+	fill:white;
+}

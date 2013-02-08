@@ -26,6 +26,13 @@ function assignEventListeners() {
 		$("#details").fadeOut();
 	});
 	
+	$("#tree").on("mousemove", function(d, i) {
+		//console.log(d);
+		
+	    console.log(d.clientX, d.clientY)
+	});
+	
+	
 	$("#controls_cover").on("mouseenter", function() {
 		$("#controls_cover").fadeOut();
 		$("#controls")
@@ -493,7 +500,7 @@ function drawMainVisual(container) {
 				
 					return "m " + p1 + "," + (p2+200) + " L " + p1 + "," + p2 + " c 0,0 0,0 0,0"; 
 				})
-				.on('mouseover', function(d) {					
+				.on('mouseover', function(d) {									
 					if($("#p"+d.id).attr("class") == "treebranch off")
 						return false;
 				
