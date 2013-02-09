@@ -12,7 +12,7 @@ body {
 }
 
 p {
-	font-size:13px;
+	font-size:14px;
 	line-height:1.8;
 }
 
@@ -151,20 +151,26 @@ img {
 }
 
 #tree {
-	/*background-image:url('../images/loading.png');
-	background-position:center center;
-	background-repeat:no-repeat;*/
 	border-radius:0px;
 	height:600px;
 	padding:10px;
-	/*background-color:#ffffff;*/
-	/*border:8px solid #e33258;*/
-	/*border:1px dotted #cccccc;*/
 	width:100%;
 }
 
 #tree svg {
 	fill:#2b2b2b;
+}
+
+#count {
+	font-size:12px;
+	font-weight:300;
+	margin-left:30px;
+	clear:both;
+	position:absolute;
+	z-index:99999;
+	width:80px;
+	height:40px;
+	margin-top:-120px;
 }
 
 #full_date {
@@ -234,18 +240,6 @@ img {
 	margin-top:10px;
 }
 
-#count {
-	font-size:12px;
-	font-weight:300;
-	margin-left:30px;
-	clear:both;
-	position:absolute;
-	z-index:99999;
-	width:80px;
-	height:40px;
-	margin-top:-120px;
-}
-
 #controls {
 	font-size:14px;
 	position:relative;
@@ -311,6 +305,6 @@ select {
 	color:white;
 }
 
-#tree svg {
-	fill:white;
+.light {
+	color:#6e6e6e;
 }

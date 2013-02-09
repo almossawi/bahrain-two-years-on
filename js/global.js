@@ -1,5 +1,6 @@
 "use strict";
 
+//options
 var LANG,
 	default_opacity = 0.6,
 	fixed_card = true,
@@ -7,6 +8,10 @@ var LANG,
 	trans_stroke_width = 10,
 	highlighted_stroke_width = 4,
 	death_count = 0;
+	
+var from_selected = -1,
+	age_selected = -1,
+	death_code_selected = -1;
 
 $(document).ready(function () {	
 	//provide lang literals globally
@@ -14,7 +19,7 @@ $(document).ready(function () {
 		LANG = data;
 		
 		//other initializations
-		$("input, textarea, select").uniform();
+		$("select, input, a.button, button").uniform();
 		
 		assignEventListeners();
 		drawMainVisual("#tree");
@@ -35,14 +40,14 @@ function resetAllStrokes() {
 }
 
 function assignMainVisualListeners() {
-	$("#show_band_45yrs").toggle(function() {console.log("on");
+	$("#show_band_45yrs").toggle(function() {
 		$("#band_45yrs").show();
 	},
 	function() {console.log("two");
 		$("#band_45yrs").hide();
 	});
 	
-	$("#show_band_90yrs").toggle(function() {console.log("on");
+	$("#show_band_90yrs").toggle(function() {
 		$("#band_90yrs").show();
 	},
 	function() {console.log("two");
@@ -98,142 +103,102 @@ function assignEventListeners() {
 		return false;
 	});
 	
+	//handle dropdowns
 	$("#from").on("change", function(d_event) {
-		//reset others
-		$("#age").val($("#age option:first").val())
-		$("#death_code").val($("#death_code option:first").val())
-		$.uniform.update();
-		
-		//bring back all transparent paths; to make the
-		//transparent paths more sensitive, remove the rest
-		$(".treebranch_transparent")
-			.attr("visibility", "visible");
+		//reset others dropdowns //$("#age").val($("#age option:first").val()); $("#death_code").val($("#death_code option:first").val()); $.uniform.update();
+		from_selected = d_event.target.value;
+
+		//bring back all transparent paths; to make the transparent paths more sensitive, remove the rest
+		$(".treebranch_transparent").attr("visibility", "visible");
 			
 		resetAllStrokes();
 		$("#details").hide(); //remove info box
 		
-		if(d_event.target.value == "cancel_all") {
-			$("#count").html(death_count + " LIVES");
-			
-			$(".treebranch")
-				.attr("class", "treebranch")
-				.css("opacity", default_opacity);
+		if(d_event.target.value == "-1") { //i.e. show all/cancel filter
+			resetDropdownBox(from_selected);
 			return false;
 		}
 
-		var count = 0;
-		d3.selectAll(".treebranch")
-			.each(function(d, i) {
-				if(d.from != $(d_event.target).val()) {
-					$("#p"+d.id)
-						.attr("class", "treebranch off")
-						.css("opacity", 0.1);
-						
-					//to make the transparent paths more sensitive, remove the rest
-					$("#transp"+d.id)
-						.attr("visibility", "hidden");
-				}
-				else {
-					$("#p"+d.id)
-						.delay(500)
-						.attr("class", "treebranch")
-						.css("opacity", default_opacity);
-						
-					count++;
-				}
-			});
-			
-		var suffix = (count == 1) ? "LIFE" : "LIVES";
-		$("#count").html(count + " " + suffix);
-			
-		return false;
+		handleDropdownBox(d_event);
 	});
 	
 	$("#age").on("change", function(d_event) {
-		$("#from").val($("#from option:first").val())
-		$("#death_code").val($("#death_code option:first").val())
-		$.uniform.update();
+		//reset other ones dropdowns //$("#from").val($("#from option:first").val()); $("#death_code").val($("#death_code option:first").val()); $.uniform.update();
+		age_selected = d_event.target.value;
 		
-		//bring back all transparent paths; to make the
-		//transparent paths more sensitive, remove the rest
-		$(".treebranch_transparent")
-			.attr("visibility", "visible");
+		//bring back all transparent paths; to make the transparent paths more sensitive, remove the rest
+		$(".treebranch_transparent").attr("visibility", "visible");
 			
 		resetAllStrokes();
 		$("#details").hide(); //remove info box
 			
-		if(d_event.target.value == "cancel_all") {
-			$("#count").html(death_count + " LIVES");
-			
-			$(".treebranch")
-				.attr("class", "treebranch")
-				.css("opacity", default_opacity);
+		if(d_event.target.value == "-1") { //i.e. show all/cancel filter
+			resetDropdownBox(age_selected);
 			return false;
 		}
 		
-		var count = 0;
-		d3.selectAll(".treebranch")
-			.each(function(d, i) {
-				if(d.age < Number(d_event.target.value) || d.age > (Number(d_event.target.value)+9)) {
-					$("#p"+d.id)
-						.attr("class", "treebranch off")
-						.css("opacity", 0.1);
-						
-						//to make the transparent paths more sensitive, remove the rest
-						$("#transp"+d.id)
-							.attr("visibility", "hidden");
-				}
-				else {
-					$("#p"+d.id)
-						.delay(500)
-						.attr("class", "treebranch")
-						.css("opacity", default_opacity);
-						
-					count++;
-				}
-			});
-			
-		var suffix = (count == 1) ? "LIFE" : "LIVES";
-		$("#count").html(count + " " + suffix);
-		
-		return false;
+		handleDropdownBox(d_event);
 	});
 	
 	$("#death_code").on("change", function(d_event) {
-		$("#age").val($("#age option:first").val())
-		$("#from").val($("#from option:first").val())
-		$.uniform.update();
+		//reset other ones dropdowns //$("#age").val($("#age option:first").val()); $("#from").val($("#from option:first").val()); $.uniform.update();
+		death_code_selected = d_event.target.value;
 		
-		//bring back all transparent paths; to make the
-		//transparent paths more sensitive, remove the rest
-		$(".treebranch_transparent")
-			.attr("visibility", "visible");
+		//bring back all transparent paths; to make the transparent paths more sensitive, remove the rest
+		$(".treebranch_transparent").attr("visibility", "visible");
 			
 		resetAllStrokes();
 		$("#details").hide(); //remove info box
 			
-		if(d_event.target.value == "cancel_all") {
-			$("#count").html(death_count + " LIVES");
-			
-			$(".treebranch")
-				.attr("class", "treebranch")
-				.css("opacity", default_opacity);
+		if(d_event.target.value == "-1") { //i.e. show all/cancel filter
+			resetDropdownBox(death_code_selected);
 			return false;
 		}
 		
-		var count = 0;
-		d3.selectAll(".treebranch")
+		handleDropdownBox(d_event);
+	});
+}
+
+function resetDropdownBox(which_one) {
+	window.which_one = -1;
+	//$("#count").html(death_count + " LIVES");
+	
+	//show these branches		
+	var count = 0;
+	d3.selectAll(".treebranch")
+		.each(function(d, i) {
+			//console.log((age_selected == -1 || (d.age > Number(age_selected) && d.age < (Number(age_selected)+9))), (death_code_selected == -1 || d.death_code == death_code_selected), (from_selected == -1 || d.from == from_selected));
+			//console.log(age_selected, death_code_selected, from_selected);
+
+			//show only if the path matches the enabled filters
+			//console.log("age check", d, age_selected, Number(age_selected)+9);
+			if((age_selected == -1 || ((d.age > 60 && Number(age_selected) == 60) || (d.age >= Number(age_selected) && d.age < (Number(age_selected)+9))))
+						&& (death_code_selected == -1 || d.death_code == death_code_selected)
+						&& (from_selected == -1 || d.from == from_selected)
+					) {
+				$(this).attr("class", "treebranch") //remove the off class
+					.css("opacity", default_opacity)
+					
+				count++;
+			}
+		});
+	
+	var suffix = (count == 1) ? "LIFE" : "LIVES";
+	$("#count").html(count + " LIVES");
+}
+
+function handleDropdownBox(d) {
+	var count = 0;
+	d3.selectAll(".treebranch")
 			.each(function(d, i) {
-				if(d.death_code != Number(d_event.target.value)) {
-					$("#p"+d.id)
-						.attr("class", "treebranch off")
-						.css("opacity", 0.1);
-						
-						//to make the transparent paths more sensitive, remove the rest
-						$("#transp"+d.id)
-							.attr("visibility", "hidden");
-				}
-				else {
+				//console.log((age_selected == -1 || (d.age > Number(age_selected) && d.age < (Number(age_selected)+9))), (death_code_selected == -1 || d.death_code == death_code_selected), (from_selected == -1 || d.from == from_selected));
+				//console.log(age_selected, death_code_selected, from_selected);
+				//console.log("age check", d.age, age_selected, Number(age_selected)+9);
+				if((age_selected == -1 || ((d.age > 60 && Number(age_selected) == 60) || (d.age >= Number(age_selected) && d.age < (Number(age_selected)+9))))
+						&& (death_code_selected == -1 || d.death_code == death_code_selected)
+						&& (from_selected == -1 || d.from == from_selected)
+					) {
+					console.log("TRUE");
 					$("#p"+d.id)
 						.delay(500)
 						.attr("class", "treebranch")
@@ -241,13 +206,21 @@ function assignEventListeners() {
 
 					count++;
 				}
+				else {
+					$("#p"+d.id)
+						.attr("class", "treebranch off")
+						.css("opacity", 0.1);
+						
+						//to make the transparent paths more sensitive, remove the rest
+						$("#transp"+d.id)
+							.attr("visibility", "hidden");
+				}
 			});
 			
 		var suffix = (count == 1) ? "LIFE" : "LIVES";
 		$("#count").html(count + " " + suffix);
 		
-		return false;
-	});
+	return false;
 }
 
 function drawTimeSeries(data, container, format, humanify_numbers, custom_units, annotations) {
@@ -269,7 +242,7 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
 	
 	data=histogram;
 
-	var w = 900,
+	var w = 950,
 		h = 200,
 		xPadding = 22,
 		yPadding = 30,
@@ -459,7 +432,7 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
 
 //draw the arcs
 function drawMainVisual(container) {
- 	d3.json("data/feb2011.json", function(data) {
+ 	d3.json("data/feb2013.json", function(data) {
  	d3.json("data/annotations.json", function(annotations) {
 		//data.deaths = data.deaths.shuffle();
 		
@@ -478,7 +451,7 @@ function drawMainVisual(container) {
 			x_axis_format = "%b %e",
 			yMax = d3.max(data.deaths, function(d) { return d.age; });
 
-		var p1 = 450, //start x
+		var p1 = 455, //start x
 			p2 = 480, //start y
 			p3 = -400, //end x
 			p4 = -425, //end y
@@ -555,6 +528,7 @@ function drawMainVisual(container) {
 	    	.style("font-size", "10px")
     		.text("Newborn");
 
+		var fill_counter = 0;
 		svg.selectAll("path")
 			.data(data.deaths)
 			.enter().append("svg:path")
@@ -582,19 +556,20 @@ function drawMainVisual(container) {
 						//add a random amount to each
 						//we need to make sure that we cover the entire spread from 1 to 30
 						//TODO fill empty ones first before randomizing
-						//TODO
-						p1 += Math.floor((Math.random()*3)+1);
+						//if(fill_counter < 400) {
+							var p1_d = p1 + fill_counter;
+							fill_counter=fill_counter+2;
+							//console.log(p1_d);
+						//}
+						//else {
+						//	console.log("!!!!! RESETTING !!!!!");
+						//	fill_counter = 0;
+						//}
 				
-						return "m " + p1 + "," + (p2+200) + " L " + p1 + "," + p2 + " c " + horizontal_skew + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age);
+						return "m " + p1_d + "," + (p2+200) + " L " + p1_d + "," + p2 + " c " + horizontal_skew + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age);
 					})
 				.attr("stroke", function(d) {
 					var colorScale = d3.scale.linear().domain([0,yMax]).range(["#e33258", "cyan"]);
-					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["red", "cyan"]);
-					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#FAAB00", "#C7003F"]);
-					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#DAF204", "red"]);
-					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#FCF0D0", "#e33232"]);
-					//var colorScale = d3.scale.linear().domain([0,yMax]).range(["#30D5C8", "#F8F8FF"]);
-
 					return colorScale(d.age);
 				})
 				.each(function(d, i) {

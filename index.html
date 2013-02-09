@@ -12,6 +12,15 @@
    		<script type="text/javascript" src="js/jquery.uniform.min.js" charset="utf-8"></script>
 
    		<link rel="stylesheet" href="css/styles.css" type="text/css" />
+   		
+   		<!--[if IE]>
+			<link rel="stylesheet" href="css/styles_ie.css" type="text/css" />
+		<![endif]-->
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/styles_ie_unsupported.css" type="text/css" />
+		<![endif]-->
+
    		<link rel="stylesheet" href="css/uniform.default.min.css" type="text/css" />
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css" />
 	</head>
@@ -31,7 +40,7 @@
 			
 			<div id="count" class="shadow"></div>
 			
-			<div id="title">
+			<div id="title" class="shadow">
 				Bahrain: Two Years On
 			</div>
 			
@@ -43,7 +52,7 @@
 				<!--<a href="#" id="cancel_all_filters">Cancel all filters</a>-->
 				
 				<select id="age">
-					<option value="cancel_all">ALL AGES</option>
+					<option value="-1"></option>
 					<option value="60">60 or older</option>
 					<option value="50">50 to 59</option>
 					<option value="40">40 to 49</option>
@@ -54,7 +63,7 @@
 				</select>
 				
 				<select id="death_code">
-					<option value="cancel_all">ALL CAUSES OF DEATH</option>
+					<option value="-1">ALL CAUSES OF DEATH</option>
 					<option value="6">Tear gas</option>
 					<option value="1">Birdshot</option>
 					<option value="2">Gunshot</option>
@@ -65,7 +74,7 @@
 				</select>
 				
 				<select id="from">
-					<option value="cancel_all">ALL HOMETOWNS</option>
+					<option value="-1">ALL HOMETOWNS</option>
 					<option>A'ali</option>
 					<option>Abu Saiba'a</option>
 					<option>Barbar</option>
@@ -127,20 +136,20 @@
 			
 			<div class="copy">
 				<p>Bahrain is a small island with a population of 1.2 million, 46% of whom are citizens. Unlike most of its neighbors, Bahrain's history is one of pearl diving.  Assyrian inscriptions from 2000 B.C. mentioned the island's pearls, which were a gem so unique to it that they lured the likes of Jacques Cartier [1].</p>
-				<p>For over a century, Bahrain has been the scene of conflict at the approximate rate of once every decade [2].  The civil unrest has centered around such issues as civil liberties and political freedom, as evidenced in <a href="http://www.youtube.com/watch?v=slODgPwakgM">this BBC video</a> from 1956 [3].  In 1921, while Bahrain was still a British protectorate, Major A. P. Trevor wrote to the government of India about the country's exploding civil situation [4].  Later accounts by Sir Charles Belgrave told of similar unrest [5].</p>
-				<p>The current conflict began on February 14, 2011 and has so far resulted in the deaths of 106 civilians, which includes eight expatriates, and three police officers [6][7][8][9].  Of those 106 civilians, 19 were teenagers or younger; 21 were female.  Additionally, up to 20 miscarriages have been attributed to the crackdown.  <!--As a percentage of total citizens, Bahrain has one of the highest death rates of the uprisings that have become known as the  <i>Arab Spring</i>.-->This visualization depicts the 109 documented deaths of individuals aged one day or older, as reported by human rights organizations, the independent commission of inquiry and the government, abstracted to take the form of a palm tree.  Mouse-over for more details; click the axis labels to show or hide the bands.  Unless noted otherwise, the causes of death are from [9], either verbatim or paraphrased.</p>
+				<p>For over a century, Bahrain has been the scene of conflict at the approximate rate of once every decade [2].  The civil unrest has centered around such issues as civil liberties and political freedom, as evidenced in <a href="http://www.youtube.com/watch?v=slODgPwakgM">this BBC video</a> from 1956 [3].  In 1921, while Bahrain was still a British protectorate, Major A. P. Trevor wrote to the government of India about the country's instability [4].  Later accounts by Sir Charles Belgrave told of similar unrest [5].</p>
+				<p>The current conflict began on February 14, 2011 and has so far resulted in the deaths of 105 civilians, including seven expatriates, and three police officers totaling 108 deaths [6][7][8][9].  Of those, 19 were teenagers or younger; 21 were female.  Additionally, up to 20 miscarriages have been attributed to the crackdown.  <!--As a percentage of total citizens, Bahrain has one of the highest death rates of the uprisings that have become known as the  <i>Arab Spring</i>.-->This visualization depicts those 108 deaths, relying on data provided by human rights organizations, the independent commission of inquiry and the government, abstracted to take the form of a palm tree.  Mouse-over for more details; click the axis labels to show or hide the bands.  Unless noted otherwise, the causes of death are from [9], either verbatim or paraphrased.</p>
 				
 				<p style="font-size:24px;margin-bottom:0;margin-top:60px">Causes of death</p>
-				<p style="margin-top:0">The top cause of death is tear gas inhalation.  40% of all deaths are a result of direct inhalation of tear gas or complications arising from that.  Several videos on YouTube, <a href="http://www.youtube.com/watch?v=vK3mVoQJGJw">such as this one</a>, appear to show police officers firing into homes.  The second highest cause of death is birdshot shells, which can be devastatingly lethal when used against people [16].  15% of deaths are attributed to injuries caused by such shells, while 11% are attributed to other forms of gunfire such as live ammunition, rubber bullets and tear gas canisters.  17% of deaths have been a result of physical abuse or torture while in custody.</p>
+				<p style="margin-top:0">The leading cause of death is tear gas inhalation.  41% of all deaths are a result of direct inhalation of tear gas or complications arising from that.  Several videos on YouTube, <a href="http://www.youtube.com/watch?v=vK3mVoQJGJw">such as this one</a>, appear to show police officers firing into homes.  Birdshot, the second leading cause of death, is similarly lethal and can have devastating results when used against people [16].  15% of deaths are attributed to injuries caused by such shells, while 11% are attributed to other forms of gunfire such as live ammunition, rubber bullets and tear gas canisters.  18% of deaths have been a result of physical abuse or torture while in custody.</p>
 				
 				<div style="clear:both;height:10px"></div>
-				<div class="bar_label">Tear gas inhalation</div><div class="bar" style="width:440px">44</div><br />
-				<div class="bar_label">Birdshot</div><div class="bar" style="width:160px">16</div><br />
-				<div class="bar_label">Gunshot</div><div class="bar" style="width:120px">12</div><br />
-				<div class="bar_label">Run over</div><div class="bar" style="width:110px">11</div><br />
-				<div class="bar_label">Torture</div><div class="bar" style="width:100px">10</div><br />
-				<div class="bar_label">Physical abuse</div><div class="bar" style="width:80px">8</div><br />
-				<div class="bar_label">Other</div><div class="bar" style="width:80px">8</div><br />
+				<div class="bar_label">Tear gas inhalation</div><div class="bar" style="width:440px"><span class="light">(41%)</span> &nbsp;44</div><br />
+				<div class="bar_label">Birdshot</div><div class="bar" style="width:160px"><span class="light">(15%)</span> &nbsp;16</div><br />
+				<div class="bar_label">Gunshot</div><div class="bar" style="width:120px"><span class="light">(11%)</span> &nbsp;12</div><br />
+				<div class="bar_label">Run over</div><div class="bar" style="width:110px"><span class="light">(10%)</span> &nbsp;11</div><br />
+				<div class="bar_label">Torture</div><div class="bar" style="width:100px"><span class="light">(9%)</span> &nbsp;10</div><br />
+				<div class="bar_label">Physical abuse</div><div class="bar" style="width:80px"><span class="light">(7%)</span> &nbsp;8</div><br />
+				<div class="bar_label">Other</div><div class="bar" style="width:80px"><span class="light">(6%)</span> &nbsp;7</div><br />
 				</p>
 				
 				<p style="font-size:24px;margin-bottom:0;margin-top:52px">Deaths over time</p>
@@ -183,7 +192,7 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 				
-				<div style="overflow:hidden;float:left;padding-top:18px;width:150px;z-index:2;position:relative" class="fb-like" data-href="http://almossawi.com/bahrain" data-send="false" data-layout="box_count" data-width="150" data-show-faces="false" data-font="arial"></div>
+				<div style="overflow:hidden;float:left;padding-top:18px;width:150px;z-index:2;position:relative" class="fb-like" data-href="http://bahrainvisualized.com" data-send="false" data-layout="box_count" data-width="150" data-show-faces="false" data-font="arial"></div>
 				
 				<div style="float:left;padding-top:30px;padding-left:200px;width:950px;z-index:1;position:absolute;font-size:12px">
 					ALI ALMOSSAWI &nbsp;&middot;&nbsp; almossawi/at/alum/dot/mit/dot/edu &nbsp;&middot;&nbsp; February 14, 2013<br />
