@@ -187,7 +187,7 @@ function assignEventListeners() {
 		$(this).css("font-weight", "600");
 		$("#ages span").html($(this).html());
 		
-		console.log($(this).attr("code"));
+		//console.log($(this).attr("code"));
 		age_selected = $(this).attr("code");
 		
 		//bring back all transparent paths; to make the transparent paths more sensitive, remove the rest
@@ -226,7 +226,7 @@ function assignEventListeners() {
 		$(this).css("font-weight", "600");
 		$("#death_code span").html($(this).html());
 		
-		console.log($(this).attr("code"));
+		//console.log($(this).attr("code"));
 		death_code_selected = $(this).attr("code");
 		
 		//bring back all transparent paths; to make the transparent paths more sensitive, remove the rest
@@ -323,7 +323,6 @@ function handleDropdownBox() {
 						&& (death_code_selected == -1 || d.death_code == death_code_selected)
 						&& (from_selected == -1 || d.from == from_selected)
 					) {
-					console.log("TRUE");
 					$("#p"+d.id)
 						.delay(500)
 						.attr("class", "treebranch")
