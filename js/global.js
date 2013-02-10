@@ -301,10 +301,16 @@ function resetDropdownBox(which_one) {
 						&& (death_code_selected == -1 || d.death_code == death_code_selected)
 						&& (from_selected == -1 || d.from == from_selected)
 					) {
-				$(this).attr("class", "treebranch") //remove the off class
+				$(this)
+					.attr("class", "treebranch") //remove the off class
 					.css("opacity", default_opacity)
-					
+						
 				count++;
+			}
+			else {
+				//hide its transparent path
+				$("#transp" + d.id)
+					.attr("visibility", "hidden")
 			}
 		});
 	
