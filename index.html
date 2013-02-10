@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<title>Bahrain: Two Years On</title>
+		<title>Bahrain: Two Years On (An interactive visualization)</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js" type="text/javascript"></script>
 		
@@ -25,6 +25,20 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38360687-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 		<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -45,90 +59,108 @@
 			</div>
 			
 			<div id="controls_cover">
-				Rollover for options
+				Roll over for options
 			</div>
 			
 			<div id="controls">
 				<!--<a href="#" id="cancel_all_filters">Cancel all filters</a>-->
+			
+				<div style="width:300px;height:100px;color:white;position:absolute;margin-left:220px">
+					<div id="ages_menu" class="menu">
+						<ul>
+							<li><a href="#" code="-1" style="font-weight:600">All ages</a></li>
+							<li class="li_divider"></li>
+							<li><a href="#" code="60">60 or older</a></li>
+							<li><a href="#" code="50">50 to 59</a></li>
+							<li><a href="#" code="40">40 to 49</a></li>
+							<li><a href="#" code="30">30 to 39</a></li>
+							<li><a href="#" code="20">20 to 29</a></li>
+							<li><a href="#" code="10">10 to 19</a></li>
+							<li><a href="#" code="0">Younger than 10</a></li>
+						</ul>
+					</div>
 				
-				<select id="age">
-					<option value="-1"></option>
-					<option value="60">60 or older</option>
-					<option value="50">50 to 59</option>
-					<option value="40">40 to 49</option>
-					<option value="30">30 to 39</option>
-					<option value="20">20 to 29</option>
-					<option value="10">10 to 19</option>
-					<option value="0">Younger than 10</option>
-				</select>
+					<div id="ages">
+						<img class="trans" src="images/transparent.png" />
+						<span>ALL AGES</span>
+					</div>
+				</div>
 				
-				<select id="death_code">
-					<option value="-1">ALL CAUSES OF DEATH</option>
-					<option value="6">Tear gas</option>
-					<option value="1">Birdshot</option>
-					<option value="2">Gunshot</option>
-					<option value="5">Run over</option>
-					<option value="3">Torture</option>
-					<option value="4">Physical abuse</option>
-					<option value="7">Other</option>
-				</select>
+				<div style="width:300px;height:100px;color:white;position:absolute;margin-left:385px">
+					<div id="death_code_menu" class="menu">
+						<ul>
+							<li><a href="#" code="-1" style="font-weight:600">All causes of death</a></li>
+							<li class="li_divider"></li>
+							<li><a href="#" code="6">Tear gas</a></li>
+							<li><a href="#" code="1">Birdshot</a></li>
+							<li><a href="#" code="2">Gunshot</a></li>
+							<li><a href="#" code="5">Run over</a></li>
+							<li><a href="#" code="4">Physical abuse</a></li>
+							<li><a href="#" code="3">Torture</a></li>
+							<li><a href="#" code="7">Other</a></li>
+						</ul>
+					</div>
+			
+					<div id="death_code">
+						<img class="trans" src="images/transparent.png" />
+						<span>ALL CAUSES OF DEATH</span>
+					</div>
+				</div>
 				
-				<select id="from">
-					<option value="-1">ALL HOMETOWNS</option>
-					<option>A'ali</option>
-					<option>Abu Saiba'a</option>
-					<option>Barbar</option>
-					<option>Bilad Alqadeem</option>
-					<option>Boori</option>
-					<option>Buguwwah</option>
-					<option>Daih</option>
-					<option>Dair</option>
-					<option>Demistan</option>
-					<option>Diraz</option>
-					<option>Hajar</option>
-					<option>Hamad Town</option>
-					<option>Isa Town</option>
-					<option>Jidhafs</option>
-					<option>Karbabad</option>
-					<option>Karraneh</option>
-					<option>Karzakan</option>
-					<option>Khamis</option>
-					<option>Ma'ameer</option>
-					<option>Mahooz</option>
-					<option>Malkiya</option>
-					<option>Manama</option>
-					<option>Markh</option>
-					<option>Migsha'a</option>
-					<option>Muharraq</option>
-					<option>Nabih Saleh</option>
-					<option>Naim</option>
-					<option>Nuwaidrat</option>
-					<option>Ras Rumman</option>
-					<option>Rifa'a</option>
-					<option>Samaheej</option>
-					<option>Sanabis</option>
-					<option>Shakhoora</option>
-					<option>Sadad</option>
-					<option>Salmabad</option>
-					<option>Sar</option>
-					<option>Shahrakkan</option>
-					<option>Sitra</option>
-					<option>Sehla</option>
-					<option>Bangladesh</option>
-					<option>India</option>
-					<option>Pakistan</option>
-				</select>
-				
-				<!--<select id="fix_or_float">
-					<option value="fix">INFO BOX IS FIXED</option>
-					<option value="float">INFO BOX FLOATS</option>
-				</select>-->
-				
-				<!--<select id="color_using">
-					<option value="by_age">Color using age</option>
-					<option value="by_death_code">Color using cause of death</option>
-					<option value="by_from">Color using hometown</option>
-				</select>-->
+				<div style="width:300px;height:100px;color:white;position:absolute;margin-left:550px">
+					<div id="from_menu" class="menu">
+						<ul>
+							<li><a href="#" code="-1" style="font-weight:600">All hometowns</a></li>
+							<li class="li_divider"></li>
+							<li class="area_item"><a href="#">A'ali</a></li>
+							<li class="area_item"><a href="#">Abu Saiba'a</a></li>
+							<li class="area_item"><a href="#">Barbar</a></li>
+							<li class="area_item"><a href="#">Bilad Alqadeem</a></li>
+							<li class="area_item"><a href="#">Boori</a></li>
+							<li class="area_item"><a href="#">Buguwwah</a></li>
+							<li class="area_item"><a href="#">Daih</a></li>
+							<li class="area_item"><a href="#">Dair</a></li>
+							<li class="area_item"><a href="#">Demistan</a></li>
+							<li class="area_item"><a href="#">Diraz</a></li>
+							<li class="area_item"><a href="#">Hajar</a></li>
+							<li class="area_item"><a href="#">Hamad Town</a></li>
+							<li class="area_item"><a href="#">Isa Town</a></li>
+							<li class="area_item"><a href="#">Jidhafs</a></li>
+							<li class="area_item"><a href="#">Karbabad</a></li>
+							<li class="area_item"><a href="#">Karraneh</a></li>
+							<li class="area_item"><a href="#">Karzakan</a></li>
+							<li class="area_item"><a href="#">Khamis</a></li>
+							<li class="area_item"><a href="#">Ma'ameer</a></li>
+							<li class="area_item"><a href="#">Mahooz</a></li>
+							<li class="area_item"><a href="#">Malkiya</a></li>
+							<li class="area_item"><a href="#">Manama</a></li>
+							<li class="area_item"><a href="#">Migsha'a</a></li>
+							<li class="area_item"><a href="#">Muharraq</a></li>
+							<li class="area_item"><a href="#">Nabih Saleh</a></li>
+							<li class="area_item"><a href="#">Naim</a></li>
+							<li class="area_item"><a href="#">Nuwaidrat</a></li>
+							<li class="area_item"><a href="#">Ras Rumman</a></li>
+							<li class="area_item"><a href="#">Rifa'a</a></li>
+							<li class="area_item"><a href="#">Samaheej</a></li>
+							<li class="area_item"><a href="#">Sanabis</a></li>
+							<li class="area_item"><a href="#">Shakhoora</a></li>
+							<li class="area_item"><a href="#">Sadad</a></li>
+							<li class="area_item"><a href="#">Salmabad</a></li>
+							<li class="area_item"><a href="#">Sar</a></li>
+							<li class="area_item"><a href="#">Shahrakkan</a></li>
+							<li class="area_item"><a href="#">Sitra</a></li>
+							<li class="area_item"><a href="#">Sehla</a></li>
+							<li class="area_item"><a href="#">Bangladesh</a></li>
+							<li class="area_item"><a href="#">India</a></li>
+							<li class="area_item"><a href="#">Pakistan</a></li>
+						</ul>
+					</div>
+			
+					<div id="from">
+						<img class="trans" src="images/transparent.png" />
+						<span>ALL HOMETOWNS</span>
+					</div>
+				</div>
 			</div>
 			
 			<div id="details">
@@ -137,22 +169,23 @@
 			<div class="copy">
 				<p>Bahrain is a small island with a population of 1.2 million, 46% of whom are citizens. Unlike most of its neighbors, Bahrain's history is one of pearl diving.  Assyrian inscriptions from 2000 B.C. mentioned the island's pearls, which were a gem so unique to it that they lured the likes of Jacques Cartier [1].</p>
 				<p>For over a century, Bahrain has been the scene of conflict at the approximate rate of once every decade [2].  The civil unrest has centered around such issues as civil liberties and political freedom, as evidenced in <a href="http://www.youtube.com/watch?v=slODgPwakgM">this BBC video</a> from 1956 [3].  In 1921, while Bahrain was still a British protectorate, Major A. P. Trevor wrote to the government of India about the country's instability [4].  Later accounts by Sir Charles Belgrave told of similar unrest [5].</p>
-				<p>The current conflict began on February 14, 2011 and has so far resulted in the deaths of 105 civilians, including seven expatriates, and three police officers totaling 108 deaths [6][7][8][9].  Of those, 19 were teenagers or younger; 21 were female.  Additionally, up to 20 miscarriages have been attributed to the crackdown.  <!--As a percentage of total citizens, Bahrain has one of the highest death rates of the uprisings that have become known as the  <i>Arab Spring</i>.-->This visualization depicts those 108 deaths, relying on data provided by human rights organizations, the independent commission of inquiry and the government, abstracted to take the form of a palm tree.  Mouse-over for more details; click the axis labels to show or hide the bands.  Unless noted otherwise, the causes of death are from [9], either verbatim or paraphrased.</p>
+				<p>The current conflict began on February 14, 2011 and has so far resulted in the deaths of 105 civilians, including seven expatriates, and three police officers totaling 108 deaths [6][7][8][9].  Of those, 19 were teenagers or younger; 21 were female.  Additionally, up to 20 miscarriages have been attributed to the crackdown.  <!--As a percentage of total citizens, Bahrain has one of the highest death rates of the uprisings that have become known as the  <i>Arab Spring</i>.-->This visualization depicts those 108 deaths, relying on data provided by human rights organizations, the Independent Commission of Inquiry and the government, abstracted to take the form of a palm tree.  Mouse over for more details; click the axis labels to show or hide the horizontal bands.  Unless noted otherwise, the causes of death are from [9], either verbatim or paraphrased.</p>
 				
-				<p style="font-size:24px;margin-bottom:0;margin-top:60px">Causes of death</p>
-				<p style="margin-top:0">The leading cause of death is tear gas inhalation.  41% of all deaths are a result of direct inhalation of tear gas or complications arising from that.  Several videos on YouTube, <a href="http://www.youtube.com/watch?v=vK3mVoQJGJw">such as this one</a>, appear to show police officers firing into homes.  Birdshot, the second leading cause of death, is similarly lethal and can have devastating results when used against people [16].  15% of deaths are attributed to injuries caused by such shells, while 11% are attributed to other forms of gunfire such as live ammunition, rubber bullets and tear gas canisters.  18% of deaths have been a result of physical abuse or torture while in custody.</p>
+				<h1 style="margin-top:50px">Causes of death</h1>
+				<p style="margin-top:0">The leading cause of death is tear gas inhalation or complications arising from that.  Several videos on YouTube, <a href="http://www.youtube.com/watch?v=vK3mVoQJGJw">such as this one</a>, appear to show police officers firing directly into homes.  Birdshot is similarly indiscriminate and can have devastating results when used against people [16].  14% of deaths are attributed to injuries caused by such shells, while 11% are attributed to other forms of gunfire such as live ammunition, rubber bullets and tear gas canisters.</p>
+				<p>18% of deaths have been a result of physical abuse or torture while in custody.  The Independent Commission of Inquiry's report concluded that torture was a systemic problem and noted 12 methods of mistreatment that are systematically used against detainees.  They include blindfolding, severe beatings, use of electro-shock devices and cigarettes, sleep deprivation and sexual and verbal abuse.</p>
 				
 				<div style="clear:both;height:10px"></div>
 				<div class="bar_label">Tear gas inhalation</div><div class="bar" style="width:440px"><span class="light">(41%)</span> &nbsp;44</div><br />
-				<div class="bar_label">Birdshot</div><div class="bar" style="width:160px"><span class="light">(15%)</span> &nbsp;16</div><br />
+				<div class="bar_label">Birdshot</div><div class="bar" style="width:160px"><span class="light">(14%)</span> &nbsp;15</div><br />
 				<div class="bar_label">Gunshot</div><div class="bar" style="width:120px"><span class="light">(11%)</span> &nbsp;12</div><br />
 				<div class="bar_label">Run over</div><div class="bar" style="width:110px"><span class="light">(10%)</span> &nbsp;11</div><br />
-				<div class="bar_label">Torture</div><div class="bar" style="width:100px"><span class="light">(9%)</span> &nbsp;10</div><br />
-				<div class="bar_label">Physical abuse</div><div class="bar" style="width:80px"><span class="light">(7%)</span> &nbsp;8</div><br />
-				<div class="bar_label">Other</div><div class="bar" style="width:80px"><span class="light">(6%)</span> &nbsp;7</div><br />
+				<div class="bar_label">Physical abuse</div><div class="bar" style="width:100px"><span class="light">(9%)</span> &nbsp;10</div><br />
+				<div class="bar_label">Torture</div><div class="bar" style="width:90px"><span class="light">(8%)</span> &nbsp;9</div><br />
+				<div class="bar_label">Other</div><div class="bar" style="width:70px"><span class="light">(6%)</span> &nbsp;7</div><br />
 				</p>
 				
-				<p style="font-size:24px;margin-bottom:0;margin-top:52px">Deaths over time</p>
+				<h1 style="margin-top:42px">Deaths over time</h1>
 				<p style="margin-top:0">The highest number of deaths in a single day occurred on March 16, 2011 when <a href="https://www.youtube.com/watch?v=dSWCssMn5ms">Gulf troops crossed into Bahrain</a>.  A nationwide crackdown claimed six lives and left hundreds or more injured.  Prior to that, the bloodiest day had been February 17, 2011, or Black Thursday, when Pearl Roundabout was raided in the early morning hours.  Of the 10,000 protestors who were camped there [14], four died and 300 were injured.</p>
 					
 				<div id="time_series">
@@ -184,22 +217,21 @@
 
 		<div id="wide_pane">		
 			<div id="logo_container">
-				<div style="background-color:#2b2b2b;float:left;padding-top:17px;padding-left:15px;width:150px;height:40px;z-index:222;position:absolute">
-				</div>
+				<div id="count_hider"></div>
 				
-				<div style="overflow:hidden;float:left;padding-top:17px;padding-left:15px;width:80px;z-index:2;position:relative">
+				<div id="twitter_block">
 <a href="https://twitter.com/share" data-count="vertical" class="twitter-share-button">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 				
-				<div style="overflow:hidden;float:left;padding-top:18px;width:150px;z-index:2;position:relative" class="fb-like" data-href="http://bahrainvisualized.com" data-send="false" data-layout="box_count" data-width="150" data-show-faces="false" data-font="arial"></div>
+				<div id="fb_block" class="fb-like" data-href="http://bahrainvisualized.com" data-send="false" data-layout="box_count" data-width="150" data-show-faces="false" data-font="arial"></div>
 				
-				<div style="float:left;padding-top:30px;padding-left:200px;width:950px;z-index:1;position:absolute;font-size:12px">
+				<div id="credits_block">
 					ALI ALMOSSAWI &nbsp;&middot;&nbsp; almossawi/at/alum/dot/mit/dot/edu &nbsp;&middot;&nbsp; February 14, 2013<br />
 					The visualization presents the conflict in Bahrain from a neutral point-of-view.  The author is not affiliated with any political organization.  To report inaccuracies or share your thoughts, feel free to email me.  This work is being released under a Creative Commons Attribution-NonCommercial license (<a href="http://creativecommons.org/licenses/by-nc/3.0/">CC BY-NC</a>).
 				</div>
 				
-				<div style="float:right;z-index:3;padding-top:13px;padding-right:15px"></div>
+				<!--<div style="float:right;z-index:3;padding-top:13px;padding-right:15px"></div>-->
 			</div>
 		</div>
 	</body>

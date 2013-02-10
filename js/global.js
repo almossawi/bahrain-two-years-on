@@ -29,6 +29,11 @@ $(document).ready(function () {
 		$("#death_code").val($("#death_code option:first").val())
 		$("#from").val($("#from option:first").val())
 		$.uniform.update();
+
+		//damn IE
+		if(Function('/*@cc_on return document.documentMode===10@*/')()){
+		    document.documentElement.className+=' ie10';
+		}
 	});
 });
 
@@ -104,7 +109,7 @@ function assignEventListeners() {
 	});
 	
 	//handle dropdowns
-	$("#from").on("change", function(d_event) {
+	/*$("#from").on("change", function(d_event) {
 		//reset others dropdowns //$("#age").val($("#age option:first").val()); $("#death_code").val($("#death_code option:first").val()); $.uniform.update();
 		from_selected = d_event.target.value;
 
@@ -156,6 +161,126 @@ function assignEventListeners() {
 		}
 		
 		handleDropdownBox(d_event);
+	});*/
+	
+	
+	
+	
+	$("#ages img").mouseenter(function (e) {
+		$("#ages_menu").show();
+	});
+	
+	$("#ages img").mouseleave(function (e) {
+		$("#ages_menu").hide();
+	});
+	
+	$("#ages_menu").mouseenter(function (e) {
+		$("#ages_menu").show();
+	});
+	
+	$("#ages_menu").mouseleave(function (e) {
+		$("#ages_menu").hide();
+	});
+	
+	$("#ages_menu ul li a").on("click", function (e) {
+		$("#ages_menu ul li a").css("font-weight", "300");
+		$(this).css("font-weight", "600");
+		$("#ages span").html($(this).html());
+		
+		console.log($(this).attr("code"));
+		age_selected = $(this).attr("code");
+		
+		//bring back all transparent paths; to make the transparent paths more sensitive, remove the rest
+		$(".treebranch_transparent").attr("visibility", "visible");
+			
+		resetAllStrokes();
+		$("#details").hide(); //remove info box
+			
+		if($(this).attr("code") == "-1") { //i.e. show all/cancel filter
+			resetDropdownBox(age_selected);
+			return false;
+		}
+		
+		handleDropdownBox();
+		return false;
+	});
+	
+	$("#death_code img").mouseenter(function (e) {
+		$("#death_code_menu").show();
+	});
+	
+	$("#death_code img").mouseleave(function (e) {
+		$("#death_code_menu").hide();
+	});
+	
+	$("#death_code_menu").mouseenter(function (e) {
+		$("#death_code_menu").show();
+	});
+	
+	$("#death_code_menu").mouseleave(function (e) {
+		$("#death_code_menu").hide();
+	});
+	
+	$("#death_code_menu ul li a").on("click", function (e) {
+		$("#death_code_menu ul li a").css("font-weight", "300");
+		$(this).css("font-weight", "600");
+		$("#death_code span").html($(this).html());
+		
+		console.log($(this).attr("code"));
+		death_code_selected = $(this).attr("code");
+		
+		//bring back all transparent paths; to make the transparent paths more sensitive, remove the rest
+		$(".treebranch_transparent").attr("visibility", "visible");
+			
+		resetAllStrokes();
+		$("#details").hide(); //remove info box
+			
+		if($(this).attr("code") == "-1") { //i.e. show all/cancel filter
+			resetDropdownBox(death_code_selected);
+			return false;
+		}
+		
+		handleDropdownBox();
+		return false;
+	});
+	
+	$("#from img").mouseenter(function (e) {
+		$("#from_menu").show();
+	});
+	
+	$("#from img").mouseleave(function (e) {
+		$("#from_menu").hide();
+	});
+	
+	$("#from_menu").mouseenter(function (e) {
+		$("#from_menu").show();
+	});
+	
+	$("#from_menu").mouseleave(function (e) {
+		$("#from_menu").hide();
+	});
+	
+	$("#from_menu ul li a").on("click", function (e) {
+		$("#from_menu ul li a").css("font-weight", "300");
+		$(this).css("font-weight", "600");
+		$("#from span").html($(this).html());
+		
+		//console.log($(this).attr("code"));
+		from_selected = ($(this).attr("code") == "-1") ? $(this).attr("code") : $(this).html();
+		
+		//bring back all transparent paths; to make the transparent paths more sensitive, remove the rest
+		$(".treebranch_transparent").attr("visibility", "visible");
+			
+		resetAllStrokes();
+		$("#details").hide(); //remove info box
+			
+		if($(this).attr("code") == "-1") { //i.e. show all/cancel filter
+			resetDropdownBox(from_selected);
+			return false;
+		}
+		
+		handleDropdownBox();
+		return false;
 	});
 }
 
@@ -187,7 +312,7 @@ function resetDropdownBox(which_one) {
 	$("#count").html(count + " LIVES");
 }
 
-function handleDropdownBox(d) {
+function handleDropdownBox() {
 	var count = 0;
 	d3.selectAll(".treebranch")
 			.each(function(d, i) {
@@ -552,19 +677,9 @@ function drawMainVisual(container) {
 				.attr("d", function(d) {
 						//once go left and once go right (first one always right for now (id == 1))
 						var p3_d = (d.id % 2 == 1 && d.id != 1) ? p3 : p3 * -1;
-	
-						//add a random amount to each
-						//we need to make sure that we cover the entire spread from 1 to 30
-						//TODO fill empty ones first before randomizing
-						//if(fill_counter < 400) {
-							var p1_d = p1 + fill_counter;
-							fill_counter=fill_counter+2;
-							//console.log(p1_d);
-						//}
-						//else {
-						//	console.log("!!!!! RESETTING !!!!!");
-						//	fill_counter = 0;
-						//}
+
+						var p1_d = p1 + fill_counter;
+						fill_counter=fill_counter+2;
 				
 						return "m " + p1_d + "," + (p2+200) + " L " + p1_d + "," + p2 + " c " + horizontal_skew + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age) + " " + p3_d + "," + yScale(d.age);
 					})

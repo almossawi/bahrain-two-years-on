@@ -9,7 +9,7 @@
             "type_of_death": "Suffocation from tear gas",
             "name_arabic": "قاسم حبيب",
             "type_of_death_arabic": "استنشاق الغاز المسيل للدموع",
-            "type_of_death_full": "Tear gas inhalation.",
+            "type_of_death_full": "Tear gas inhalation.  Qassim's family reportedly complained to the local police station about the excessive use of tear gas in their village.  Shortly thereafter, the family's home was allegedly surrounded and targeted with tear gas, as shown in <a href='https://www.youtube.com/watch?feature=player_detailpage&v=Pm5RwK24gDU#t=17s'>this amateur video footage</a> posted on YouTube.",
             "death_code": 6
         },
         {
@@ -39,7 +39,7 @@
             "from": "Samaheej",
             "date_of_death": "2012-11-09",
             "type_of_death": "Run over while chased by police",
-            "type_of_death_full": "Died immediately when police chased him while he was heading to Friday Prayers in Diraz, when he ran away a speeding car hit him.",
+            "type_of_death_full": "Died after being struck by a passing car while running away from a police car that were chasing him.  Ali was on his way to Friday Prayers in Diraz.",
             "death_code": 5
         },
         {
@@ -49,7 +49,7 @@
             "from": "India",
             "date_of_death": "2012-11-05",
             "type_of_death": "Explosive device",
-            "type_of_death_full": "Expat. Died as a result of injuries sustained from an explosives device in the Gudaibiya area of Manama when he kicked an object wrapped in a plastic bag.",
+            "type_of_death_full": "Expat. Died as a result of injuries sustained from an explosive device in the Gudaibiya area of Manama when he kicked an object wrapped in a plastic bag.",
             "death_code": 7
         },
         {
@@ -59,7 +59,7 @@
             "from": "Bangladesh",
             "date_of_death": "2012-11-05",
             "type_of_death": "Explosive device",
-            "type_of_death_full": "Expat.  Died of injuries from explosives devices in Gudaibiya.",
+            "type_of_death_full": "Expat.  Died of injuries from an explosive device in Gudaibiya.",
             "death_code": 7
         },
         {
@@ -110,7 +110,7 @@
             "from": "Sadad",
             "date_of_death": "2012-09-28",
             "type_of_death": "Shotgun",
-            "type_of_death_full": "Died of birdshot bullets fired by security forces on a peaceful protest.",
+            "type_of_death_full": "Died of birdshot bullets fired by security forces on a peaceful protest.  <a href='https://www.youtube.com/watch?feature=player_detailpage&v=e90M28zre7o#t=24s'>Video from morgue</a>.",
             "death_code": 1
         },
         {
@@ -200,7 +200,7 @@
             "from": "Salmabad",
             "date_of_death": "2012-03-31",
             "type_of_death": "Shot with live ammunition",
-            "type_of_death_full": "Ahmed, a cameraman and citizen journalist was protesting in Salmabad when he was shot by gunfire in his upper right thigh and subsequently died in hospital. Witnesses said at about 1:30 am Al-Salmabadi was shot with a laser-pointed gun by a civilian car accompanying security forces. Apparently, he was targeted due to filming from a video camera, witness said. Al Wefaq blamed militants loyal to the regime for Al-Salmabadi's death.",
+            "type_of_death_full": "Ahmed, a cameraman and citizen journalist, was protesting in Salmabad when he was shot by gunfire in his upper right thigh and subsequently died in hospital. Some witnesses claim said that at 1:30AM, Ahmed was shot with a laser-pointed gun by a civilian car accompanying security forces and that he was apparently targeted due to filming. Opposition group, Al-Wefaq blamed militants loyal to the regime for Ahmed's death.",
             "death_code": 2
         },
         {
@@ -291,7 +291,7 @@
             "from": "Shakhoora",
             "date_of_death": "2012-03-01",
             "type_of_death": "Complications following beating",
-            "type_of_death_full": "The Bahrain Center for Human Rights said Jafar died as a result of injuries inflicted by security forces to the head and pelvis since 15 February 2011. He was reportedly in coma for a long while and even after waking up from it, he was admitted again, till his death on 2 March 2012.",
+            "type_of_death_full": "The Bahrain Center for Human Rights said Jafar died as a result of injuries inflicted by security forces to the head and pelvis since 15 February 2011. He was reportedly in a coma for some time; after waking up from it, he was admitted once again to the hospital until his death on March 2, 2012.",
             "death_code": 4
         },
         {
@@ -411,7 +411,7 @@
             "from": "Daih",
             "date_of_death": "2012-01-25",
             "type_of_death": "Torture",
-            "type_of_death_full": "Witnesses say he was arrested after police crashed into his car, beat on the street, and later tortured in Hoora police station [7].",
+            "type_of_death_full": "Witnesses say he was arrested after police crashed into his car, beaten on the street and later tortured in Hoora police station [7].",
             "death_code": 4
         },
         {
@@ -461,7 +461,7 @@
             "from": "Sanabis",
             "date_of_death": "2012-01-14",
             "type_of_death": "Depression",
-            "type_of_death_full": "Bahrain Center for Human Rights claims that she set herself on fire after she 'suffered from sever depression for months' after her son was arrested and beaten by security forces in front of her.",
+            "type_of_death_full": "The Bahrain Center for Human Rights claims that she set herself on fire after suffering from severe depression for months following the arrest of her son, who was beaten by security forces in front of her.",
             "death_code": 7
         },
         {
@@ -486,12 +486,12 @@
         },
         {
             "id": 51,
-            "name": "Sayed Hashim Saeed Almumin",
+            "name": "Sayed Hashim Saeed Al-Momin",
             "age": 15,
             "from": "Sitra",
             "date_of_death": "2011-12-31",
             "type_of_death": "Shot",
-            "type_of_death_full": "A medical report gave the cause of death as hematomas and bleeding as a result of a neck injury, and noted burns on the bottom-left of his chest and his left forearm. Police allegedly fired two tear gas canisters at his chest and neck from close range.",
+            "type_of_death_full": "A medical report gave the cause of death as hematomas and bleeding as a result of a neck injury, and noted burns on the bottom-left of his chest and his left forearm. Police allegedly fired two tear gas canisters at his chest and neck from close range.  <a href='https://www.youtube.com/watch?v=a45_joxXa3M'>This video</a> from the morgue shows the deceased's injuries (WARNING: GRAPHIC).",
             "death_code": 2
         },
         {
@@ -532,7 +532,7 @@
             "from": "Daih",
             "date_of_death": "2011-12-07",
             "type_of_death": "Metal rod to the head",
-            "type_of_death_full": "Zahra died after a metal rod thrown by police entered her head.",
+            "type_of_death_full": "Zahra died after a metal rod allegedly thrown by police was lodged into her head.  The government claims that the metal rod was thrown by protestors.",
             "death_code": 4
         },
         {
@@ -552,7 +552,7 @@
             "from": "Sitra",
             "date_of_death": "2011-11-19",
             "type_of_death": "Run over by police car",
-            "type_of_death_full": "Died when a speeding police vehicle squeezed him into a wall in Juffair.",
+            "type_of_death_full": "Died when a speeding police vehicle squeezed him into a wall in Juffair.  <a href='https://www.youtube.com/watch?v=mI9ZGRNKjvI'>Video of family members in the morgue</a>.",
             "death_code": 5
         },
         {
@@ -562,7 +562,7 @@
             "from": "Daih",
             "date_of_death": "2011-11-03",
             "type_of_death": "Beaten to death",
-            "type_of_death_full": "Suffered cardiac arrest the day after he was attacked in the evening by police.",
+            "type_of_death_full": "Suffered cardiac arrest the day after he was attacked by police officers.",
             "death_code": 4
         },
         {
@@ -583,7 +583,7 @@
             "from": "Karraneh",
             "date_of_death": "2011-10-29",
             "type_of_death": "Complications from gunshot",
-            "type_of_death_full": "Died due to sustained injuries. The official reason for death is heart failure. He lost his eye allegedly due to a rubber bullet fired by Bahraini security forces and traveled to Iran for treatment. According to an activist Riyadh had birdshot injuries and underwent a number of surgeries in Iran to remove their remains.",
+            "type_of_death_full": "Riyadh lost his eye when a tear gas canister fired by security forces into his home struck him.  Failing to receive adequate medical treatment in Bahrain, he traveled abroad and underwent several surgeries, but eventually died while in hospital (<a href='http://bahrainlog.com'>source</a>).",
             "death_code": 2
         },
         {
@@ -633,7 +633,7 @@
             "from": "Sitra",
             "date_of_death": "2011-08-31",
             "type_of_death": "Shot",
-            "type_of_death_full": "The cause of death was 'a fractured spine, internal bleeding, and shock'. Witnesses report that they heard shots immediately after seeing a policeman holding a tear gas gun standing out of the top window of a police SUV that was chasing protesters.",
+            "type_of_death_full": "The cause of death was 'a fractured spine, internal bleeding, and shock'. Witnesses report that they heard shots immediately after seeing a policeman holding a tear gas gun standing out of the top window of a police SUV that was chasing protesters.  <a href='https://www.youtube.com/watch?v=YDSNWoZ_HEg'>Video</a> (WARNING: GRAPHIC).",
             "death_code": 2
         },
         {
@@ -643,7 +643,7 @@
             "from": "Bilad Alqadeem",
             "date_of_death": "2011-08-13",
             "type_of_death": "Torture",
-            "type_of_death_full": "According to his wife, Hussain who is blind, was brutally tortured while in prison, which resulted in him urinating blood and damaged his internal organs.  He died shortly after being released.",
+            "type_of_death_full": "According to his wife, Hussain, who was blind, was brutally tortured while in prison, which resulted in him urinating blood and damaged his internal organs.  He died shortly after being released.",
             "death_code": 3
         },
         {
@@ -674,7 +674,7 @@
             "from": "Sanabis",
             "date_of_death": "2011-07-19",
             "type_of_death": "Tortured to death",
-            "type_of_death_full": "Tortured to death.",
+            "type_of_death_full": "According to his family, Ali was kidnapped by security forces and tortured to death.  Ali's body showed clear signs of torture, beating and electric shock. <a href='http://bahrainonline.org/showthread.php?t=274366'>More info</a>.",
             "death_code": 3
         },
         {
@@ -684,7 +684,7 @@
             "from": "Sehla",
             "date_of_death": "2011-06-30",
             "type_of_death": "Shotgun",
-            "type_of_death_full": "A shotgun injury sustained on March 14, 2011 to the right side of his head.",
+            "type_of_death_full": "A shotgun injury sustained on March 14, 2011 to the right side of his head while on his way to the local bakery.  Majeed's family was not informed of his death until July 2, 2011 [8].",
             "death_code": 1
         },
         {
@@ -694,7 +694,7 @@
             "from": "Khamis",
             "date_of_death": "2011-06-12",
             "type_of_death": "Torture",
-            "type_of_death_full": "Injuries sustained while in custody. 20 days after his detention, Jaber's family was allowed to visit him and reported seeing bruises on his face, head and the left hand, which he was unable to move. He was released from custody on June 9 and left outside the entrance to a hospital. He died after three days complaining of stomach pains.",
+            "type_of_death_full": "Injuries sustained while in custody. 20 days after his detention, Jaber's family was allowed to visit him and reported seeing bruises on his face, head and his left hand, which he was unable to move. He was released from custody on June 9 and left outside the entrance to a hospital. He died after three days complaining of stomach pains.",
             "death_code": 3
         },
         {
@@ -714,8 +714,8 @@
             "from": "Nuwaidrat",
             "date_of_death": "2011-06-19",
             "type_of_death": "Stabbed by government loyalists",
-            "type_of_death_full": "Stabbed in the head with a sharp object by unknowns while returning home from the mosque after morning prayer.",
-            "death_code": 7
+            "type_of_death_full": "Stabbed in the head with a sharp object by unknown individuals.  Hassan was on his way home from the local mosque after morning prayer when he was attacked.",
+            "death_code": 4
         },
         {
             "id": 33,
@@ -754,7 +754,7 @@
             "from": "Bilad Alqadeem",
             "date_of_death": "2011-04-16",
             "type_of_death": "Abuse",
-            "type_of_death_full": "Cardiac arrest and cessation of breathing. She allegedly turned yellow and died from extreme stress after police broke down the door to her house and began choking her brother, and beating and kicking a neighbor's son. A medical report states that she suffered from type 1 diabetes, rendering her vulnerable to psychological stress.",
+            "type_of_death_full": "Cardiac arrest and cessation of breathing. She allegedly turned yellow and died from extreme stress after police broke down the door to her house and began choking her brother, and beating and kicking a neighbor's son. A medical report states that she suffered from type 1 diabetes, making her vulnerable to psychological stress.",
             "death_code": 7
         },
         {
@@ -764,17 +764,17 @@
             "from": "Karbabad",
             "date_of_death": "2011-04-12",
             "type_of_death": "Tortured to death",
-            "type_of_death_full": "Injuries sustained during torture while in custody.  Witnesses reported hearing Abdulkareem screaming while receiving beatings and then suddenly the screaming stopped, after which one individual said to another, 'you killed him.'",
+            "type_of_death_full": "Injuries sustained during torture while in custody.  Witnesses reported hearing Abdulkareem screaming while receiving beatings and then suddenly the screaming stopped, after which one individual said to another, 'you killed him.'  Abdulkareem was co-founder of the local Alwasat newspaper and ran a local publishing house and bookshop.  <a href='http://en.wikipedia.org/wiki/Karim_Fakhrawi'>More info</a>.",
             "death_code": 3
         },
         {
             "id": 28,
-            "name": "Zakariya Rashid Alashiri",
+            "name": "Zakariya Rashid Al-Ashiri",
             "age": 40,
             "from": "Dair",
             "date_of_death": "2011-04-09",
             "type_of_death": "Tortured to death",
-            "type_of_death_full": "A blindfolded cellmate described hearing prison guards enter their cell and beat Zakariya to death when he refused to be quiet.",
+            "type_of_death_full": "A blindfolded cellmate described hearing prison guards enter their cell and beat Zakariya to death when he refused to be quiet.  Zakariya was a blogger and journalist who was arrested on April 2, 2011 and charged with inciting hatred towards the regime.  <a href='http://en.wikipedia.org/wiki/Zakariya_Rashid_Hassan_al-Ashiri'>More info</a>",
             "death_code": 3
         },
         {
@@ -814,7 +814,7 @@
             "from": "Karzakan",
             "date_of_death": "2011-04-03",
             "type_of_death": "Torture",
-            "type_of_death_full": "Cardiac arrest induced by sickle-cell disease.  Hassan was tortured as noted by Amnesty International and Médecins Sans Frontières both of which examined his body.",
+            "type_of_death_full": "Cardiac arrest induced by sickle-cell disease.  Hassan was subjected to torture, as noted by Amnesty International and Médecins Sans Frontières, both of which examined his body.",
             "death_code": 3
         },
         {
@@ -844,7 +844,7 @@
             "from": "Hajar",
             "date_of_death": "2011-03-24",
             "type_of_death": "Tortured to death",
-            "type_of_death_full": "Torture.  Aziz's family reports there were signs of electric shocks on the body, marks on his hands, chest, and a piercing in his stomach.",
+            "type_of_death_full": "Torture.  Aziz's family reports there were signs of electric shocks on the body, marks on his hands and chest and a piercing in his stomach.",
             "death_code": 3
         },
         {
@@ -884,7 +884,7 @@
             "from": "Hajar",
             "date_of_death": "2011-03-20",
             "type_of_death": "Gunfire",
-            "type_of_death_full": "A bullet fired from a Browning .50 caliber machine gun by the Bahrain Defence Force.  The police first claimed to not know Jawad's whereabouts, then stated Jawad was on 'a special mission' and could not talk on the phone, and finally stated that Jawad had entered a brawl with the army and they were detaining him until the morning. The family later called Jawad's mobile phone, and reached an individual who claimed to have killed Jawad. The family continued receiving calls from Jawad's mobile phone, including one call impersonating Jawad. Jawad's family has been unable to recover his car or his mobile phones [8].",
+            "type_of_death_full": "A bullet fired from a Browning .50 caliber machine gun by the Bahrain Defence Force.  The police first claimed to not know Jawad's whereabouts, then stated Jawad was on 'a special mission' and could not talk on the phone, and finally stated that Jawad had entered a brawl with the army and they were detaining him until the next morning. The family later called Jawad's mobile phone and reached an individual claiming to have killed Jawad. The family continued receiving calls from Jawad's mobile phone, including one call impersonating Jawad. Jawad's family has been unable to recover his car or his mobile phone [8].",
             "death_code": 2
         },
         {
@@ -894,8 +894,8 @@
             "from": "Boori",
             "date_of_death": "2011-03-20",
             "type_of_death": "Beaten to death",
-            "type_of_death_full": "Traumatic injuries to the chest, stomach, back and limbs, which led to bleeding and shock. His body was found in Awali.",
-            "death_code": 3
+            "type_of_death_full": "Traumatic injuries to the chest, stomach, back and limbs, which led to bleeding and shock. His body was found in Awali, an area north of Rifa'a, with distinct bruises and a fractured skull.",
+            "death_code": 4
         },
         {
             "id": 16,
@@ -905,7 +905,7 @@
             "date_of_death": "2011-03-19",
             "type_of_death": "Shotgun, then beaten to death",
             "type_of_death_full": "According to a witness' account, Isa was beaten to death by 15 police officers for around 20 minutes [12].",
-            "death_code": 1
+            "death_code": 4
         },
         {
             "id": 15,
@@ -1014,7 +1014,7 @@
             "from": "Pakistan",
             "date_of_death": "2011-03-13",
             "type_of_death": "Attacked by a mob",
-            "type_of_death_full": "Expat.  Died of severe chest contusion resulting in acute heart failure, attacked by a mob.",
+            "type_of_death_full": "Expat.  Died of severe chest contusion resulting in acute heart failure; attacked by a mob.",
             "death_code": 4
         },
         {
@@ -1024,7 +1024,7 @@
             "from": "Malkiya",
             "date_of_death": "2011-02-21",
             "type_of_death": "Shot in head with live bullet",
-            "type_of_death_full": "Sustained at least two live bullets to the head when the Bahrain Defence Force opened fire on mourners with M16 rifles, Dilmun rifles, and Browning .50 caliber machine guns mounted on armored vehicles.  <a href='https://www.youtube.com/watch?v=3nI02Z8B1dw'>Amateur video footage posted on YouTube</a> shows the moment troops opened fire.",
+            "type_of_death_full": "Sustained at least two live bullets to the head when the Bahrain Defence Force opened fire on mourners with M16 rifles, Dilmun rifles, and Browning .50 caliber machine guns mounted on armored vehicles.  <a href='https://www.youtube.com/watch?v=3nI02Z8B1dw'>Amateur video footage posted on YouTube</a> shows the moment troops opened fire and <a href='https://www.youtube.com/watch?v=sdI_s8CGDEU'>another</a> shows Abdulredha being carried away (WARNING: GRAPHIC).",
             "death_code": 2
         },
         {
