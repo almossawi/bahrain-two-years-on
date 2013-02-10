@@ -2,7 +2,7 @@
 
 //options
 var LANG,
-	default_opacity = 0.6,
+	default_opacity = 0.7,
 	fixed_card = true,
 	default_stroke_width = 1,
 	trans_stroke_width = 10,
