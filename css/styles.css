@@ -253,9 +253,9 @@ img {
 	border:0px solid white;
 	text-align:center;
 	margin-top:10px;
-	opacity:0;
 	clear:both;
 	height:30px;
+	opacity:1;
 }
 
 #controls_cover {
@@ -274,6 +274,7 @@ img {
 	background-color:black;
 	color:#8f8f8f;
 	cursor:pointer;
+	display:none;
 }
 
 .bar {

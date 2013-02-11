@@ -66,12 +66,12 @@ function assignEventListeners() {
 		resetAllStrokes();
 	});
 	
-	$("#controls_cover").on("mouseenter", function() {
+	/*$("#controls_cover").on("mouseenter", function() {
 		$("#controls_cover").fadeOut();
 		$("#controls")
 			.delay(500)
 			.animate({ opacity: 1}, 1000);
-	});
+	});*/
 	
 	/*$("#color_using").on("change", function(d_event) {
 		if(d_event.target.value == "by_age") {
