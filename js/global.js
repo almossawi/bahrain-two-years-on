@@ -315,7 +315,7 @@ function resetDropdownBox(which_one) {
 		});
 	
 	var suffix = (count == 1) ? "LIFE" : "LIVES";
-	$("#count").html(count + " LIVES");
+	$("#count").html(count + " " + suffix);
 }
 
 function handleDropdownBox() {
