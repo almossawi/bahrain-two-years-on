@@ -663,8 +663,9 @@ function drawMainVisual(container) {
 			.data(data.deaths)
 			.enter().append("svg:path")
 				.attr("opacity", function() {
-					return default_opacity;
-					//return Math.floor((Math.random()*1)+0.5)
+					//return default_opacity;
+					var r = Math.random();
+					return (r < 0.3) ? 0.3 : r;
 				})
 				.attr("id", function(d) { return "p" + d.id; })
 				.attr("stroke-width", default_stroke_width)
