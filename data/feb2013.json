@@ -1,6 +1,15 @@
 {
     "deaths": [
         {
+            "id": 109,
+            "name": "Hussain Ali Aljazeeri",
+            "age": 16,
+            "from": "Daih",
+            "date_of_death": "2013-02-14",
+            "type_of_death_full": "Direct birdshot to his abdomen.  Hussain died of his injuries in hospital <a href='http://alwefaq.net/index.php?show=news&action=article&id=7467'>(source)</a>.",
+            "death_code": 1
+        },
+        {
             "id": 87,
             "name": "Qassim Habib",
             "age": 8,
@@ -33,7 +42,7 @@
             "age": 16,
             "from": "Samaheej",
             "date_of_death": "2012-11-09",
-            "type_of_death_full": "Died after being struck by a passing car while running away from a police car that were chasing him.  Ali was on his way to Friday Prayers in Diraz.",
+            "type_of_death_full": "Died after being struck by a passing car while running away from a police car that was chasing him.  Ali was on his way to Friday Prayers in Diraz.",
             "death_code": 5
         },
         {
@@ -115,7 +124,7 @@
             "age": 16,
             "from": "Muharraq",
             "date_of_death": "2012-08-17",
-            "type_of_death_full": "Died in hospital as a result of injuries sustained by security forces.  Hussam was shot with a shotgun and kicked repeatedly by a man in civilian clothing in front of security forces.  Human Rights Watch said al-Haddad was unarmed.",
+            "type_of_death_full": "Died in hospital as a result of injuries sustained by security forces.  Hussam was shot with a shotgun and kicked repeatedly by a man in civilian clothing in front of security forces.  Human Rights Watch said that he was unarmed.",
             "death_code": 1
         },
         {
