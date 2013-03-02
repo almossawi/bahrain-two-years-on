@@ -1,6 +1,15 @@
 {
     "deaths": [
         {
+            "id": 110,
+            "name": "Mahmood Isa Aljazeeri",
+            "age": 20,
+            "from": "Nabih Saleh",
+            "date_of_death": "2013-02-21",
+            "type_of_death_full": "Direct shot to the head with a tear gas canister on February 14, 2013 resulting in a fractured skull.  Mahmood succumbed to his injuries and died while in hospital a week later.  This <a href='http://www.youtube.com/watch?v=lwjYUgh3L1A&sns=em'>amateur video footage</a> shows Mahmood being shot.",
+            "death_code": 2
+        },
+        {
             "id": 109,
             "name": "Hussain Ali Aljazeeri",
             "age": 16,
@@ -826,7 +835,7 @@
         },
         {
             "id": 15,
-            "name": "Ali Ahmad Almuraysi",
+            "name": "Ahmad Almuraysi",
             "age": 30,
             "from": "Rifa'a",
             "date_of_death": "2011-03-17",
@@ -882,7 +891,7 @@
             "id": 9,
             "name": "Steven Ebraham",
             "age": 48,
-            "from": "India (expat)",
+            "from": "India",
             "date_of_death": "2011-03-16",
             "type_of_death_full": ".50 caliber Browning Gun bullet to the right side of his chest fired by the Bahrain Defence Force",
             "death_code": 2

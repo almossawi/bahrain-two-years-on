@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta property="og:title" content="البحرين: بعد عامين" /> 
+		<meta property="og:description" content="البحرين جزيرة صغيرة يسكن فيها حوالي ١.٢ مليون شخص ويتميز تاريخها بالغوص.  فقد ذكرت الألواح الآشورية التي تعود لسنة ٢٠٠٠ قبل الميلاد 'عيون السمك' في دلمون.  منذ مئة عام والبحرين تشهد اضطرابات بين السكان والنظام بمعدل مرة كل عشر سنوات حول قضايا تتعلق بالحريات الإجتماعية والسياسية .    هذا العمل يظهر ضحايا الإضطرابات ال١١٠ مستنداً إلى البيانات الموثقة من منظمات حقوق الإنسان، اللجنة الوطنية لتقصي الحقائق والسلطة في شكلٍ تجريدي يشبه النخلة." /> 
+		<MEta property="og:image" content="http://bahrainvisualized.com/images/thumb.png" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://bahrainvisualized.com/arabic" />
+		<meta property="og:site_name" content="البحرين: بعد عامين" />
+		
+		<title>البحرين: بعد عامين</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js" type="text/javascript"></script>
+		
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+   		<script type="text/javascript" src="js/date.js"></script>
+   		<script type="text/javascript" src="js/global.min.js"></script>
+   		<script type="text/javascript" src="js/jquery.uniform.min.js" charset="utf-8"></script>
+
+   		<link rel="stylesheet" href="css/styles.min.css" type="text/css" />
+   		
+   		<!--[if IE]>
+			<link rel="stylesheet" href="css/styles_ie.css" type="text/css" />
+		<![endif]-->
+		
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/styles_ie_unsupported.css" type="text/css" />
+		<![endif]-->
+
+   		<link rel="stylesheet" href="css/uniform.default.min.css" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38360687-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=337561759677631";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+		<div id="page">
+			<div id="tree">
+			</div>
+			
+			<div id="count" class="shadow"></div>
+			
+			<div id="title" class="shadow">
+				البحرين: بعد عامين
+			</div>
+			
+			<!--<div id="controls_cover">
+				Roll over for options
+			</div>-->
+			
+			<div id="controls">
+				<!--<a href="#" id="cancel_all_filters">Cancel all filters</a>-->
+			
+				<div style="width:300px;height:100px;color:white;position:absolute;margin-left:220px">
+					<div id="ages_menu" class="menu">
+						<ul>
+							<li><a href="#" code="-1" style="font-weight:600">جميع الأعمار</a></li>
+							<li class="li_divider"></li>
+							<li><a href="#" code="60">٦٠ عام أو أكبر</a></li>
+							<li><a href="#" code="50">٥٠ إلى ٥٩</a></li>
+							<li><a href="#" code="40">٤٠ إلى ٤٩</a></li>
+							<li><a href="#" code="30">٣٠ إلى ٣٩</a></li>
+							<li><a href="#" code="20">٢٠ إلى ٢٩</a></li>
+							<li><a href="#" code="10">١٠ إلى ١٩</a></li>
+							<li><a href="#" code="0">١٠ سنوات أو أصغر</a></li>
+						</ul>
+					</div>
+				
+					<div id="ages">
+						<img class="trans" src="images/transparent.png" />
+						<span>جميع الأعمار</span>
+					</div>
+				</div>
+				
+				<div style="width:300px;height:100px;color:white;position:absolute;margin-left:385px">
+					<div id="death_code_menu" class="menu">
+						<ul>
+							<li><a href="#" code="-1" style="font-weight:600">جميع أسباب الوفاة</a></li>
+							<li class="li_divider"></li>
+							<li><a href="#" code="6">الغاز المسيل للدموع</a></li>
+							<li><a href="#" code="1">السلاح الإنشطاري</a></li>
+							<li><a href="#" code="2">الرصاص أو الطلق المباشر</a></li>
+							<li><a href="#" code="5">الدهس</a></li>
+							<li><a href="#" code="4">الإيذاء الجسدي</a></li>
+							<li><a href="#" code="3">التعذيب</a></li>
+							<li><a href="#" code="7">أخرى</a></li>
+						</ul>
+					</div>
+			
+					<div id="death_code">
+						<img class="trans" src="images/transparent.png" />
+						<span>جميع أسباب الوفاة</span>
+					</div>
+				</div>
+				
+				<div style="width:300px;height:100px;color:white;position:absolute;margin-left:550px">
+					<div id="from_menu" class="menu">
+						<ul>
+							<li><a href="#" code="-1" style="font-weight:600">جميع المناطق</a></li>
+							<li class="li_divider"></li>
+							
+														<li class="area_item" code="A'ali"><a href="#">عالي</a></li>
+							<li class="area_item" code="Abu Saiba'a"><a href="#">أبو صيبع</a></li>
+							<li class="area_item" code="Barbar"><a href="#">باربار</a></li>
+							<li class="area_item" code="Bilad Alqadeem"><a href="#">بلاد القديم</a></li>
+							<li class="area_item" code="Boori"><a href="#">بوري</a></li>
+							<li class="area_item" code="Buguwwah"><a href="#">بوقوة</a></li>
+							<li class="area_item" code="Daih"><a href="#">الديه</a></li>
+							<li class="area_item" code="Dair"><a href="#">الدير</a></li>
+							<li class="area_item" code="Demistan"><a href="#">دمستان</a></li>
+							<li class="area_item" code="Diraz"><a href="#">الدراز</a></li>
+							<li class="area_item" code="Hajar"><a href="#">الحجر</a></li>
+							<li class="area_item" code="Hamad Town"><a href="#">مدينة حمد</a></li>
+							<li class="area_item" code="Isa Town"><a href="#">مدينة عيسى</a></li>
+							<li class="area_item" code="Jidhafs"><a href="#">جدحفص</a></li>
+							<li class="area_item" code="Karbabad"><a href="#">كرباباد</a></li>
+							<li class="area_item" code="Karraneh"><a href="#">كرانه</a></li>
+							<li class="area_item" code="Karzakan"><a href="#">كرزكان</a></li>
+							<li class="area_item" code="Khamis"><a href="#">الخميس</a></li>
+							<li class="area_item" code="Ma'ameer"><a href="#">المعامير</a></li>
+							<li class="area_item" code="Mahooz"><a href="#">الماحوز</a></li>
+							<li class="area_item" code="Malkiya"><a href="#">المالكية</a></li>
+							<li class="area_item" code="Manama"><a href="#">المنامة</a></li>
+							<li class="area_item" code="Migsha'a"><a href="#">المقشع</a></li>
+							<li class="area_item" code="Muharraq"><a href="#">المحرق</a></li>
+							<li class="area_item" code="Nabih Saleh"><a href="#">النبيه صالح</a></li>
+							<li class="area_item" code="Naim"><a href="#">النعيم</a></li>
+							<li class="area_item" code="Nuwaidrat"><a href="#">النويدرات</a></li>
+							<li class="area_item" code="Ras Rumman"><a href="#">راس رمان</a></li>
+							<li class="area_item" code="Rifa'a"><a href="#">الرفاع</a></li>
+							<li class="area_item" code="Samaheej"><a href="#">سماهيج</a></li>
+							<li class="area_item" code="Sanabis"><a href="#">سنابس</a></li>
+							<li class="area_item" code="Shakhoora"><a href="#">الشاخورة</a></li>
+							<li class="area_item" code="Sadad"><a href="#">صدد</a></li>
+							<li class="area_item" code="Salmabad"><a href="#">سماباد</a></li>
+							<li class="area_item" code="Sar"><a href="#">سار</a></li>
+							<li class="area_item" code="Shahrakkan"><a href="#">شهركان</a></li>
+							<li class="area_item" code="Sitra"><a href="#">سترة</a></li>
+							<li class="area_item" code="Sehla"><a href="#">السهلة</a></li>
+							<li class="area_item" code="Bangladesh"><a href="#">بنغلادش</a></li>
+							<li class="area_item" code="India"><a href="#">الهند</a></li>
+							<li class="area_item" code="Pakistan"><a href="#">باكستان</a></li>
+						</ul>
+					</div>
+			
+					<div id="from">
+						<img class="trans" src="images/transparent.png" />
+						<span>جميع المناطق</span>
+					</div>
+				</div>
+			</div>
+			
+			<div id="details">
+			</div>
+			
+			<div class="copy">			
+<p>
+
+<p>البحرين جزيرة صغيرة يسكن فيها حوالي ١.٢ مليون شخص (٦٠٠,٠٠٠ مواطن) ويتميز تاريخها بالغوص.  فقد ذكرت الألواح الآشورية التي تعود لسنة ٢٠٠٠ قبل الميلاد "عيون السمك" في دلمون.  في القرن الماضي جذب اللؤلؤ البحريني أمثال جاك كارتير إلى الجزيرة <١>.  منذ مئة عام والبحرين تشهد اضطرابات بين السكان والنظام بمعدل مرة كل عشر سنوات <٢> حول قضايا تتعلق بالحريات الإجتماعية والسياسية كما يتبين في <a href="http://www.youtube.com/watch?v=slODgPwakgM">هذا التقرير الخبري</a> الذي أعدته القناة الأخبارية البريطانية في سنة ١٩٥٦.  في عام ١٩٢١، عندما كانت البحرين تحت الحكم البريطاني، كتب الميجر أ. ب. تريفور إلى حكومة الهند عن المشاكل السياسية في البلاد <٤>.  في العقود التي تلت كتب شارلز بلغريف في مذكراته ورسائله عن قضايا مشابهة <٥>.</p>				<p>الحراك الحالي بدء في ١٤ فبراير، ٢٠١١ وقد نتج حتى فبراير ٢٠١٣ عن مقتل ١٠٧ مدنيين، متضمنا سبعة مقيمين أجانب، وثلاثة من رجال الشرطة <٦><٧><٨><٩>.  ١٨ من القتلى الـ١١٠ هم دون عمر الثامنة عشرة و٢١ منهم إناث.  بالإضافة لذلك، رصدت بعض التقارير عشرون حالة وفاة لأجنة.  هذا العمل يظهر الضحايا الـ١١٠ مستنداً إلى البيانات الموثقة من منظمات حقوق الإنسان، اللجنة الوطنية لتقصي الحقائق والسلطة في شكلٍ تجريدي يشبه النخلة.  باستطاعتك تحريك الفأرة على الخطوط لمعرفة المزيد عن كل ضحية، قم بالضغط على الخط الأفقي في اليسار لإظهار أو اخفاء الأشرطة العمودية.  ننوه إلى أن معظم أسباب الوفاة مأخوذة من <٩>.</p>
+				
+				<h1 style="margin-top:50px">أسباب الوفاة</h1>
+				<p style="margin-top:0">أكبر سبب للوفاة هو استنشاق الغاز المسيل للدموع مباشرة أو مضاعفات ناتجة عن ذلك.  هناك عدة فيديوات مثل <a href="http://www.youtube.com/watch?v=vK3mVoQJGJw">هذا الفيديو</a> تظهر رجال الشرطة وهم يطلقون الغاز المسيل للدموع في البيوت مباشرة عبر نوافذها.  السلاح الإنشطاري كذلك قد يكون قاتلاً حين يستخدم ضد البشر <١١>.  ١٥٪ من الوفيات هي بسبب هذا السلاح بينما ١٢٪ من الوفيات بسبب أسلحة نارية أخرى كالرصاص الحي والرصاص المطاطي والطلق المباشر لقنابل الغاز باتجاه الجسم.</p>
+				<p>التعذيب الجسدي داخل وخارج السجن سبب ١٧٪ من الوفيات.  تقرير اللجنة المستقلة لتقصي الحقائق استنتج أن التعذيب في البحرين ممنهج وذكر عدة طرق تستخدم بشكل ممنهج لتعذيب السجناء.  من ضمنها "ﺗﻌﺼﻴﺐ اﻟﻌﻴﻨﻴﻦ؛ وﺗﻜﺒﻴﻞ اﻟﻴﺪﻳﻦ؛ واﻹﺟﺒﺎر ﻋﻠﻰ اﻟﻮﻗﻮف ﻟﻔﺘﺮات ﻃﻮﻳﻠﺔ؛ واﻟﻀﺮب؛ واﻟﻠﻜﻢ؛ واﻟﻀﺮب ﺑﺨﺮاﻃﻴﻢ ﻣﻄﺎﻃﻴﺔ وأﺳﻼك كهربائية ﻋﻠﻰ اﻟﻘﺪﻣﻴﻦ؛ واﻟﻀﺮب ﺑﺎﻟﺴﻴﺎط وﻗﻀﺒﺎن ﻣﻌﺪﻧﻴﺔ وﺧﺸﺒﻴﺔ وأﺷﻴﺎء أﺧﺮى؛ واﻟﺼﻌﻖ بالكهرباء؛ واﻟﺤﺮﻣﺎن ﻣﻦ اﻟﻨﻮم؛ واﻟﺘﻌﺮﻳﺾ ﻟﺪرﺟﺎت ﺣﺮارة ﺷﺪﻳﺪة؛ واﻻﻋﺘﺪاءات اﻟﻠﻔﻈﻴﺔ؛ واﻟﺘﻬﺪﻳﺪ ﺑﺎﻻﻏﺘﺼﺎب؛ وإﻫﺎﻧﺔ اﻟﻄﺎﺋﻔﺔ اﻟﺪﻳﻨية" <٨>.</p>
+				
+				<div style="clear:both;height:10px"></div>
+				<div class="bar_label">استنشاق الغاز المسيل للدموع</div><div class="bar" style="width:440px"><span class="light">(٤٠٪)</span> &nbsp;٤٤</div><br />
+				<div class="bar_label">السلاح الإنشطاري</div><div class="bar" style="width:160px"><span class="light">(١٥٪)</span> &nbsp;١٦</div><br />
+				<div class="bar_label">السلاح الناري</div><div class="bar" style="width:120px"><span class="light">(١٢٪)</span> &nbsp;١٣</div><br />
+				<div class="bar_label">الدهس</div><div class="bar" style="width:110px"><span class="light">(١٠٪)</span> &nbsp;١١</div><br />
+				<div class="bar_label">االإعتداء الجسدي</div><div class="bar" style="width:100px"><span class="light">(٩٪)</span> &nbsp;١٠</div><br />
+				<div class="bar_label">التعذيب داخل السجن</div><div class="bar" style="width:90px"><span class="light">(٨٪)</span> &nbsp;٩</div><br />
+				<div class="bar_label">أخرى</div><div class="bar" style="width:70px"><span class="light">(٦٪)</span> &nbsp;٧</div><br />
+				
+				<h1 style="margin-top:50px">الوفيات عبر الزمن</h1>
+				<p style="margin-top:0">أكبر عدد من الضحايا سقطوا في يوم ١٦ مارس ٢٠١١ عند <a href="https://www.youtube.com/watch?v=dSWCssMn5ms">دخول القوات الخليجية إلى البحرين</a>. القمع الذي وقع في ذلك اليوم تسبب في مقتل ستة أشخاص وجرح المئات.  كان اليوم الأكثر دموياً فيما سبق يوم ١٧ فبراير ٢٠١١ عندما هاجمت قوات الشرطة والجيش دوار اللؤلؤة في ساعات الفجر.  من المحتجين الـ١٠,٠٠٠ الذين كانوا متواجدين في الدوار <١٤> لقي أربعة منهم مصرعهم وجرح نحو ٣٠٠. </p>
+					
+				<div id="time_series">
+					<div></div>
+				</div>
+				
+				<div id="full_date"></div>				
+				
+				<p style="font-size:10px;margin-top:120px;direction:ltr">
+				[1] Cartier by Hans Nadelhoffer, 2007.<br />
+				[2] Political Movements in Bahrain: Past, Present, and Future by Omar Shehabi, <a href="http://bit.ly/z2hy1p">http://bit.ly/z2hy1p (jadaliyya.com)</a><br />
+				[3] If you take my advice - I'd repress them by Adam Curtis, BBC Blogs, <a href="http://www.bbc.co.uk/blogs/adamcurtis/posts/if_you_take_my_advice_-_id_rep">http://www.bbc.co.uk/blogs/adamcurtis/posts/if_you_take_my_advice_-_id_rep</a><br />
+				[4] Bahrain: 1920 - 1971, A reading of British documents (Arabic) by Saeed Alshehabi, <a href="http://www.neelwafurat.com/itempage.aspx?id=lbb20866-19450&search=books">http://bit.ly/Yn1JLV (neelwafurat.com)</a><br />
+				[5] Belgrave Diaries: Papers of Charles Dalrymple-Belgrave (1926-1957), <a href="http://bit.ly/bvC2Xy">http://bit.ly/bvC2Xy (scribd.com)</a><br />
+				[6] Bahrain Center for Human Rights, <a href="http://www.bahrainrights.org/en">http://www.bahrainrights.org/en</a><br />
+				[7] Police Media Center, <a href="http://www.policemc.gov.bh/en">http://www.policemc.gov.bh/en</a><br />
+				[8] Report of the Bahrain Independent Commission of Inquiry, <a href="http://www.bici.org.bh/BICIreportEN.pdf">http://www.bici.org.bh/BICIreportEN.pdf</a><br />
+				[9] Casualties of the Bahraini uprising (2011-present), <a href="http://en.wikipedia.org/wiki/Casualties_of_the_Bahraini_uprising_%282011%E2%80%93present%29">http://bit.ly/THTvkh (wikipedia.org)</a><br />
+				[10] Bahrain: Investigate Shooting, Arrest of Man Caught Up in Police Sweep, Human Rights Watch, <a href="http://www.hrw.org/en/news/2011/03/23/bahrain-investigate-shooting-arrest-man-caught-police-sweep">http://bit.ly/ev567s (hrw.org)</a><br />
+				[11] Bahrain in Pictures, <a href="http://bahrain.viewbook.com">http://bahrain.viewbook.com</a><br />
+				[12] Bahrain: Investigate Deaths Linked to Crackdown, Human Rights Watch, <a href="http://www.hrw.org/news/2011/03/29/bahrain-investigate-deaths-linked-crackdown">http://bit.ly/11WHqa5 (hrw.org)</a><br />
+				[13] Tear-Gas Related Deaths in Bahrain, Physicians for Human Rights, <a href="http://physiciansforhumanrights.org/issues/persecution-of-health-workers/bahrain/bahrain-tear-gas-deaths.html">http://bit.ly/GKoo0Z (physiciansforhumanrights.org)</a><br />
+				[14] Bahrain Takes the Stage With a Raucous Protest by Michael Slackman, New York Times, <a href="http://www.nytimes.com/2011/02/16/world/middleeast/16bahrain.html">http://www.nytimes.com/2011/02/16/world/middleeast/16bahrain.html</a><br />
+				[15] Bahrain protesters join anti-government march in Manama, BBC, <a href="http://www.bbc.co.uk/news/world-middle-east-17309839">http://www.bbc.co.uk/news/world-middle-east-17309839</a><br />
+				</p>
+			</div>
+		</div> <!-- end page -->
+
+		<div id="lang"><a href="/">English</a></div>
+
+		<div id="wide_pane">		
+			<div id="logo_container">
+				<!--<div id="count_hider"></div>-->
+				
+				<div id="twitter_block">
+<a href="https://twitter.com/share" data-url="http://bahrainvisualized.com" data-count="vertical" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+				
+				<div id="fb_block" class="fb-like" data-href="http://bahrainvisualized.com" data-send="false" data-layout="box_count" data-width="150" data-show-faces="false" data-font="arial"></div>
+				
+				<div id="credits_block">
+					<div style="text-align:right;font-size:16px;direction:rtl">
+هذا العمل يظهر الحراك في البحرين من وجهة نظر محايدة.  المؤلف ليس عضواً في أي تجمعٍ سياسي. للإبلاغ عن أي أخطاء أو لإبداء آرائكم يرجى مراسلتنا.<br />
+					
+					١ مارس ٢٠١٣<br />
+					</div>
+					contact/at/bahrainvisualized/dot/com &nbsp;&middot;&nbsp; <a href="http://creativecommons.org/licenses/by-nc/3.0/">cc by-nc</a>
+				</div>
+				
+				<!--<div style="float:right;z-index:3;padding-top:13px;padding-right:15px"></div>-->
+			</div>
+		</div>
+		
+		<script>
+		var images = [
+			'images/menu_balloon.png',
+			'images/menu_balloon_wide.png'
+		];
+
+		$(images).each(function() {
+			var image = $('<img />').attr('src', this);
+		});
+		</script>
+	</body>
+</html>

@@ -284,6 +284,49 @@ function assignEventListeners() {
 	});
 }
 
+function convertToArabicMonth(month_english) {
+	var month_arabic = {
+        'Jan': 'يناير',
+        'Feb': 'فبراير',
+        'Mar': 'مارس',
+        'Apr': 'أبريل',
+        'May': 'مايو',
+        'Jun': 'يونيو',
+        'Jul': 'يوليو',
+        'Aug': 'أغسطس',
+        'Sep': 'سبتمبر',
+        'Oct': 'أكتوبر',
+        'Nov': 'نوفمبر',
+        'Dec': 'ديسمبر'
+    }
+	
+	return month_arabic[month_english];
+}
+
+function convertToIndian(number) {
+	var rep = {
+        '0': '&#1632;',
+        '1': '&#1633;',
+        '2': '&#1634;',
+        '3': '&#1635;',
+        '4': '&#1636;',
+        '5': '&#1637;',
+        '6': '&#1638;',
+        '7': '&#1639;',
+        '8': '&#1640;',
+        '9': '&#1641;'
+    }
+
+    var number_converted = "",
+    	number_str = number.toString();
+    
+    for(var i=0;i<number_str.length;i++) {
+    	number_converted += rep[number_str[i]];
+    }
+
+    return number_converted;
+}
+
 function resetDropdownBox(which_one) {
 	window.which_one = -1;
 	//$("#count").html(death_count + " LIVES");
@@ -313,9 +356,11 @@ function resetDropdownBox(which_one) {
 					.attr("visibility", "hidden")
 			}
 		});
-	
-	var suffix = (count == 1) ? "LIFE" : "LIVES";
-	$("#count").html(count + " " + suffix);
+
+	if(count == 1)
+		$("#count").html("روح واحدة");
+	else
+		$("#count").html(" الأرواح" + " " + convertToIndian(count));
 }
 
 function handleDropdownBox() {
@@ -347,8 +392,10 @@ function handleDropdownBox() {
 				}
 			});
 			
-		var suffix = (count == 1) ? "LIFE" : "LIVES";
-		$("#count").html(count + " " + suffix);
+	if(count == 1)
+		$("#count").html("روح واحدة");
+	else
+		$("#count").html(" الأرواح" + " " + convertToIndian(count));
 		
 	return false;
 }
@@ -390,8 +437,8 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
     //prepare our scales and axes
   	//var xMin = d3.min(d3.values(data), function(d) { return d.date; }),
 	//    xMax = d3.max(d3.values(data), function(d) { return d.date; }),
-	var xMin = +new Date("2011-01-01"),
-	    xMax = +new Date("2013-02-28"),
+	var xMax = +new Date("2011-01-01"),
+	    xMin = +new Date("2013-02-28"),
 	    yMin = 0,
 	    yMax = d3.max(d3.values(data), function(d) { return d.count; });
 
@@ -399,7 +446,7 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
 		
 	var xScale = d3.time.scale()
         .domain([xMin, xMax])
-        .range([xPadding+16, w-xPadding]);
+        .range([xPadding+22, w-xPadding-18]);
             
     var yScale = d3.scale.linear()
         .domain([yMin, yMax])
@@ -413,7 +460,7 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
                 
 	var yAxis = d3.svg.axis()
         .scale(yScale)
-        .orient("left")
+        .orient("right")
         .tickFormat(d3.format(format))
         .ticks(5);
             
@@ -436,18 +483,18 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
     		.attr('y1', -1)
     		.attr('y2', -1)
     		.attr('x1', yPadding+5)
-    		.attr('x2', w-yPadding+8);
+    		.attr('x2', w-yPadding-8);
     		
 	//draw x axis
 	var xAxis = svg.append("g")
     	.attr("class", "axis x")
-	    .attr("transform", "translate(2," + (h-xPadding-6) + ")")
+	    .attr("transform", "translate(-4," + (h-xPadding-6) + ")")
     	.call(xAxis);
     	    	
 	//draw y axis
 	svg.append("g")
     	.attr("class", "axis y")
-	    .attr("transform", "translate(" + (yPadding+10) + ",0)")
+	    .attr("transform", "translate(" + (yPadding+875) + ",0)")
     	.call(yAxis);
     
     //draw left y-axis
@@ -502,22 +549,24 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
 					    	.attr("stroke-dasharray","1,3")
     						.attr('y1', 7)
 						    .attr('y2', 36)
-						    .attr('x1', xScale(d.value.date)-1)
-						    .attr('x2', xScale(d.value.date)-1);
+						    .attr('x1', xScale(d.value.date)-3)
+						    .attr('x2', xScale(d.value.date)-3);
 							    
 					d3.select(which_metric + " svg")
 						.append('svg:text')
 							.attr("class", "annotation_text")
 							.text(annotations[ze_date].annotation)
-    						.attr('y', 17)
-						    .attr('x', xScale(d.value.date)+4);
+							.attr("text-anchor", "end")
+    						.attr('y', 20)
+						    .attr('x', xScale(d.value.date)-16);
 							    
 					d3.select(which_metric + " svg")
 						.append('svg:text')
 							.attr("class", "annotation_text")
 							.text(annotations[ze_date].annotation_line2)
-    						.attr('y', 31)
-						    .attr('x', xScale(d.value.date)+4);
+							.attr("text-anchor", "end")
+    						.attr('y', 39)
+						    .attr('x', xScale(d.value.date)-16);
 				}
    			})
    			.on('mouseover.tooltip', function(d) {
@@ -562,8 +611,8 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
 
 //draw the arcs
 function drawMainVisual(container) {
- 	d3.json("data/feb2013.json", function(data) {
- 	d3.json("data/annotations.json", function(annotations) {
+ 	d3.json("data/feb2013_arabic.json", function(data) {
+ 	d3.json("data/annotations_arabic.json", function(annotations) {
 		//data.deaths = data.deaths.shuffle();
 		
 		death_count = data.deaths.length;
@@ -611,17 +660,17 @@ function drawMainVisual(container) {
 			.style("fill", "#cccccc")
     		.attr('x', 13)
 	    	.attr('y', 20)
-    		.style("font-size", "10px")
+    		.style("font-size", "16px")
 	    	.attr("transform", "rotate(-90, 10 , 20) translate(-240, 0)")
-    		.text("Victim's age");
+    		.text("عمر الضحية");
 	    	
     	svg.append("svg:text")
 			.style("fill", "#cccccc")
     		.attr('x', 26)
 	    	.attr('y', 20)
-    		.style("font-size", "10px")
+    		.style("font-size", "14px")
 	    	.attr("id", "show_band_90yrs")
-	    	.text("90 years");
+	    	.text("٩٠ عاماً");
 	    	
 	    svg.append('svg:rect')
 	    	.attr("fill", "#7b7b7b")
@@ -638,8 +687,8 @@ function drawMainVisual(container) {
     		.attr('x', 26)
 	    	.attr('y', 235)
 	    	.attr("id", "show_band_45yrs")
-    		.style("font-size", "10px")
-	    	.text("45 years");
+    		.style("font-size", "14px")
+	    	.text("٤٥ عاماً");
 	    	
 	    svg.append('svg:rect')
 	    	.attr("fill", "#7b7b7b")
@@ -655,8 +704,8 @@ function drawMainVisual(container) {
 			.style("fill", "#cccccc")
 	    	.attr('x', 26)
     		.attr('y', 458)
-	    	.style("font-size", "10px")
-    		.text("Newborn");
+	    	.style("font-size", "14px")
+    		.text("رضيع");
 
 		var fill_counter = 0;
 		svg.selectAll("path")
@@ -725,11 +774,16 @@ function drawMainVisual(container) {
 						.attr("stroke-width", highlighted_stroke_width)
 						.attr("opacity", 1);
 	
-					var age = (d.age < 1) ? d.actual_age : d.age + " years";
-					var html = "<span style='font-weight:bold;font-size:15px'>" + d.name + "</span><br />"
-						+ age + ", from " + d.from + "<br />"
-						+ "Killed " + Date.parse(d.date_of_death).toString('dddd, MMM d, yyyy') + "<br />"
-						+ "<p>&ldquo;" + d.type_of_death_full + "&rdquo;</p>";
+					var day_indian = convertToIndian(Date.parse(d.date_of_death).toString('d')),
+						month_indian = convertToArabicMonth(Date.parse(d.date_of_death).toString('MMM')),
+						year_indian = convertToIndian(Date.parse(d.date_of_death).toString('yyyy')),
+						date_indian = day_indian + " " + month_indian + " " + year_indian;
+						
+					var age = (d.age < 1) ? d.actual_age : convertToIndian(d.age) + " عاماً";
+					var html = "<span style='font-size:22px'>" + d.name + "</span><br />"
+						+ age + " من " + d.from + "<br />"
+						+ date_indian + "<br />"
+						+ "<p>&rdquo;" + d.type_of_death_full + "&ldquo;</p>";
 
 					//are we floating the pane or showing it at its fixed location?
 					if(fixed_card) {
@@ -762,7 +816,11 @@ function drawMainVisual(container) {
 				})
 				});
 				
-		$("#count").html(data.deaths.length + " LIVES");
+		
+		if(data.deaths.length == 1)
+			$("#count").html("روح واحدة");
+		else
+			$("#count").html(" الأرواح" + " " + convertToIndian(data.deaths.length));
 		
 		assignMainVisualListeners();
 	});
