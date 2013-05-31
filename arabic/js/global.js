@@ -532,10 +532,15 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
    					return "#fff";
    			})
    			.attr("x", function(d, i) { return xScale(d.value.date)-3; })
-   			.attr("y", function(d) { return h-yPadding-1; })
-   			.attr("height", function(d) { return 0; })
+   			//.attr("y", function(d) { return h-yPadding-1; })
+   			//.attr("height", function(d) { return 0; })
    			.attr('opacity', 0.8)
    			.attr("width", 1)
+   			.attr("y", function(d) { return yScale(d.value.count)-1; })
+	   		.attr("height", function(d) {
+   				console.log((h-yPadding) - yScale(d.value.count));
+    		    return (h-yPadding) - yScale(d.value.count);
+	   		})
    			.each(function(d, i) {
    				var ze_date = Date.parse(d.key).toString('yyyy')
 						+ "-" + Date.parse(d.key).toString('MM')
@@ -549,8 +554,8 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
 					    	.attr("stroke-dasharray","1,3")
     						.attr('y1', 7)
 						    .attr('y2', 36)
-						    .attr('x1', xScale(d.value.date)-3)
-						    .attr('x2', xScale(d.value.date)-3);
+						    .attr('x1', xScale(d.value.date)-6)
+						    .attr('x2', xScale(d.value.date)-6);
 							    
 					d3.select(which_metric + " svg")
 						.append('svg:text')
@@ -600,13 +605,13 @@ function drawTimeSeries(data, container, format, humanify_numbers, custom_units,
 								.attr("dy", "0.35m")
 								.attr("text-anchor", "middle")
 								.attr("class", "tooltip");
-			})
-   			.transition()
+			});
+   			/*.transition()
    			.duration(1000)
    				.attr("y", function(d) { return yScale(d.value.count)-1; })
    				.attr("height", function(d) {
     	    		return (h-yPadding) - yScale(d.value.count);
-	   			});
+	   			});*/
 }
 
 //draw the arcs
